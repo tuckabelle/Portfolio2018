@@ -25,3 +25,6 @@ fields:
 - type: tag_list
   name: type
   label: project type
+- type: text
+  name: url
+  label: url
