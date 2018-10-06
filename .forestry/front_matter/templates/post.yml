@@ -16,15 +16,17 @@ fields:
 - type: datetime
   name: date
   label: Date
-- type: file
-  name: feature_img
-  label: feature img
+  config:
+    date_format: YYYY
+- type: text
+  name: url
+  label: url
 - type: tag_list
   name: role
   label: project role
 - type: tag_list
   name: type
   label: project type
-- type: text
-  name: url
-  label: url
+- type: file
+  name: feature_img
+  label: feature img
