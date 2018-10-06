@@ -1,0 +1,17 @@
+---
+label: home
+hide_body: false
+is_partial: false
+fields:
+- type: text
+  name: intro
+  label: intro
+- type: list
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: jekyll-posts
+    max: '5'
+  label: project list
+  name: project_list
