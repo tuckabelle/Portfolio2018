@@ -1,0 +1,17 @@
+---
+label: currently
+hide_body: true
+is_partial: false
+fields:
+- type: textarea
+  name: description
+  label: Description
+- type: datetime
+  name: date
+  label: date
+- type: text
+  name: source_title
+  label: Source title
+- type: text
+  name: url
+  label: url
