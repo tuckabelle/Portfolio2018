@@ -5,13 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: _red
-  label: Red
-  create: all
-  match: "**/*"
-- type: directory
-  path: _blue
-  label: Blue
+  path: _currently
+  label: Currently
   create: all
   match: "**/*"
 - type: jekyll-posts
