@@ -15,5 +15,3 @@ fields:
 - type: text
   name: url
   label: url
-pages:
-- _posts/test.md
