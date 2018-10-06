@@ -4,32 +4,24 @@ hide_body: false
 is_partial: false
 fields:
 - type: text
-  name: title
-  label: Title
-- type: datetime
-  name: date
-  label: Date
-- type: tag_list
-  name: tags
-  label: Tags
-  default:
-  - cats
-  - dogs
-- type: select
-  name: select
-  config:
-    source:
-      type: simple
-    options:
-    - item 1
-    - item 2
-  label: Select
-  description: Select from list (this can be from existing data in your site or from
-    custom list)
-- type: text
   name: layout
   label: Layout
   hidden: true
   default: post
   config:
     required: true
+- type: text
+  name: title
+  label: Title
+- type: datetime
+  name: date
+  label: Date
+- type: file
+  name: feature_img
+  label: feature img
+- type: tag_list
+  name: role
+  label: project role
+- type: tag_list
+  name: type
+  label: project type
