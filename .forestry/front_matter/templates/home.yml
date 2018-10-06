@@ -1,11 +1,18 @@
 ---
 label: home
-hide_body: false
+hide_body: true
 is_partial: false
 fields:
 - type: text
   name: intro
   label: intro
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
+  label: About
+  name: about
 - type: list
   config:
     use_select: true
@@ -15,3 +22,10 @@ fields:
     max: '5'
   label: project list
   name: project_list
+- type: textarea
+  name: contact
+  label: contact
+  config:
+    wysiwyg: true
+    schema:
+      format: html-blocks
