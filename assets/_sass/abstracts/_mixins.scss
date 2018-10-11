@@ -63,32 +63,66 @@ $breakpoint-xsmall: 37em;
     }
 }
 
-/// Event wrapper
-/// @author Harry Roberts
-/// @param {Bool} $self [false] - Whether or not to include current selector
-/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
-@mixin on-event($self: false) {
-  @if $self {
-    &,
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
+
+/* @include clearit */
+@mixin clearit {
+     &:before,
+    &:after {
+        content: "";
+        display: table;
     }
-  } @else {
-    &:hover,
-    &:active,
-    &:focus {
-      @content;
+    &:after {
+        clear: both;
     }
+    zoom: 1;
+}
+
+/* @include transition(all,2s,ease-out); */
+@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
+    -webkit-transition: $what $time $how;
+    -moz-transition:    $what $time $how;
+    -ms-transition:     $what $time $how;
+    -o-transition:      $what $time $how;
+    transition:         $what $time $how;
+}
+
+
+@mixin heading {
+  //@include title-face;
+  margin-bottom: 0.35em;
+  line-height: 1.2;
+  color: inherit;
+  a {
+    //@include heading-link;
   }
 }
 
-/// Make a context based selector a little more friendly
-/// @author Hugo Giraudel
-/// @param {String} $context
-@mixin when-inside($context) {
-  #{$context} & {
-    @content;
-  }
+@mixin heading-1 {
+  @include heading;
+  font-size: 3.375em;
+}
+
+@mixin heading-2 {
+  @include heading;
+  font-size: 2.966em;
+}
+
+@mixin heading-3 {
+  @include heading;
+  font-size: 1.5em;
+}
+
+@mixin heading-4 {
+  @include heading;
+  font-size: 1.318em;
+}
+
+@mixin heading-5 {
+  @include heading;
+  font-size: 1em;
+}
+
+@mixin heading-6 {
+  @include heading;
+  font-size: 0.875em;
 }
