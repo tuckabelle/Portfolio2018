@@ -1,0 +1,94 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass mixins.
+// -----------------------------------------------------------------------------
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+    clear: both;
+}
+
+// Breakpoints
+$breakpoint-xlarge: 90em;
+$breakpoint-large: 62em;
+$breakpoint-medium: 48em;
+$breakpoint-small: 36em;
+$breakpoint-xsmall: 25em;
+
+@mixin breakpoint($break) {
+    @if $break==xlarge {
+        @media screen and (min-width: $breakpoint-xlarge) {
+            @content;
+        }
+    }
+    @else if $break==large {
+        @media screen and (min-width: $breakpoint-large) {
+            @content;
+        }
+    }
+    @else if $break==medium {
+        @media screen and (min-width: $breakpoint-medium) {
+            @content;
+        }
+    }
+    @else if $break==small {
+        @media screen and (min-width: $breakpoint-small) {
+            @content;
+        }
+    }
+    @else if $break==xsmall {
+        @media screen and (max-width: $breakpoint-xsmall) {
+            @content;
+        }
+    }
+    @else {
+        @media screen and (min-width: $break) {
+            @content;
+        }
+    }
+}
+
+// Box Shadow
+/* @include box-shadow(1px,1px,1px,0, #fff, true); */
+
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+    @if $inset {
+        -webkit-box-shadow: inset $top $left $blur $size $color;
+        -moz-box-shadow: inset $top $left $blur $size $color;
+        box-shadow: inset $top $left $blur $size $color;
+    }
+    @else {
+        -webkit-box-shadow: $top $left $blur $size $color;
+        -moz-box-shadow: $top $left $blur $size $color;
+        box-shadow: $top $left $blur $size $color;
+    }
+}
+
+/// Event wrapper
+/// @author Harry Roberts
+/// @param {Bool} $self [false] - Whether or not to include current selector
+/// @link https://twitter.com/csswizardry/status/478938530342006784 Original tweet from Harry Roberts
+@mixin on-event($self: false) {
+  @if $self {
+    &,
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  } @else {
+    &:hover,
+    &:active,
+    &:focus {
+      @content;
+    }
+  }
+}
+
+/// Make a context based selector a little more friendly
+/// @author Hugo Giraudel
+/// @param {String} $context
+@mixin when-inside($context) {
+  #{$context} & {
+    @content;
+  }
+}

@@ -1,0 +1,88 @@
+body,
+button,
+input,
+select,
+textarea {
+	@extend %body-text;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+/*================================
+=            Headings            =
+================================*/
+
+h1 {
+	//@extend %h1 !optional;
+	margin: 1rem 0;
+}
+
+h2 {
+	//@extend %h2 !optional;
+	margin: 0 0 1rem;
+}
+
+h3 {
+	//@extend %h3 !optional;
+	margin: 0.75rem 0;
+}
+
+h4 {
+	//@extend %h4 !optional;
+	margin: 0.75rem 0;
+}
+
+/*============================
+=            Copy            =
+============================*/
+
+p {
+	margin: 0 0 1rem;
+}
+
+@for $i from 2 through 6 {
+  p + h#{$i},
+  ul + h#{$i},
+  ol + h#{$i} {
+  	margin-top: 2.5rem;
+  }
+}
+
+hr {
+	border: 0;
+	height: 1px;
+	margin: 2rem 0;
+	clear: both;
+}
+
+b, strong {
+	font-weight: 600;
+}
+
+dfn, cite, em, i {
+	font-style: italic;
+}
+
+	p {
+		font-family: inherit;
+		font-size: inherit;
+		line-height: inherit;
+		color: inherit;
+		font-weight: inherit;
+		margin-bottom: 0;
+	}
+
+/*=============================
+=            Links            =
+=============================*/
+
+a {
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
+
+	&:visited {
+		color: purple;
+	}
+
+}

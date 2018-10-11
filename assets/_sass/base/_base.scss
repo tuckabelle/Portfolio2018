@@ -10,9 +10,9 @@ html {
 }
 
 body {
-    background: $color__background-body;
+
     /* Fallback for when there is no custom background color defined. */
-    --breakpoint: "xsmall";
+    --breakpoints: "xsmall";
 
     @include breakpoint("small") {
         --breakpoint: "small";
@@ -35,13 +35,13 @@ body {
 .wrapper {
     width: 100%;
     margin: 0 auto;
-    padding-left: $size-wrapper-padding-mobile;
-    padding-right: $size-wrapper-padding-mobile;
+    padding-left: 1rem;
+    padding-right: 1rem;
 
     @include breakpoint('medium') {
-      max-width: $size-wrapper-max-width;
-      padding-left: $size-wrapper-padding;
-      padding-right: $size-wrapper-padding;
+      //max-width: $size-wrapper-max-width;
+      //padding-left: $size-wrapper-padding;
+      //padding-right: $size-wrapper-padding;
     }
 }
 
@@ -49,8 +49,6 @@ body {
     @extend .wrapper;
 
     @include breakpoint('medium') {
-      max-width: $size-wrapper-full-max-width;
+      //max-width: $size-wrapper-full-max-width;
     }
 }
-
-
