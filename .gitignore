@@ -11,6 +11,10 @@ _site
 /.bundle
 /vendor
 
+# Compiled Files
+/assets/css/*.css
+/assets/js/*.js
+
 # Node.js
 node_modules/
 

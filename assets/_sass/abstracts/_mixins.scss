@@ -2,6 +2,19 @@
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
 
+// Consistent font sizes and pixel fallback.
+// Define default font size
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+
 // Clear after (not all clearfix need this also)
 @mixin clearfix-after() {
     clear: both;
@@ -64,7 +77,8 @@ $breakpoint-xsmall: 37em;
 }
 
 
-/* @include clearit */
+// Clearings
+// @include clearit
 @mixin clearit {
      &:before,
     &:after {
@@ -77,16 +91,7 @@ $breakpoint-xsmall: 37em;
     zoom: 1;
 }
 
-/* @include transition(all,2s,ease-out); */
-@mixin transition($what: all, $time: 0.2s, $how: ease-in-out) {
-    -webkit-transition: $what $time $how;
-    -moz-transition:    $what $time $how;
-    -ms-transition:     $what $time $how;
-    -o-transition:      $what $time $how;
-    transition:         $what $time $how;
-}
-
-
+// Headings
 @mixin heading {
   //@include title-face;
   margin-bottom: 0.35em;
@@ -125,4 +130,30 @@ $breakpoint-xsmall: 37em;
 @mixin heading-6 {
   @include heading;
   font-size: 0.875em;
+}
+
+//Animation mixin setup
+@mixin keyframes($animation-name) {
+    @-webkit-keyframes #{$animation-name} {
+        @content;
+    }
+    @-moz-keyframes #{$animation-name} {
+        @content;
+    }
+    @-ms-keyframes #{$animation-name} {
+        @content;
+    }
+    @-o-keyframes #{$animation-name} {
+        @content;
+    }
+    @keyframes #{$animation-name} {
+        @content;
+    }
+}
+@mixin animation($str) {
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  -o-animation: #{$str};
+  animation: #{$str};
 }

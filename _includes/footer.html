@@ -1,3 +1,4 @@
+
 <footer class="site-footer h-card">
   <data class="u-url" href="{{ "/" | relative_url }}"></data>
 
@@ -34,4 +35,19 @@
 
 </footer>
 
+</div><!-- barba-wrapper -->
+</div><!-- barba-container -->
+
+<script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
 <script src="{{ "/assets/js/bundle.js" | relative_url }}" type="text/javascript"></script>
+<script src="{{ "/assets/js/barba.min.js" | relative_url }}" type="text/javascript"></script>
+<script src="{{ "/assets/js/main.js" | relative_url }}" type="text/javascript"></script>
+
+<script type="text/javascript">
+window.addEventListener('DOMContentLoaded', () => {
+     Barba.Pjax.start();
+});
+</script>

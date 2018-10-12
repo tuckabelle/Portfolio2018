@@ -56,7 +56,7 @@ module.exports = {
     src:   '_js',
     dest:  'js',
     entry: [
-      'bundle.js',
+      'bundle.js', 'main.js', 'barba.min.js',
     ],
   },
 
