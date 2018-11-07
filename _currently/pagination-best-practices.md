@@ -8,6 +8,5 @@ description: Some users may prefer to customize viewing options for long lists, 
   usability issues, so try to stick to one alternative.
 source_title: Users' Pagination Preferences and "View All"
 url: https://www.nngroup.com/articles/item-list-view-all/
-published: false
 
 ---
