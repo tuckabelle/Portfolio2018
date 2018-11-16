@@ -16,4 +16,5 @@ fields:
   name: url
   label: url
 pages:
+- _currently/the-ux-uncanny-valley.md
 - _currently/pagination-best-practices.md

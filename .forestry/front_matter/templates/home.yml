@@ -32,5 +32,3 @@ fields:
 - type: file
   name: resume
   label: resume
-pages:
-- _currently/the-ux-uncanny-valley.md
