@@ -11,6 +11,5 @@ url: https://link.medium.com/igbNFwWbQR
 description: Examining how options affect experience and opinion of a product; users
   can have negative reactions to intuitive interfaces that encroach on their sense
   of free will.
-published: false
 
 ---
