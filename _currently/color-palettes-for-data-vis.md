@@ -5,6 +5,5 @@ description: How to make palettes for data visualizations with colors that are a
   distinguishable, and have enough variety for complex data series.
 source_title: Finding the Right Color Palettes for Data Visualizations
 url: https://link.medium.com/YTcAE6dSWR
-published: false
 
 ---
