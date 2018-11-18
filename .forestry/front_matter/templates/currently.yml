@@ -16,5 +16,6 @@ fields:
   name: url
   label: url
 pages:
+- _currently/color-palettes-for-data-vis.md
 - _currently/the-ux-uncanny-valley.md
 - _currently/pagination-best-practices.md
