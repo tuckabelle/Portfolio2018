@@ -3,11 +3,12 @@ module.exports = {
 
   tasks: {
     browsersync: true,
-    eslint:      true,
-    imagemin:    true,
-    sass:        true,
-    watch:       true,
-    webpack:     true,
+    eslint: true,
+    imagemin: true,
+    sass: true,
+    styleLint: true,
+    watch: true,
+    webpack: true
   },
 
   assets: './assets',
@@ -23,60 +24,73 @@ module.exports = {
       // "Safari",
       // "Opera",
       // "Opera Developer",
-    ],
+    ]
   },
 
   eslintLoader: {
-    enforce: "pre",
-    test:    /\.js$/,
+    enforce: 'pre',
+    test: /\.js$/,
     exclude: /node_modules/,
-    loader:  "eslint-loader",
+    loader: 'eslint-loader'
   },
 
   imagemin: {
-    src:         '_images',
-    dest:        'images',
+    src: '_images',
+    dest: 'images',
     progressive: true,
-    svgoPlugins: [{removeViewBox: false}],
+    svgoPlugins: [{ removeViewBox: false }]
   },
 
   jekyll: {
     config: {
-      default:     '_config.yml',
+      default: '_config.yml',
       development: '_config_development.yml',
-      production:  '',
+      production: ''
     },
-    dest:     '_site',
+    dest: '_site',
     includes: '_includes',
-    layouts:  '_layouts',
-    posts:    '_posts',
+    layouts: '_layouts',
+    posts: '_posts'
   },
 
   js: {
-    src:   '_js',
-    dest:  'js',
-    entry: [
-      'bundle.js', 'main.js', 'barba.min.js',
-    ],
+    src: '_js',
+    dest: 'js',
+    entry: ['bundle.js', 'main.js']
   },
 
   sass: {
-    src:          '_sass',
-    dest:         'css',
-    outputStyle:  'compressed',
+    src: '_sass',
+    dest: 'css',
+    outputStyle: 'compressed',
     autoprefixer: {
-      browsers: [
-        '> 1%',
-        'last 2 versions',
-        'Firefox ESR',
-      ],
-    },
+      grid: 'autoplace',
+      browsers: ['> 1%', 'last 2 versions', 'Firefox ESR']
+    }
   },
 
   webpack: {
-    mode:   'production',
+    mode: 'production',
     module: {
-      rules: [],
-    },
+      rules: []
+    }
   },
+  externals: {
+    TimelineMax: 'TimelineMax',
+    TweenMax: 'TweenMax',
+    Barba: 'Barba'
+  },
+  module: {
+    rules: [{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }]
+  },
+  resolve: {
+    modules: ['node_modules'],
+    alias: {
+      TweenLite: 'gsap/src/minified/TweenLite.min.js',
+      TweenMax: 'gsap/src/minified/TweenMax.min.js',
+      TimelineLite: 'gsap/src/minified/TimelineLite.min.js',
+      TimelineMax: 'gsap/src/minified/TimelineMax.min.js',
+      Barba: 'barba.js/dist/barba.min.js'
+    }
+  }
 }

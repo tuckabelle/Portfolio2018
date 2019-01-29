@@ -2,9 +2,6 @@
 .sass-cache
 *.scssc
 
-# Sublime Text
-sftp-config.json
-
 # Jekyll
 _site
 .jekyll-metadata

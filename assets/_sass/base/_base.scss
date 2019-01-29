@@ -1,54 +1,10 @@
 html {
-    box-sizing: border-box;
-    overflow: auto;
+  box-sizing: border-box;
+  overflow: auto;
 }
 
 *,
-*:before,
-*:after {
-    box-sizing: inherit;
-}
-
-body {
-
-    /* Fallback for when there is no custom background color defined. */
-    --breakpoints: "xsmall";
-
-    @include breakpoint("small") {
-        --breakpoint: "small";
-    }
-
-    @include breakpoint("medium") {
-        --breakpoint: "medium";
-    }
-
-    @include breakpoint("large") {
-        --breakpoint: "large";
-    }
-
-    &.menu-open {
-        overflow-y: hidden;
-        height: 100vh;
-    }
-}
-
-.wrapper {
-    width: 100%;
-    margin: 0 auto;
-    padding-left: 1rem;
-    padding-right: 1rem;
-
-    @include breakpoint('medium') {
-      //max-width: $size-wrapper-max-width;
-      //padding-left: $size-wrapper-padding;
-      //padding-right: $size-wrapper-padding;
-    }
-}
-
-.wrapper-full {
-    @extend .wrapper;
-
-    @include breakpoint('medium') {
-      //max-width: $size-wrapper-full-max-width;
-    }
+*::before,
+*::after {
+  box-sizing: inherit;
 }

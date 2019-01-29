@@ -1,20 +1,3 @@
 /*====================================
 =            Placeholders            =
 ====================================*/
-
-%body-text {
-  //font-family: $font-georgia;
-  //@include font-size(16px);
-  line-height: 1.5;
-
-  @include breakpoint('medium') {
-    //@include font-size(16px);
-    line-height: 1.55;
-  }
-}
-
-%btn {
-  //font-family: $font-europa;
-  //@include font-size(14px);
-  letter-spacing: 1.5px;
-}
