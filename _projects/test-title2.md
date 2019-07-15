@@ -4,12 +4,15 @@ feature_img: ''
 color: ''
 title: Test Title2
 short_descr: []
-date: 
+date: 2019-07-01 04:00:00 +0000
 url: ''
-role: []
-client:
-  name: ''
-  sub-name: ''
+role:
+- web design
+client: Center for Strategic and International Studies
 team_credits: []
+sub_heading: Subtitle
+banner_image: "/uploads/2019/07/15/photo-1498429089284-41f8cf3ffd39.jpeg"
+background_color: "#7ED321"
+client_subtitle: iLab
 
 ---
