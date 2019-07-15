@@ -5,7 +5,7 @@ fields:
 - type: text
   name: intro
   label: intro
-- name: addition_links
+- name: additional_links
   type: field_group_list
   fields:
   - name: link_text
@@ -22,13 +22,13 @@ fields:
     min: 
     max: 
     labelField: 
-  label: addition links
+  label: additional links
 - type: textarea
   config:
     wysiwyg: true
     schema:
       format: markdown
-  label: About
+  label: about
   name: about
 - type: textarea
   name: contact
