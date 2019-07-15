@@ -1,19 +1,18 @@
 ---
 layout: post
-feature_img: "/images/Advisory_Board.jpg"
-color: "#CEDCE4"
+feature_img: '/images/Advisory_Board.jpg'
+color: '#CEDCE4'
 title: Test Title
 short_descr: []
 date: 2019-07-01T04:00:00.000+00:00
-url: "#"
+url: '#'
 role:
-- web design
+  - web design
 client: Center for Strategic and International Studies
 team_credits:
-- name_and_role: Jacque, developer
+  - name_and_role: Jacque, developer
 sub_heading: Subtitle
-background_color: "#CA6868"
-banner_image: "/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg"
+background_color: '#CA6868'
+banner_image: '/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg'
 client_subtitle: iLab
-
 ---
