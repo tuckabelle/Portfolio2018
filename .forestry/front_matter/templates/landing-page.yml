@@ -26,15 +26,6 @@ fields:
     default: ''
   hidden: false
   default: ''
-- name: about
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: false
-    schema:
-      format: markdown
-  label: About
 - name: layout
   label: Layout
   type: text
