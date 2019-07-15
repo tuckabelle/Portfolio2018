@@ -37,6 +37,7 @@ fields:
   config:
     required: false
   label: Client
+  default: Center for Strategic and International Studies
 - name: client_subtitle
   type: text
   config:
