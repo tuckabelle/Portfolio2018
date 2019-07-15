@@ -11,5 +11,3 @@ fields:
 - type: text
   label: Permalink
   name: permalink
-pages:
-- about.md

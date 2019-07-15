@@ -63,4 +63,5 @@ fields:
     labelField: 
   label: team credits
 pages:
+- about.md
 - _posts/2019-09-01-test-title.md
