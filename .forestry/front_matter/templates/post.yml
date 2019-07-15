@@ -62,3 +62,5 @@ fields:
     max: 
     labelField: 
   label: team credits
+pages:
+- _posts/test-title.md
