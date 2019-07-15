@@ -2,10 +2,49 @@
 layout: default
 ---
 
-{% comment %} This layout is used by the documents in the _posts/ collection {%
-endcomment %} {% include breadcrumbs.html class="content-narrow" %}
-<div>
-  <div class="post-thumb_container">
-    <img src="{{ page.feature_img }}" width="300" />
-  </div>
+<a
+  class="btn-back"
+  data-proj="{{ post.title | url_encode }}"
+  href='{{ "/" | relative_url }}'
+  >BACK</a
+>
+
+<div class="post-thumb_container">
+  <img class="post-thumb full" src="{{ page.feature_img }}" />
 </div>
+<article
+  class="post h-entry"
+  itemscope
+  itemtype="http://schema.org/BlogPosting"
+>
+  <header class="post-header">
+    <h1 class="post-title p-name" itemprop="name headline">
+      {{ page.title | escape }}
+    </h1>
+    <p class="post-meta">
+      <time
+        class="dt-published"
+        datetime="{{ page.date | date_to_xmlschema }}"
+        itemprop="datePublished"
+      >
+        {% assign date_format = site.minima.date_format | default: "%b %-d, %Y"
+        %} {{ page.date | date: date_format }}
+      </time>
+      {% if page.author %} •
+      <span itemprop="author" itemscope itemtype="http://schema.org/Person"
+        ><span class="p-author h-card" itemprop="name"
+          >{{ page.author }}</span
+        ></span
+      >
+      {% endif %}
+    </p>
+  </header>
+
+  <div class="post-content e-content" itemprop="articleBody">
+    {{ content }}
+  </div>
+
+  {% if site.disqus.shortname %} {% include disqus_comments.html %} {% endif %}
+
+  <a class="u-url" href="{{ page.url | relative_url }}" hidden></a>
+</article>
