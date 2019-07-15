@@ -1,15 +1,18 @@
 {% assign projects = site.projects %} {% for project in projects %}
-<h3>
-  <a
-    class="post-block_title"
-    id="{{ project.title | url_encode }}"
-    href="{{ project.url | relative_url }}"
-  >
-    {{ project.title | escape }}
+<li>
+  <h3>
+    <a
+      class="post-block_title"
+      id="{{ project.title | url_encode }}"
+      href="{{ project.url | relative_url }}"
+    >
+      {{ project.title | escape }}
+    </a>
+  </h3>
+  <a class="post-block_img intro-thumb" href="{{ project.url | relative_url }}">
+    <img class="full" src="{{ project.banner_image }}" />
   </a>
-</h3>
-<a class="post-block_img intro-thumb" href="{{ project.url | relative_url }}">
-  <img class="full" src="{{ project.feature_img }}" />
-</a>
 
-{% if site.show_excerpts %} {{ project.excerpt }} {% endif %} {% endfor %}
+  {% if site.show_excerpts %} {{ project.excerpt }} {% endif %}
+</li>
+{% endfor %}

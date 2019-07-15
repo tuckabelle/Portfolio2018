@@ -1,9 +1,6 @@
 ---
 layout: post
-feature_img: ''
-color: ''
 title: Test Title2
-short_descr: []
 date: 2019-07-01 04:00:00 +0000
 url: ''
 role:

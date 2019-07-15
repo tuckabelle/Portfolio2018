@@ -1,9 +1,6 @@
 ---
 layout: post
-feature_img: '/images/Advisory_Board.jpg'
-color: '#CEDCE4'
 title: Test Title
-short_descr: []
 date: 2019-07-01T04:00:00.000+00:00
 url: '#'
 role:
