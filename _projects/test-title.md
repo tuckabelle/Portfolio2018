@@ -12,6 +12,5 @@ client:
   sub-name: iLab
 team_credits:
 - name_and_role: Jacque, developer
-published: false
 
 ---
