@@ -1,6 +1,6 @@
 ---
 layout: post
-feature_img: ''
+feature_img: "/images/Advisory_Board.jpg"
 color: "#CEDCE4"
 title: Test Title
 short_descr: []
@@ -10,7 +10,8 @@ role: []
 client:
   name: CSIS
   sub-name: iLab
-team_credits: []
+team_credits:
+- name_and_role: Jacque, developer
 published: false
 
 ---
