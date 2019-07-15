@@ -13,7 +13,7 @@ fields:
 - name: url
   type: text
   config:
-    required: false
+    required: true
   label: URL
 - name: banner_image
   label: Banner Image
