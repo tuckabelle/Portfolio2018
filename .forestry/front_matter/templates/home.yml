@@ -5,22 +5,6 @@ fields:
 - type: text
   name: intro
   label: intro
-- type: list
-  config:
-    use_select: true
-    source:
-      type: pages
-      section: jekyll-posts
-    max: '5'
-  label: project list
-  name: project_list
-- type: textarea
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: About
-  name: about
 - name: addition_links
   type: field_group_list
   fields:
@@ -39,6 +23,13 @@ fields:
     max: 
     labelField: 
   label: addition links
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: About
+  name: about
 - type: textarea
   name: contact
   label: contact
