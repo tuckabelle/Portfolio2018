@@ -1,7 +1,6 @@
 ---
 label: post
 hide_body: false
-is_partial: false
 fields:
 - type: text
   name: layout
@@ -10,12 +9,23 @@ fields:
   default: post
   config:
     required: true
+- type: file
+  name: feature_img
+  label: feature img
+- name: color
+  type: text
+  config:
+    required: false
+  label: color
 - type: text
   name: title
-  label: Title
+  label: title
+- type: tag_list
+  name: short_descr
+  label: short descr
 - type: datetime
   name: date
-  label: Date
+  label: date (year)
   config:
     date_format: YYYY
 - type: text
@@ -24,9 +34,31 @@ fields:
 - type: tag_list
   name: role
   label: project role
-- type: tag_list
-  name: type
-  label: project type
-- type: file
-  name: feature_img
-  label: feature img
+- name: client
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: name
+  - name: sub-name
+    type: text
+    config:
+      required: false
+    label: sub-name
+  label: client
+- name: team_credits
+  type: field_group_list
+  fields:
+  - name: name_and_role
+    type: text
+    config:
+      required: false
+    label: name and role
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: team credits
