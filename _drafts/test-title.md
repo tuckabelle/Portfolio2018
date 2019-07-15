@@ -1,7 +1,7 @@
 ---
 layout: post
 feature_img: "/images/Advisory_Board.jpg"
-color: ''
+color: "#CEDCE4"
 title: Test Title
 short_descr: []
 date: 2019-09-01 04:00:00 +0000
