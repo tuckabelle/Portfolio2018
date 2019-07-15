@@ -5,7 +5,7 @@ permalink: "/about/"
 feature_img: ''
 color: ''
 short_descr: []
-date: 
+date: ''
 url: ''
 role: []
 client:
