@@ -49,3 +49,5 @@ fields:
 - type: file
   name: resume
   label: resume
+pages:
+- index.md
