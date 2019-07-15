@@ -11,6 +11,5 @@ client:
   name: ''
   sub-name: ''
 team_credits: []
-published: false
 
 ---
