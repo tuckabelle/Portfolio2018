@@ -1,18 +1,10 @@
 ---
 label: home
 hide_body: true
-is_partial: false
 fields:
 - type: text
   name: intro
   label: intro
-- type: textarea
-  config:
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: About
-  name: about
 - type: list
   config:
     use_select: true
@@ -22,6 +14,31 @@ fields:
     max: '5'
   label: project list
   name: project_list
+- type: textarea
+  config:
+    wysiwyg: true
+    schema:
+      format: markdown
+  label: About
+  name: about
+- name: addition_links
+  type: field_group_list
+  fields:
+  - name: link_text
+    type: text
+    config:
+      required: false
+    label: link text
+  - name: link_url
+    type: text
+    config:
+      required: false
+    label: link url
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: addition links
 - type: textarea
   name: contact
   label: contact

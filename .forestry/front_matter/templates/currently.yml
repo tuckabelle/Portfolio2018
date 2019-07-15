@@ -1,7 +1,6 @@
 ---
 label: currently
 hide_body: true
-is_partial: false
 fields:
 - type: textarea
   name: description
@@ -16,6 +15,6 @@ fields:
   name: url
   label: url
 pages:
+- _currently/pagination-best-practices.md
 - _currently/color-palettes-for-data-vis.md
 - _currently/the-ux-uncanny-valley.md
-- _currently/pagination-best-practices.md
