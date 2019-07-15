@@ -16,13 +16,46 @@ fields:
   description: Dimensions work best at 1200 pixels by 400 pixels
   hidden: false
   default: ''
-- name: tags
-  label: Tags
-  type: tag_list
-  hidden: false
-  default: []
-- name: slug
-  label: Slug
+- name: background_color
+  type: color
+  label: Background color
+  config:
+    required: false
+    color_format: Hex
+- name: date
+  type: datetime
+  label: Date
+  description: ''
+  config:
+    required: false
+    date_format: YYYY
+    time_format: 
+    display_utc: false
+  default: '2019-07-01 04:00:00 +0000'
+- name: client
   type: text
-  hidden: false
-  default: ''
+  config:
+    required: false
+  label: Client
+- name: client_subtitle
+  type: text
+  config:
+    required: false
+  label: Client subtitle
+- name: role
+  type: tag_list
+  default: []
+  label: Role
+- name: team_credits
+  type: field_group_list
+  fields:
+  - name: name_and_role
+    type: text
+    config:
+      required: false
+    label: Name and role
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Team Credits
