@@ -1,20 +1,20 @@
-<!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+{% comment %}
+	The default layout for the site, which is extended by all other layouts.
+	Includes the document <head>, main navigation and page footer
+{% endcomment %}
 
-  {%- include head.html -%}
+{% include head.html %}
 
-  <body>
+{% include nav.html %}
 
-    {%- include header.html -%}
+{% include hero.html %}
 
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
-    </main>
+{% comment %}
+	Any layout that extends this layout will have its contents
+	added as the content variable
+{% endcomment %}
 
-    {%- include footer.html -%}
+{{ content }}
 
-  </body>
+{% include footer.html %}
 
-</html>

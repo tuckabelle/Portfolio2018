@@ -1,26 +1,32 @@
 ---
-layout: home
-project_list:
-- _posts/test-title.md
-intro: Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum
-  rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed
-  metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien sollicitudin
-  lacinia lacinia. Vivamus facilisis dolor et massa placerat, at vestibulum nisl egestas.
-  Nullam rhoncus lacus non odio luctus, eu condimentum mauris ultrices. Praesent blandit,
-  augue a posuere aliquam, arcu tortor feugiat turpis, quis lacinia augue sapien at
-  tellus. Cras ut erat magna.
-about: |-
-  Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa placerat, at vestibulum nisl egestas. Nullam rhoncus lacus non odio luctus, eu condimentum mauris ultrices. Praesent blandit, augue a posuere aliquam, arcu tortor feugiat turpis, quis lacinia augue sapien at tellus. Cras ut erat magna.
-
-  > Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa placerat, at vestibulum nisl egestas. Nullam rhoncus lacus non odio luctus, eu condimentum mauris ultrices. Praesent blandit, augue a posuere aliquam, arcu tortor feugiat turpis, quis lacinia augue sapien at tellus. Cras ut erat magna.
-  >
-  > \-Credit
-
-  Nam dapibus nisl vitae elit fringilla rutrum. Aenean sollicitudin, erat a elementum rutrum, neque sem pretium metus, quis mollis nisl nunc et massa. Vestibulum sed metus in lorem tristique ullamcorper id vitae erat. Nulla mollis sapien sollicitudin lacinia lacinia. Vivamus facilisis dolor et massa placerat, at vestibulum nisl egestas. Nullam rhoncus lacus non odio luctus, eu condimentum mauris ultrices. Praesent blandit, augue a posuere aliquam, arcu tortor feugiat turpis, quis lacinia augue sapien at tellus. Cras ut erat magna.
-addition_links:
-- link_text: This is an additiona link
-  link_url: "#"
-contact: sdfasdfasdfadfadsf
-resume: ''
-
+title: Home
+banner_image: "/img/banner.png"
+layout: landing-page
+heading: Belkirk College
+partners:
+- "/uploads/2017/11/13/stem.png"
+- "/uploads/2017/11/13/UPenn_logo.png"
+- "/uploads/2017/11/13/nysed.png"
+services:
+- description: Performing collaborative research and providing services to support
+    the Health Sector.
+  heading: Health
+  icon: "/uploads/2017/11/13/health.png"
+- description: Performing collaborative research and providing services to support
+    the biotechnology sector.
+  heading: BioTech
+  icon: "/uploads/2017/11/13/biotech.png"
+sub_heading: Engineering and Health Sciences
+textline: | 
+  Belkirk College of Engineering
+  
+  Ora et Labora
+hero_button:
+  text: Learn more
+  href: "/about"
+show_news: true
+menu:
+  navigation:
+    identifier: _index
+    weight: 1
 ---

@@ -2,67 +2,39 @@
 label: post
 hide_body: false
 fields:
+- name: title
+  label: Title
+  type: text
+  hidden: false
+  default: ''
 - type: text
-  name: layout
+  label: Sub Heading
+  name: sub_heading
+  default: ''
+- name: date
+  label: Publish Date
+  type: datetime
+  hidden: false
+  default: ''
+- name: tags
+  label: Tags
+  type: tag_list
+  hidden: false
+  default: ''
+- type: file
+  name: banner_image
+  label: Banner Image
+  description: Ideal dimensions 2500px by 1200px
+- type: list
+  name: related_posts
+  label: Related Posts
+  config:
+    use_select: true
+    source:
+      type: pages
+      section: posts
+- name: layout
   label: Layout
+  type: text
   hidden: true
   default: post
-  config:
-    required: true
-- type: file
-  name: feature_img
-  label: feature img
-- name: color
-  type: text
-  config:
-    required: false
-  label: color
-- type: text
-  name: title
-  label: title
-- type: tag_list
-  name: short_descr
-  label: short descr
-- type: datetime
-  name: date
-  label: date (year)
-  config:
-    date_format: YYYY
-- type: text
-  name: url
-  label: url
-- type: tag_list
-  name: role
-  label: project role
-- name: client
-  type: field_group
-  config: {}
-  fields:
-  - name: name
-    type: text
-    config:
-      required: false
-    label: name
-  - name: sub-name
-    type: text
-    config:
-      required: false
-    label: sub-name
-  label: client
-- name: team_credits
-  type: field_group_list
-  fields:
-  - name: name_and_role
-    type: text
-    config:
-      required: false
-    label: name and role
-  config:
-    min: 
-    max: 
-    labelField: 
-  label: team credits
-pages:
-- _projects/test-title2.md
-- _projects/test-title.md
-- _posts/2019-09-01-test-title.md
