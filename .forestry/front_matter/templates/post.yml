@@ -9,12 +9,20 @@ fields:
   default: post
   config:
     required: true
+- type: file
+  name: feature_img
+  label: feature img
+- name: color
+  type: text
+  config:
+    required: false
+  label: color
 - type: text
   name: title
-  label: Title
+  label: title
 - type: datetime
   name: date
-  label: Date
+  label: date (year)
   config:
     date_format: YYYY
 - type: text
@@ -23,9 +31,34 @@ fields:
 - type: tag_list
   name: role
   label: project role
+- name: client
+  type: field_group
+  config: {}
+  fields:
+  - name: name
+    type: text
+    config:
+      required: false
+    label: name
+  - name: sub-name
+    type: text
+    config:
+      required: false
+    label: sub-name
+  label: client
 - type: tag_list
-  name: type
-  label: project type
-- type: file
-  name: feature_img
-  label: feature img
+  name: short_descr
+  label: short descr
+- name: team_credits
+  type: field_group_list
+  fields:
+  - name: name_and_role
+    type: text
+    config:
+      required: false
+    label: name and role
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: team credits
