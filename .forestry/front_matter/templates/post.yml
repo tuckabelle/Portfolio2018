@@ -20,6 +20,9 @@ fields:
 - type: text
   name: title
   label: title
+- type: tag_list
+  name: short_descr
+  label: short descr
 - type: datetime
   name: date
   label: date (year)
@@ -46,9 +49,6 @@ fields:
       required: false
     label: sub-name
   label: client
-- type: tag_list
-  name: short_descr
-  label: short descr
 - name: team_credits
   type: field_group_list
   fields:
