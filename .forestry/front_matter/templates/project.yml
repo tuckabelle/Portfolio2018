@@ -10,11 +10,11 @@ fields:
   type: text
   hidden: false
   default: ''
-- name: url
+- name: link
   type: text
   config:
     required: true
-  label: URL
+  label: Link
 - name: banner_image
   label: Banner Image
   type: file
