@@ -1,3 +1,63 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page section "work".
 // -----------------------------------------------------------------------------
+
+#work-container {
+  .diagonal {
+    grid-area: workdiagonal;
+  }
+
+  h2 {
+    grid-area: worktitle;
+    height: $diag_height_s / 2;
+    @include breakpoint('medium') {
+      height: $diag_height_m / 2;
+    }
+    @include breakpoint('large') {
+      height: $diag_height_l / 2;
+    }
+    @include breakpoint('xlarge') {
+      height: $diag_height_xl / 2;
+    }
+  }
+}
+
+#work-graphic {
+  height: auto;
+  background-color: red;
+  grid-area: workgraphic;
+
+  @include breakpoint('large') {
+    max-height: 350px;
+  }
+  @include breakpoint('xlarge') {
+    max-height: 400px;
+  }
+}
+
+#work-desc {
+  height: 300px;
+  background-color: green;
+  grid-area: workdesc;
+  max-width: 680px;
+}
+
+#work-intro {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: ($diag_height_s / 2) auto auto;
+  grid-column-gap: 32px;
+  grid-template-areas: 'workdiagonal workdiagonal' 'worktitle worktitle' 'worktitle worktitle' 'workdesc workgraphic';
+  @include breakpoint('medium') {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: ($diag_height_m / 2) auto auto;
+    grid-column-gap: 40px;
+    grid-template-areas: 'workdiagonal workdiagonal' 'worktitle worktitle' 'worktitle worktitle' 'workdesc workgraphic';
+  }
+  @include breakpoint('large') {
+    grid-template-columns: 2fr 1fr;
+    grid-template-rows: ($diag_height_l / 2) auto auto;
+    grid-column-gap: 40px;
+    grid-template-areas: 'workdiagonal workdiagonal' 'worktitle workgraphic' 'worktitle workgraphic' 'workdesc workgraphic';
+  }
+}

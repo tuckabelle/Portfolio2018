@@ -2,38 +2,97 @@
 // This file contains styles that are specific to the home page section "about".
 // -----------------------------------------------------------------------------
 
-.html,
-body {
-  margin: 0;
-  padding: 0;
-}
-.barba-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
-}
+#about-container {
+  background-color: $bg-color;
+  margin-bottom: 80px;
+  @include breakpoint('large') {
+    margin-bottom: 120px;
+  }
+  svg {
+    background-color: #ffffff;
+    grid-area: aboutdiagonal;
+  }
 
-a.post-block_img {
-  display: block;
-  position: relative;
-
-  img {
-    position: relative;
-    width: 400px;
-    height: auto;
+  h2 {
+    grid-area: abouttitle;
+    min-height: $diag_height_s / 2;
+    align-self: end;
+    @include breakpoint('medium') {
+      min-height: $diag_height_m / 2;
+    }
+    @include breakpoint('large') {
+      min-height: $diag_height_l / 2;
+    }
+    @include breakpoint('xlarge') {
+      min-height: $diag_height_xl / 2;
+    }
   }
 }
 
-.post-thumb_container {
-  display: block;
-  position: relative;
+#about-intro {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: ($diag_height_s / 2) auto auto;
+  grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
+  @include breakpoint('medium') {
+    grid-template-columns: 1fr;
+    grid-template-rows: ($diag_height_m / 2) auto;
+    grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
+  }
+  @include breakpoint('large') {
+    grid-template-columns: 1fr;
+    grid-template-rows: ($diag_height_l / 2) auto auto;
+    grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
+  }
+}
 
-  img.post-thumb.full {
-    position: relative;
-    height: auto;
-    width: 80vw;
+#about-content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-template-areas: 'about1' 'aboutgraphic' 'aboutquote' 'about2';
+  @include breakpoint('medium') {
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto;
+    grid-column-gap: 48px;
+    grid-template-areas: 'about1 about1' 'aboutgraphic aboutquote' 'about2 about2';
+  }
+  @include breakpoint('large') {
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: auto;
+    grid-column-gap: 48px;
+    grid-template-areas: 'aboutgraphic about1' 'aboutgraphic aboutquote' 'aboutgraphic about2';
+  }
+  @include breakpoint('xlarge') {
+    grid-column-gap: 64px;
+  }
+
+  #about-para1 {
+    grid-area: about1;
+  }
+  #about-para2 {
+    grid-area: about2;
+  }
+  #about-graphic {
+    grid-area: aboutgraphic;
+    height: 300px;
+    background-color: green;
+    opacity: 0.5;
+    width: 300px;
+    max-width: 300px;
+    margin: 0 auto;
+    @include breakpoint('medium') {
+      margin: unset;
+    }
+    @include breakpoint('large') {
+      max-width: unset;
+      width: 100%;
+    }
+  }
+  #about-quote {
+    grid-area: aboutquote;
+  }
+  .home-content {
+    justify-self: end;
   }
 }

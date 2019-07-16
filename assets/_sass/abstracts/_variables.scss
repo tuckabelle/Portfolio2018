@@ -1,3 +1,14 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
+
+$bg-color: #f3f3f3;
+
+$diag_height_s: 100px;
+$diag_height_m: 150px;
+$diag_height_l: 200px;
+$diag_height_xl: 250px;
+
+$page-margins_l: 6vw;
+$page-margins_overflow: $page-margins_l - 2;
+$page-margins_s: 20px;

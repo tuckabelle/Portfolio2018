@@ -2,6 +2,27 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
+.diagonal svg {
+  display: block;
+  width: 100%;
+  background: $bg-color;
+  height: $diag_height_s;
+
+  @include breakpoint('medium') {
+    height: $diag_height_m;
+  }
+  @include breakpoint('large') {
+    height: $diag_height_l;
+  }
+  @include breakpoint('xlarge') {
+    height: $diag_height_xl;
+  }
+}
+
+.home-content {
+  max-width: 680px;
+}
+
 @import 'home-about';
 @import 'home-contact';
 @import 'home-intro';
@@ -19,26 +40,4 @@ body {
   bottom: 0;
   left: 0;
   display: block;
-}
-
-a.post-block_img {
-  display: block;
-  position: relative;
-
-  img {
-    position: relative;
-    width: 400px;
-    height: auto;
-  }
-}
-
-.post-thumb_container {
-  display: block;
-  position: relative;
-
-  img.post-thumb.full {
-    position: relative;
-    height: auto;
-    width: 80vw;
-  }
 }
