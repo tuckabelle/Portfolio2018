@@ -35,14 +35,12 @@ document.addEventListener('DOMContentLoaded', function() {
         .pop()
 
       let oldThumb = _this.oldContainer.querySelector(
-        'a[href*="' + href + '"].post-block_img > img'
+        'a[href*="/' + href[3] + '"] img'
       )
 
       let oldPos = oldThumb.getBoundingClientRect()
 
-      let destThumb = _this.newContainer.querySelector(
-        '.post-thumb_container > img'
-      )
+      let destThumb = _this.newContainer.querySelector('.post-thumb')
 
       let destPos = destThumb.getBoundingClientRect()
 
@@ -93,20 +91,17 @@ document.addEventListener('DOMContentLoaded', function() {
       _this.oldContainer.style.zIndex = '10'
       //this.newContainer.style.visibility = 'visible'
 
-      let href = Barba.HistoryManager.prevStatus()
-        .url.split('/')
-        .pop()
+      let href = Barba.HistoryManager.prevStatus().url.split('/')
 
       let destThumb = _this.newContainer.querySelector(
-        'a[href*="' + href + '"].post-block_img > img'
+        'a[href*="/' + href[3] + '"] img'
       )
-
+      console.log(destThumb)
       let destPos = destThumb.getBoundingClientRect()
 
-      let oldThumb = _this.oldContainer.querySelector(
-        '.post-thumb_container > img'
-      )
+      let oldThumb = _this.oldContainer.querySelector('.post-thumb')
 
+      let oldPos = oldThumb.getBoundingClientRect()
       _this.cloneThumb = oldThumb.cloneNode(true)
       _this.cloneThumb.style.position = 'fixed'
       _this.cloneThumb.style.top = oldPos.top + 'px'
@@ -152,10 +147,8 @@ document.addEventListener('DOMContentLoaded', function() {
     let transitionObj
     if (Barba.HistoryManager.prevStatus().namespace === 'detail') {
       transitionObj = ShrinkTransition
-      console.log('shrink')
     } else {
       transitionObj = ExpandTransition
-      console.log('expand')
     }
 
     return transitionObj

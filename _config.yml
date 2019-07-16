@@ -22,7 +22,6 @@ url: '' # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: ixkaito
 github_username: ixkaito
 
-permalink: '/:path/'
 defaults:
   - scope:
       path: ''
@@ -38,7 +37,7 @@ collections:
     output: true
   projects:
     output: true
-    permalink: '/:path/'
+    permalink: '/:path'
 # Build settings
 markdown: kramdown
 # theme: minima
