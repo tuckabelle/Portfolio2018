@@ -80,8 +80,9 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "@babel/runtime": "^7.2.0",
-    "gsap": "^2.0.2",
     "barba.js": "^1.0.0",
-    "smooth-scroll": "^15.0.0"
+    "gsap": "^2.0.2",
+    "smooth-scroll": "^15.0.0",
+    "stylelint-config-sass-guidelines": "^6.0.0"
   }
 }

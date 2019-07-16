@@ -5,8 +5,8 @@
 .diagonal svg {
   display: block;
   width: 100%;
-  background: $bg-color;
   height: $diag_height_s;
+  background: $bg-color;
 
   @include breakpoint('medium') {
     height: $diag_height_m;
@@ -33,6 +33,7 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .barba-container {
   position: absolute;
   top: 0;

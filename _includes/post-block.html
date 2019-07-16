@@ -1,7 +1,8 @@
 {% assign projects = site.projects %} {% for project in projects %}
 <div class="post-block-container">
 	<div class="post-block_info">
-		<span class="post-date">{{ project.date }}</span>
+		<span class="post-date">{% assign date_format = site.minima.date_format | default: "%Y"
+			%} {{ project.date | date: date_format }}</span>
 		<h3>
 			<a class="post-block_title" id="{{ project.title | url_encode }}" href="{{ project.url | relative_url }}">
 				{{ project.title | escape }}

@@ -1,0 +1,10 @@
+@import 'post-header';
+
+.post-content {
+  margin: 2rem 0 4rem;
+
+  p {
+    max-width: 680px;
+    margin: 0 auto;
+  }
+}

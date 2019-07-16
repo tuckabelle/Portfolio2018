@@ -4,15 +4,15 @@
 
 #contact-container {
   display: grid;
+  grid-template-areas: 'contacttitle' 'contactinfo' 'intrographic';
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 'contacttitle' 'contactinfo' 'intrographic';
 
   @include breakpoint('medium') {
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
     grid-column-gap: 32px;
     grid-template-areas: 'contacttitle intrographic' 'contactinfo intrographic';
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: auto;
   }
 
   h2 {

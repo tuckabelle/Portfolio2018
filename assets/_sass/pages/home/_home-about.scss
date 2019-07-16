@@ -3,20 +3,21 @@
 // -----------------------------------------------------------------------------
 
 #about-container {
-  background-color: $bg-color;
   margin-bottom: 80px;
+  background-color: $bg-color;
   @include breakpoint('large') {
     margin-bottom: 120px;
   }
+
   svg {
-    background-color: #ffffff;
     grid-area: aboutdiagonal;
+    background-color: #fff;
   }
 
   h2 {
     grid-area: abouttitle;
-    min-height: $diag_height_s / 2;
     align-self: end;
+    min-height: $diag_height_s / 2;
     @include breakpoint('medium') {
       min-height: $diag_height_m / 2;
     }
@@ -31,37 +32,39 @@
 
 #about-intro {
   display: grid;
+  grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
   grid-template-columns: 1fr;
   grid-template-rows: ($diag_height_s / 2) auto auto;
-  grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
   @include breakpoint('medium') {
+    grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
     grid-template-columns: 1fr;
     grid-template-rows: ($diag_height_m / 2) auto;
-    grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
   }
   @include breakpoint('large') {
+    grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
     grid-template-columns: 1fr;
     grid-template-rows: ($diag_height_l / 2) auto auto;
-    grid-template-areas: 'aboutdiagonal' 'abouttitle' 'abouttitle';
   }
 }
 
 #about-content {
   display: grid;
+  grid-template-areas: 'about1' 'aboutgraphic' 'aboutquote' 'about2';
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas: 'about1' 'aboutgraphic' 'aboutquote' 'about2';
   @include breakpoint('medium') {
+    grid-column-gap: 48px;
+    grid-row-gap: 24px;
+    grid-template-areas: 'about1 about1' 'aboutgraphic aboutquote' 'about2 about2';
     grid-template-columns: auto 1fr;
     grid-template-rows: auto;
-    grid-column-gap: 48px;
-    grid-template-areas: 'about1 about1' 'aboutgraphic aboutquote' 'about2 about2';
   }
   @include breakpoint('large') {
+    grid-column-gap: 48px;
+    grid-row-gap: 32px;
+    grid-template-areas: 'aboutgraphic about1' 'aboutgraphic aboutquote' 'aboutgraphic about2';
     grid-template-columns: 1fr 2fr;
     grid-template-rows: auto;
-    grid-column-gap: 48px;
-    grid-template-areas: 'aboutgraphic about1' 'aboutgraphic aboutquote' 'aboutgraphic about2';
   }
   @include breakpoint('xlarge') {
     grid-column-gap: 64px;
@@ -70,28 +73,32 @@
   #about-para1 {
     grid-area: about1;
   }
+
   #about-para2 {
     grid-area: about2;
   }
+
   #about-graphic {
     grid-area: aboutgraphic;
-    height: 300px;
-    background-color: green;
-    opacity: 0.5;
     width: 300px;
     max-width: 300px;
+    height: 300px;
     margin: 0 auto;
+
+    opacity: 0.5;
     @include breakpoint('medium') {
       margin: unset;
     }
     @include breakpoint('large') {
-      max-width: unset;
       width: 100%;
+      max-width: unset;
     }
   }
+
   #about-quote {
     grid-area: aboutquote;
   }
+
   .home-content {
     justify-self: end;
   }
