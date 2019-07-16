@@ -1,0 +1,39 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page section "contact".
+// -----------------------------------------------------------------------------
+
+.html,
+body {
+  margin: 0;
+  padding: 0;
+}
+.barba-container {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: block;
+}
+
+a.post-block_img {
+  display: block;
+  position: relative;
+
+  img {
+    position: relative;
+    width: 400px;
+    height: auto;
+  }
+}
+
+.post-thumb_container {
+  display: block;
+  position: relative;
+
+  img.post-thumb.full {
+    position: relative;
+    height: auto;
+    width: 80vw;
+  }
+}

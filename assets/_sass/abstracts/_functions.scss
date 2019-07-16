@@ -2,6 +2,21 @@
 // This file contains all application-wide Sass functions.
 // -----------------------------------------------------------------------------
 
+$browser-context: 16px;
+
+@function calculate-rem($size) {
+  $rem-size: $size / $browser-context;
+  @return #{$rem-size}rem;
+}
+
+@function return-map-value($map, $breakpoint) {
+  @if not map-has-key($map, $breakpoint) {
+    @warn "'#{$breakpoint}' is not a valid size";
+  } @else {
+    @return map-get($map, $breakpoint);
+  }
+}
+
 /// Native `url(..)` function wrapper
 /// @param {String} $base - base URL for the asset
 /// @param {String} $type - asset type folder (e.g. `fonts/`)

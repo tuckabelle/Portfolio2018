@@ -8,7 +8,7 @@
 @import 'vendor/normalize';
 
 // 3. Base stuff
-@import 'base/base', 'base/print', 'base/typography';
+@import 'base/accessibility', 'base/base', 'base/print', 'base/typography';
 
 // 4. Layout-related sections
 @import 'layout/header', 'layout/footer';
@@ -17,4 +17,4 @@
 @import 'components/button';
 
 // 6. Page-specific styles
-@import 'pages/home';
+@import 'pages/home/home';

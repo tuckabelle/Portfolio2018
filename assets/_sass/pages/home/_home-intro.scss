@@ -1,0 +1,57 @@
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page section "intro".
+// -----------------------------------------------------------------------------
+#intro-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 10vh auto auto;
+  grid-column-gap: 32px;
+  grid-template-areas: 'introwrds introwrds' 'intrographic intrographic' 'intrographic intrographic' 'introsubtitle introdesc';
+  @include breakpoint('medium') {
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto 32px auto auto;
+    grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'introdesc introdesc';
+  }
+  @include breakpoint('large') {
+    grid-template-columns: 4fr 1fr;
+    grid-template-rows: auto 40px min-content 2fr;
+    grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'intrographic introdesc';
+  }
+  @include breakpoint('xlarge') {
+    grid-template-rows: auto 64px auto 2fr;
+    grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'intrographic introdesc';
+  }
+}
+
+#intro-wrds {
+  height: 300px;
+  background-color: red;
+  opacity: 0.7;
+  grid-area: introwrds;
+  grid-row: 1 / span 2;
+
+  z-index: 0;
+  align-items: end;
+  @include breakpoint('small') {
+    z-index: 5;
+  }
+}
+
+#intro-graphic {
+  height: 300px;
+  background-color: green;
+  opacity: 0.5;
+  grid-area: intrographic;
+}
+
+#intro-subtitle {
+  background-color: blue;
+  opacity: 0.5;
+  grid-area: introsubtitle;
+}
+
+#intro-desc {
+  background-color: purple;
+  opacity: 0.5;
+  grid-area: introdesc;
+}

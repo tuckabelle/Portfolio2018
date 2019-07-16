@@ -62,13 +62,15 @@
     "gulp-stylelint": "^8.0.0",
     "gulp-watch": "^5.0.1",
     "imagemin-pngquant": "^6.0.0",
-    "postcss-custom-properties": "^8.0.9",
+    "postcss-loader": "^3.0.0",
     "postcss-object-fit-images": "^1.1.2",
     "prettier": "^1.14.3",
     "require-dir": "^1.1.0",
     "stylelint": "^9.6.0",
     "stylelint-config-standard": "^18.2.0",
     "stylelint-order": "^1.0.0",
+    "stylelint-scss": "^3.3.2",
+    "stylelint-webpack-plugin": "^0.10.5",
     "vinyl-named": "^1.1.0",
     "webpack": "^4.23.0",
     "webpack-bundle-analyzer": "^3.0.3",
@@ -80,7 +82,6 @@
     "@babel/runtime": "^7.2.0",
     "gsap": "^2.0.2",
     "barba.js": "^1.0.0",
-    "stylelint-config-sass-guidelines": "^5.2.0",
-    "stylelint-scss": "^3.3.2"
+    "smooth-scroll": "^15.0.0"
   }
 }
