@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Test Title
-date: 2019-07-01T04:00:00.000+00:00
+date: 2019-07-01 04:00:00 +0000
 url: "#"
 role:
 - web design
