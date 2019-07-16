@@ -49,12 +49,3 @@ fields:
     schema:
       format: markdown
   label: blockquote
-- name: para2
-  type: textarea
-  default: ''
-  config:
-    required: false
-    wysiwyg: true
-    schema:
-      format: markdown
-  label: para2
