@@ -15,3 +15,4 @@ client_subtitle: iLab
 
 ---
 
+{% render_time page rendered at: %}
