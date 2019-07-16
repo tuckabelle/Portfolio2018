@@ -107,8 +107,6 @@ document.addEventListener('DOMContentLoaded', function() {
         '.post-thumb_container > img'
       )
 
-      let oldPos = oldThumb.getBoundingClientRect()
-
       _this.cloneThumb = oldThumb.cloneNode(true)
       _this.cloneThumb.style.position = 'fixed'
       _this.cloneThumb.style.top = oldPos.top + 'px'
