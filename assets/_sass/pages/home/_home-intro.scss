@@ -3,55 +3,54 @@
 // -----------------------------------------------------------------------------
 #intro-container {
   display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: auto 10vh auto auto;
   grid-column-gap: 32px;
   grid-template-areas: 'introwrds introwrds' 'intrographic intrographic' 'intrographic intrographic' 'introsubtitle introdesc';
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 10vh auto auto;
   @include breakpoint('medium') {
+    grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'introdesc introdesc';
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto 32px auto auto;
-    grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'introdesc introdesc';
   }
   @include breakpoint('large') {
+    grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'intrographic introdesc';
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto 40px min-content 2fr;
-    grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'intrographic introdesc';
   }
   @include breakpoint('xlarge') {
-    grid-template-rows: auto 64px auto 2fr;
     grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'intrographic introdesc';
+    grid-template-rows: auto 64px auto 2fr;
   }
 }
 
 #intro-wrds {
+  z-index: 0;
+  grid-area: introwrds;
+  grid-row: 1 / span 2;
+  align-items: end;
   height: 300px;
   background-color: red;
   opacity: 0.7;
-  grid-area: introwrds;
-  grid-row: 1 / span 2;
-
-  z-index: 0;
-  align-items: end;
   @include breakpoint('small') {
     z-index: 5;
   }
 }
 
 #intro-graphic {
+  grid-area: intrographic;
   height: 300px;
   background-color: green;
   opacity: 0.5;
-  grid-area: intrographic;
 }
 
 #intro-subtitle {
+  grid-area: introsubtitle;
   background-color: blue;
   opacity: 0.5;
-  grid-area: introsubtitle;
 }
 
 #intro-desc {
+  grid-area: introdesc;
   background-color: purple;
   opacity: 0.5;
-  grid-area: introdesc;
 }

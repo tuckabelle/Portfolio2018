@@ -1,22 +1,24 @@
 <header id="post-header" style="background-color: {{ page.background_color }}">
-
-	<div id="post_img" class="post-thumb_container over-left">
-		<img class="post-thumb full" src="{{ page.banner_image }}" />
-	</div>
-	<div id="post_info">
-		<h1 class="post_title">
-			{{ page.title | escape }}
-		</h1>
-		<p class="post_subheading">{{ project.sub_heading }}</p>
-		<div class="post_meta">
-			<time datetime="{{ page.date | date_to_xmlschema }}" itemprop="datePublished">
-				{% assign date_format = site.minima.date_format | default: "%Y"
-				%} {{ page.date | date: date_format }}
-			</time>
-			<div class="post_client">
-				<p> {{ page.client }}</p>
-				<p> {{ page.client_subtitle }}</p>
-			</div>
-		</div>
-	</div>
+  <div id="post_img" class="post-thumb_container over-left">
+    <img class="post-thumb full" src="{{ page.banner_image }}" />
+  </div>
+  <div id="post_info">
+    <h1 class="post_title">
+      {{ page.title | escape }}
+    </h1>
+    <p class="post_subheading">{{ project.sub_heading }}</p>
+    <div class="post_meta">
+      <time
+        datetime="{{ page.date | date_to_xmlschema }}"
+        itemprop="datePublished"
+      >
+        {% assign date_format = site.minima.date_format | default: "%Y" %} {{
+        page.date | date: date_format }}
+      </time>
+      <div class="post_client">
+        <p>{{ page.client }}</p>
+        <p>{{ page.client_subtitle }}</p>
+      </div>
+    </div>
+  </div>
 </header>
