@@ -63,7 +63,7 @@ fields:
 - name: layout
   type: text
   config:
-    required: false
+    required: true
   label: layout
   hidden: true
   default: post
