@@ -1,18 +1,19 @@
-<div id="barba-wrapper">
-	<div class="barba-container" data-namespace="{% if page.url != '/' %}detail{% else %}MAIN{% endif %}" style="visibility: visible;">
-		<header class="site-header" role="banner">
-			<div class="wrapper">
-				{%- assign default_paths = site.pages | map: "path" -%} {%- assign
-				page_paths = site.header_pages | default: default_paths -%} {%- if
-				page_paths -%}
-				<nav class="site-nav">
-					{% if page.url != '/' %}
-					<a class="btn-back" data-proj="{{ post.title | url_encode }}" href='{{ "/" | relative_url }}'>BACK</a>
-					{% else %} {% endif %}
-				</nav>
+<header class="site-header" role="banner">
+  <div class="wrapper">
+    {%- assign default_paths = site.pages | map: "path" -%} {%- assign
+    page_paths = site.header_pages | default: default_paths -%} {%- if
+    page_paths -%}
+    <nav class="site-nav">
+      {% if page.url != '/' %}
+      <a
+        class="btn-back"
+        data-proj="{{ post.title | url_encode }}"
+        href='{{ "/" | relative_url }}'
+        >BACK</a
+      >
+      {% else %} {% endif %}
+    </nav>
 
-				{%- endif -%}
-			</div>
-		</header>
-	</div>
-</div>
+    {%- endif -%}
+  </div>
+</header>
