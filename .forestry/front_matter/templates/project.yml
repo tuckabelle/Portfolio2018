@@ -60,5 +60,12 @@ fields:
     max: 
     labelField: 
   label: Team Credits
+- name: layout
+  type: text
+  config:
+    required: false
+  label: layout
+  hidden: true
+  default: post
 pages:
 - _projects/test-title3.md
