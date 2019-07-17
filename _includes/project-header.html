@@ -1,6 +1,10 @@
 <header id="post-header" style="background-color: {{ page.background_color }}">
   <div id="post_img" class="post-img_container post-thumb_container over-left">
-    <img class="post-thumb full" src="{{ page.banner_image }}" />
+    <img
+      data-ref="{{ page.url | relative_url }}"
+      class="post-thumb full"
+      src="{{ page.banner_image }}"
+    />
   </div>
   <div id="post_info">
     <h1 class="post_title">

@@ -28,7 +28,11 @@
   </div>
   <div class="post-img_container over-right">
     <a class="post-block_img intro-thumb " href="{{ project.url }}">
-      <img class="full" src="{{ project.banner_image }}" />
+      <img
+        data-ref="{{ project.url | relative_url }}"
+        class="full"
+        src="{{ project.banner_image }}"
+      />
     </a>
   </div>
 </div>
