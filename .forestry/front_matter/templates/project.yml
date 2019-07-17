@@ -36,7 +36,7 @@ fields:
     date_format: YYYY
     time_format: 
     display_utc: false
-    export_format: YYYY
+    export_format: ''
   default: '2019-07-01 04:00:00 +0000'
 - name: client
   type: text
