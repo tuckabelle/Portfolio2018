@@ -10,6 +10,11 @@ fields:
   type: text
   hidden: false
   default: ''
+- name: date
+  type: text
+  config:
+    required: false
+  label: Date
 - name: link
   type: text
   config:
@@ -27,17 +32,6 @@ fields:
   config:
     required: false
     color_format: Hex
-- name: date
-  type: datetime
-  label: Date
-  description: ''
-  config:
-    required: false
-    date_format: YYYY
-    time_format: 
-    display_utc: false
-    export_format: ''
-  default: '2019-07-01 04:00:00 +0000'
 - name: client
   type: text
   config:

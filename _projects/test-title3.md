@@ -1,5 +1,5 @@
 ---
-date: 2018
+date: "2018"
 client: Center for Strategic and International Studies
 role: []
 title: Test Title3
@@ -10,7 +10,6 @@ background_color: "#50E3C2"
 client_subtitle: iLab
 team_credits:
 - name_and_role: Jacque Shrag, developer
-published: false
 
 ---
 Pede nec erat nulla in dui ipsum volutpat pharetra. Suscipit integer justo. Dolor sed pede. Pede nibh urna et at ac. Dictum placerat euismod ac commodo convallis euismod sit at.
