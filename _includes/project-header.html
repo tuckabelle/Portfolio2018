@@ -12,8 +12,7 @@
         datetime="{{ page.date | date_to_xmlschema }}"
         itemprop="datePublished"
       >
-        {% assign date_format = site.minima.date_format | default: "%Y" %} {{
-        page.date | date: date_format }}
+        {{ project.year }}
       </time>
       <div class="post_client">
         <p>{{ page.client }}</p>
