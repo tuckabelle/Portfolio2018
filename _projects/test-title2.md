@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Test Title2
-date: "2019"
+date: '2019'
 url: ''
 role:
 - web design
@@ -12,6 +12,7 @@ banner_image: "/uploads/2019/07/15/photo-1498429089284-41f8cf3ffd39.jpeg"
 background_color: "#7ED321"
 client_subtitle: iLab
 link: "#"
+year: "2019"
 
 ---
 Testing
