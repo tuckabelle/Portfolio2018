@@ -43,10 +43,13 @@
 
 #intro-subtitle {
   grid-area: introsubtitle;
+  font-family: $font-sans;
+  font-weight: bold;
   opacity: 0.5;
 }
 
 #intro-desc {
   grid-area: introdesc;
+  font-family: $font-sans;
   opacity: 0.5;
 }
