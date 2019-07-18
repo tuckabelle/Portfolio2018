@@ -13,7 +13,7 @@ barba.init({
         if (data.current.namespace == 'detail') {
           goingForward = false
         }
-        console.log(goingForward)
+
         TweenMax.set(data.next.container, {
           visibility: 'visible',
           xPercent: goingForward ? 100 : -100,
@@ -23,14 +23,43 @@ barba.init({
           right: 0
         })
 
-        TweenMax.to(data.current.container, 0.6, {
+        TweenMax.to(data.current.container, 2, {
           xPercent: goingForward ? -100 : 100
         })
       },
 
       enter(data) {
         const done = this.async()
-        TweenMax.to(data.next.container, 0.6, {
+
+        const imgRef = findImgRef(
+          data.current.namespace,
+          data.current.url.path,
+          data.next.url.path
+        )
+
+        const oldThumb = data.current.container.querySelector(imgRef)
+        const newThumb = data.next.container.querySelector(imgRef)
+
+        const oldPos = oldThumb.getBoundingClientRect()
+        const newPos = newThumb.getBoundingClientRect()
+
+        const aspectRatio = oldThumb.naturalWidth / oldThumb.naturalHeight
+        const newHeight = Math.round(newPos.width / aspectRatio)
+        console.log(newHeight)
+
+        oldThumb.style.zIndex = '100'
+        //console.log(newPos)
+
+        TweenMax.to(oldThumb, 2, {
+          position: 'fixed',
+          visibility: 'visible',
+          top: newPos.top,
+          left: newPos.left,
+          height: newHeight,
+          width: newPos.width
+        })
+
+        TweenMax.to(data.next.container, 2, {
           xPercent: 0,
           onComplete: function() {
             TweenMax.set(data.next.container, {

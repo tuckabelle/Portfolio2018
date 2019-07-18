@@ -6,8 +6,7 @@ a.post-block_img {
   position: relative;
   display: flex;
   justify-content: flex-end;
-
-  img {
+  overflow: auto img {
     position: relative;
     width: 66%;
     //max-width: 400px;
