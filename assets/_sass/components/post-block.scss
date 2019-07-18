@@ -2,11 +2,13 @@
 // This file contains all styles related to the post block component.
 // -----------------------------------------------------------------------------
 
-a.post-block_img {
+.post-block__img {
   position: relative;
   display: flex;
   justify-content: flex-end;
-  overflow: auto img {
+  overflow: auto;
+
+  img {
     position: relative;
     width: 66%;
     //max-width: 400px;
@@ -32,14 +34,14 @@ a.post-block_img {
   }
 }
 
-.post-block_info {
+.post-block__info {
   grid-area: postinfo;
 }
 
-.post-block-container .post-img_container {
+.post-block-container .post-img__container {
   grid-area: postimg;
 }
 
-.post-block_links {
+.post-block__links {
   display: flex;
 }
