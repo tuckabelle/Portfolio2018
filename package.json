@@ -80,8 +80,9 @@
   "dependencies": {
     "@babel/polyfill": "^7.2.5",
     "@babel/runtime": "^7.2.0",
-    "@barba/prefetch": "^2.1.6",
     "@barba/core": "^2.1.1",
+    "@barba/prefetch": "^2.1.6",
+    "animejs": "^3.0.1",
     "barba.js": "^1.0.0",
     "gsap": "^2.0.2",
     "smooth-scroll": "^15.0.0",

@@ -2,15 +2,60 @@
 import barba from '@barba/core'
 import barbaPrefetch from '@barba/prefetch'
 import { TweenMax, TimelineMax } from 'gsap/all'
-import SmoothScroll from 'smooth-scroll/src/js/smooth-scroll.js'
+import anime from 'animejs/lib/anime.min.js'
 
 barba.use(barbaPrefetch)
 
+barba.hooks.beforeEnter(() => {})
+
 barba.init({
+  debug: true,
   transitions: [
     {
       sync: true,
-      beforeLeave(data) {},
+      before(data) {
+        //localStorage.setItem('scrollYPos', window.scrollY)
+
+        const imgRef = findImgRef(
+          data.current.namespace,
+          data.current.url.path,
+          data.next.url.path
+        )
+
+        const oldThumb = data.current.container.querySelector(imgRef)
+        const oldPos = oldThumb.getBoundingClientRect()
+        const oldPosHeight = oldPos.top
+
+        const newPost = getPosition(oldThumb)
+
+        const lastYPos = localStorage.getItem('scrollYPos')
+
+        const newNewPos = lastYPos - oldPosHeight
+
+        //console.log(newNewPos)
+        //console.log('Now scrolling ' + lastYPos)
+        localStorage.removeItem('scrollPlace')
+        localStorage.removeItem('scrollYPos')
+        localStorage.setItem('scrollYPos', window.scrollY)
+        localStorage.setItem('scrollPlace', newNewPos)
+
+        let goingForward = true
+
+        if (data.current.namespace == 'detail') {
+          goingForward = false
+        }
+
+        //console.log('Next ' + newYPos)
+        const directionCurrent = (goingForward ? -100 : 100) + '%'
+        const directionNext = (goingForward ? 100 : -100) + '%'
+
+        //console.log(directionNext)
+        anime.set(data.next.container, {
+          translateX: directionNext,
+          position: 'absolute',
+          top: 0
+        })
+      },
       leave(data) {
         let goingForward = true
 
@@ -35,43 +80,127 @@ barba.init({
         const newHeight = Math.round(newPos.width / aspectRatio)
 
         const newid = newThumb.getAttribute('id')
-        console.log(newid)
+        //console.log(newid)
 
-        const newt = oldThumb.cloneNode(true)
-        newt.style.position = 'fixed'
-        newt.style.top = oldPos.top + 'px'
-        newt.style.left = oldPos.left + 'px'
-        newt.style.right = oldPos.right + 'px'
-        newt.height = newHeight
-        newt.width = oldPos.width
-        data.current.container.appendChild(newt)
+        let bodyRect = data.current.container.getBoundingClientRect()
+        let offset = oldPos.top - bodyRect.top
+        //console.log(offset)
 
-        let leftdest = -window.screen.width + newPos.left
-        let leftdest2 = window.screen.width - newPos.left
+        // const newt = oldThumb.cloneNode(true)
+        // newt.style.position = 'fixed'
+        // newt.style.top = offset + 'px'
+        // newt.style.left = oldPos.left + 'px'
+        // //newt.style.right = oldPos.right + 'px'
+        // newt.height = newHeight
+        // newt.width = oldPos.width
+        // data.current.container.appendChild(newt)
+        //
+        // newt.style.zIndex = '100'
 
-        newt.style.zIndex = '100'
+        const directionCurrent = (goingForward ? -100 : 100) + '%'
+        const directionNext = (goingForward ? 100 : -100) + '%'
 
-        TweenMax.to(data.current.container, 2, {
-          xPercent: goingForward ? -100 : 100
+        let leftdest = newPos.left
+        let leftdest2 = newPos.left
+        //console.log(newPos.top)
+
+        const newNewPos = localStorage.getItem('scrollPlace')
+
+        anime.set(newThumb, {
+          left: directionCurrent
         })
 
-        TweenMax.to(data.next.container, 2, {
-          xPercent: goingForward ? 100 : -100,
-          onComplete: function() {
-            TweenMax.set(data.next.container, {
-              clearProps: 'all',
-              onComplete: done
-            })
+        anime({
+          targets: data.current.container,
+          translateX: directionCurrent,
+          easing: 'easeOutSine',
+          duration: 600,
+          delay: 200,
+          complete: function(anim) {
+            window.scrollTo(0, newNewPos)
           }
         })
-        TweenMax.to(newt, 2, {
+
+        anime({
+          targets: newThumb,
           position: 'fixed',
           visibility: 'visible',
-          top: newPos.top,
-          left: goingForward ? leftdest2 : leftdest,
-          height: newHeight,
-          width: newPos.width
+          zindex: 100,
+
+          left: 0,
+
+          easing: 'easeInOutQuad',
+          duration: 200
         })
+
+        anime({
+          targets: oldThumb,
+          position: 'fixed',
+          visibility: 'visible',
+          zindex: 100,
+
+          left: directionNext,
+
+          easing: 'easeInOutQuad',
+          duration: 200
+        })
+
+        anime({
+          targets: data.next.container,
+          translateX: 0,
+          easing: 'easeOutSine',
+          duration: 600,
+          delay: 400,
+          complete: function(anim) {
+            console.log('done')
+            done()
+          }
+        })
+
+        // TweenMax.to(data.current.container, 2, {
+        //   xPercent: goingForward ? -100 : 100
+        // })
+        //
+        // TweenMax.to(data.next.container, 2, {
+        //   xPercent: goingForward ? 100 : -100,
+        //   onComplete: function() {
+        //     TweenMax.set(data.next.container, {
+        //       clearProps: 'all',
+        //       onComplete: done
+        //     })
+        //   }
+        // })
+        // TweenMax.to(newt, 2, {
+        //   position: 'fixed',
+        //   visibility: 'visible',
+        //   top: newPos.top,
+        //   left: goingForward ? leftdest2 : leftdest,
+        //   height: newHeight,
+        //   width: newPos.width
+        // })
+      },
+      afterEnter(data) {
+        const nextPage = data.next.container
+
+        const imgRef = findImgRef(
+          data.current.namespace,
+          data.current.url.path,
+          data.next.url.path
+        )
+
+        const oldThumb = data.current.container.querySelector(imgRef)
+        const newThumb = data.next.container.querySelector(imgRef)
+
+        //console.log(oldThumb.offsetParent.offsetTop)
+
+        let bodyRect = data.next.container.getBoundingClientRect(),
+          elemRect = oldThumb.getBoundingClientRect(),
+          offset = elemRect.top - bodyRect.top
+
+        // setTimeout(() => {
+        //   //console.log(offset)
+        //   window.scrollTo(0, offset)
+        // }, 100)
       }
     }
   ]
@@ -85,5 +214,31 @@ function findImgRef(cn, cu, nu) {
   } else {
     let imgRef = 'img[data-ref="' + cu + '"]'
     return imgRef
+  }
+}
+
+function getPosition(el) {
+  let xPos = 0
+  let yPos = 0
+
+  while (el) {
+    if (el.tagName == 'BODY') {
+      // deal with browser quirks with body/window/document and page scroll
+      const xScroll = el.scrollLeft || document.documentElement.scrollLeft
+      const yScroll = el.scrollTop || document.documentElement.scrollTop
+
+      xPos += el.offsetLeft - xScroll + el.clientLeft
+      yPos += el.offsetTop - yScroll + el.clientTop
+    } else {
+      // for all other non-BODY elements
+      xPos += el.offsetLeft - el.scrollLeft + el.clientLeft
+      yPos += el.offsetTop - el.scrollTop + el.clientTop
+    }
+
+    el = el.offsetParent
+  }
+  return {
+    x: xPos,
+    y: yPos
   }
 }
