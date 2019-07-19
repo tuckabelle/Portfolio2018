@@ -19,7 +19,7 @@ html {
   padding: 0 $page-margins_s;
   overflow-x: hidden;
 
-  @include breakpoint('large') {
+  @include breakpoint('medium') {
     padding: 0 $page-margins_l;
   }
 }
@@ -52,4 +52,8 @@ html {
     width: calc(100% + ((#{$page-margins_l} + 24px)) * 2);
     margin-left: calc((#{$page-margins_l} + 24px) * -1);
   }
+}
+
+img {
+  width: 100%;
 }

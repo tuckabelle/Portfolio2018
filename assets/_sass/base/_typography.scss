@@ -6,6 +6,7 @@ textarea {
   //  @extend %body-text;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @extend %body-text;
 }
 
 /*================================
@@ -22,9 +23,12 @@ h2 {
   margin: 0 0 1rem;
 }
 
+.home h2 {
+  @extend %large-heading;
+}
+
 h3 {
   //@extend %h3 !optional;
-  margin: 0.75rem 0;
 }
 
 h4 {
@@ -87,5 +91,14 @@ a {
 
   &:visited {
     color: #9400d3;
+  }
+
+  &.post-block__title {
+    @extend %post-block__title;
+    color: $text-color__black;
+  }
+
+  &.link-block {
+    @extend %link-block__text;
   }
 }

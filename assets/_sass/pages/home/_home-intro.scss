@@ -7,6 +7,7 @@
   grid-template-areas: 'introwrds introwrds' 'intrographic intrographic' 'intrographic intrographic' 'introsubtitle introdesc';
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto 10vh auto auto;
+  background-color: $bg-color;
   @include breakpoint('medium') {
     grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'introdesc introdesc';
     grid-template-columns: 4fr 1fr;
@@ -37,19 +38,15 @@
 
 #intro-graphic {
   grid-area: intrographic;
-  height: 300px;
   opacity: 0.5;
 }
 
 #intro-subtitle {
+  @extend %sub-title;
   grid-area: introsubtitle;
-  font-family: $font-sans;
-  font-weight: bold;
   opacity: 0.5;
 }
 
 #intro-desc {
   grid-area: introdesc;
-  font-family: $font-sans;
-  opacity: 0.5;
 }

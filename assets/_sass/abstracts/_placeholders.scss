@@ -3,5 +3,59 @@
 ====================================*/
 
 %body-text {
-  @include font-size(20rem);
+  font-family: $font-serif;
+  @include font-size(16px);
+  line-height: 1.4;
+}
+
+%body-text__large {
+  font-family: $font-serif;
+  @include font-size(18px);
+  line-height: 1.4;
+}
+
+%sub-title {
+  font-family: $font-serif;
+  @include font-size(22px);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+%large-heading {
+  font-family: $font-sans;
+  font-weight: bold;
+  line-height: 1;
+  @include font-size(200px);
+}
+
+%post-block__title {
+  @include font-size(60px);
+  font-family: $font-sans;
+  font-weight: normal;
+  line-height: 1.2;
+}
+
+%link-block__text {
+  font-family: $font-sans;
+  font-weight: normal;
+  line-height: 1;
+  @include font-size(16px);
+}
+
+%post-date {
+  color: $color__black-60;
+  font-family: $font-sans;
+  @include font-size(18px);
+}
+
+%blockquote__quote {
+  color: $color__black-60;
+  font-family: $font-sans;
+  @include font-size(25px);
+}
+
+%blockquote__citation {
+  color: $color__black-60;
+  font-family: $font-serif;
+  @include font-size(16px);
 }

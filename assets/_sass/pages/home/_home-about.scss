@@ -72,10 +72,12 @@
 
   #about-para1 {
     grid-area: about1;
+    @extend %body-text__large;
   }
 
   #about-para2 {
     grid-area: about2;
+    @extend %body-text__large;
   }
 
   #about-graphic {
@@ -97,6 +99,7 @@
 
   #about-quote {
     grid-area: aboutquote;
+    @extend %blockquote__quote;
   }
 
   .home-content {
