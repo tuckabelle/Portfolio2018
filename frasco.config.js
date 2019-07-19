@@ -90,7 +90,8 @@ module.exports = {
       TweenMax: 'gsap/src/minified/TweenMax.min.js',
       TimelineLite: 'gsap/src/minified/TimelineLite.min.js',
       TimelineMax: 'gsap/src/minified/TimelineMax.min.js',
-      Barba: 'barba.js/dist/barba.min.js'
+      Barba: 'barba.js/dist/barba.min.js',
+      anime: 'animejs/lib/anime.es.js'
     }
   }
 }

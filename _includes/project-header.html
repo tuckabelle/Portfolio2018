@@ -1,20 +1,28 @@
 <header id="post-header" style="background-color: {{ page.background_color }}">
-  <div id="post_img" class="post-thumb_container over-left">
-    <img class="post-thumb full" src="{{ page.banner_image }}" />
+  <div
+    id="post__img"
+    class="post-img__container post-thumb__container over-left"
+  >
+    <img
+      data-ref="{{ page.url | relative_url }}"
+      id="{{ page.title | url_encode }}"
+      class="post-thumb full"
+      src="{{ page.banner_image }}"
+    />
   </div>
-  <div id="post_info">
-    <h1 class="post_title">
+  <div id="post__info">
+    <h1 class="post__title">
       {{ page.title | escape }}
     </h1>
-    <p class="post_subheading">{{ project.sub_heading }}</p>
-    <div class="post_meta">
+    <p class="post__subheading">{{ project.sub_heading }}</p>
+    <div class="post__meta">
       <time
         datetime="{{ page.date | date_to_xmlschema }}"
         itemprop="datePublished"
       >
         {{ project.year }}
       </time>
-      <div class="post_client">
+      <div class="post__client">
         <p>{{ page.client }}</p>
         <p>{{ page.client_subtitle }}</p>
       </div>

@@ -7,8 +7,8 @@
       {% if page.url != '/' %}
       <a
         class="btn-back"
-        data-proj="{{ post.title | url_encode }}"
-        href='{{ "/" | relative_url }}'
+        data-proj="{{ page.title | url_encode }}"
+        href='{{ "/" | relative_url }}#{{ page.title | url_encode }}'
         >BACK</a
       >
       {% else %} {% endif %}
