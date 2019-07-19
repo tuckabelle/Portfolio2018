@@ -21,7 +21,17 @@
 
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
 
+$font-sans: 'kapraneuepro';
+$font-serif: 'Source Serif Pro', serif;
+
+// -----------------------------------------------------------------------------
+// Colors.
+// -----------------------------------------------------------------------------
 $bg-color: #f3f3f3;
+
+// -----------------------------------------------------------------------------
+// Layout
+// -----------------------------------------------------------------------------
 
 $diag_height_s: 100px;
 $diag_height_m: 150px;
@@ -31,6 +41,3 @@ $diag_height_xl: 250px;
 $page-margins_l: 6vw;
 $page-margins_overflow: $page-margins_l - 2;
 $page-margins_s: 20px;
-
-$font-sans: 'kapraneuepro';
-$font-serif: 'Source Serif Pro', serif;

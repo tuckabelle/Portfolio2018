@@ -37,7 +37,7 @@ h4 {
 ============================*/
 
 p {
-  margin: 0 0 1rem;
+  @extend %body-text;
 }
 
 @for $i from 2 through 6 {

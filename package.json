@@ -85,6 +85,7 @@
     "animejs": "^3.0.1",
     "barba.js": "^1.0.0",
     "gsap": "^2.0.2",
+    "rfs": "^8.0.4",
     "smooth-scroll": "^15.0.0",
     "stylelint-config-sass-guidelines": "^6.0.0"
   }
