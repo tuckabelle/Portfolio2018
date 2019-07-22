@@ -1,3 +1,39 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+
+.link-block {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  margin-right: 40px;
+
+  &::before {
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 40px;
+    height: 40px;
+    background-color: $bg-color;
+    border-radius: 20px;
+    content: '';
+    transition: width 0.3s ease-in-out;
+  }
+
+  &:hover {
+    &::before {
+      width: calc(100% + 16px);
+      transition: width 0.3s ease-in-out;
+    }
+  }
+
+  a.link-block__text {
+    z-index: 1;
+    margin-left: 16px;
+
+    &:visited {
+      color: #000;
+    }
+  }
+}

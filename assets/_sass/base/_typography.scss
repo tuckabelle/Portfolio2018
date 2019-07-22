@@ -98,7 +98,7 @@ a {
     color: $text-color__black;
   }
 
-  &.link-block {
+  &.link-block__text {
     @extend %link-block__text;
   }
 }
