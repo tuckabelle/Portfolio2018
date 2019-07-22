@@ -7,12 +7,15 @@
   display: flex;
   justify-content: flex-end;
   overflow: auto;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38),
+    -10px 2px 22px 0 rgba(0, 0, 0, 0.13);
 
   img {
     position: relative;
     width: 66%;
     //max-width: 400px;
     height: auto;
+
     @include breakpoint('medium') {
       width: 100%;
     }
