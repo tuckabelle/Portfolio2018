@@ -4,7 +4,15 @@
   margin: 2rem 0 4rem;
 
   p {
+    @extend %body-text__large;
     max-width: 680px;
-    margin: 0 auto;
+    margin: 0 auto 32px;
+    line-height: 1.5;
+  }
+
+  h2 {
+    @extend %post-block__title;
+    max-width: 850px;
+    margin: 4rem auto 1rem;
   }
 }

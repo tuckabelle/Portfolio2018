@@ -45,7 +45,7 @@
   h1 {
     @include font-size(70px);
     font-family: $font-sans;
-    font-weight: bold;
+    font-weight: normal;
     line-height: 1.2;
   }
 }
