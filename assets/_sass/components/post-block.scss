@@ -44,7 +44,7 @@
   }
 
   .post-block__right {
-    flex-grow: 2;
+    @extend %post-meta__right;
   }
 
   h3 {
@@ -65,9 +65,7 @@
 }
 
 .post-block__left {
-  display: flex;
-  align-content: flex-start;
-  padding-right: 1rem;
+  @extend %post-meta__left;
 }
 
 .post-date {

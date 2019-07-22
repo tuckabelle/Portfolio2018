@@ -14,17 +14,23 @@
     <h1 class="post__title">
       {{ page.title | escape }}
     </h1>
-    <p class="post__subheading">{{ project.sub_heading }}</p>
+    <p class="post__subheading">{{ page.sub_heading }}</p>
     <div class="post__meta">
-      <time
-        datetime="{{ page.date | date_to_xmlschema }}"
-        itemprop="datePublished"
-      >
-        {{ project.year }}
-      </time>
-      <div class="post__client">
-        <p>{{ page.client }}</p>
-        <p>{{ page.client_subtitle }}</p>
+      <div class="post-meta__left post-date">
+        {{ page.year }}
+        <img
+          class="post-date__line"
+          src="{{ 'assets/images/date-line.svg' | relative_url }}"
+          alt="{{
+        site.title }}"
+          title="{{ site.title }}"
+        />
+      </div>
+      <div class="post-meta__right" <div class="post__client">
+        <p>
+          {{ page.client }}<br />
+          <span>{{ page.client_subtitle }}</span>
+        </p>
       </div>
     </div>
   </div>

@@ -59,3 +59,13 @@
   font-family: $font-serif;
   @include font-size(16px);
 }
+
+%post-meta__left {
+  display: flex;
+  align-content: flex-start;
+  padding-right: 1rem;
+}
+
+%post-meta__right {
+  flex-grow: 2;
+}
