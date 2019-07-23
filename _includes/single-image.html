@@ -1,0 +1,12 @@
+{% if include.url.size > 0 %}
+<figure class="{{ include.classes | default: post__image }}">
+  <img
+    src="{{ include.url }}"
+    title="{{ include.title | strip_html  }}"
+    alt="{{ include.title | strip_html  }}"
+  />
+  {% if include.title and include.figcaption != false %}
+  <figcaption class="img-caption">{{ include.title }}</figcaption>
+  {% endif %}
+</figure>
+{% endif %}
