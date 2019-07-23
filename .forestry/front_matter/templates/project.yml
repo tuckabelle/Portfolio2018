@@ -68,5 +68,4 @@ fields:
   hidden: true
   default: post
 pages:
-- _projects/test-4.html
 - _projects/test-title3.md
