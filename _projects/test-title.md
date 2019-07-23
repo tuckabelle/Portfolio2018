@@ -31,6 +31,8 @@ Et sapien id. Massa in nunc dignissim mauris erat. Natoque sed per accumsan mass
 
 Et sapien id. Massa in nunc dignissim mauris erat. Natoque sed per accumsan massa vivamus. At amet suscipit ornare ut veritatis. Dictumst est nulla wisi sollicitudin conubia mauris nibh integer. Imperdiet luctus convallis. In consequat sed sed nulla ut adipiscing sed eleifend. Volutpat massa nisl. Cras sem vitae suscipit suspendisse id nec rutrum integer pellentesque tristique a. Imperdiet ut elementum.
 
+{{% tip %}} Tip Body {{% /tip %}}
+
 ## Test2
 
 Pede nec erat nulla in dui ipsum volutpat pharetra. Suscipit integer justo. Dolor sed pede. Pede nibh urna et at ac. Dictum placerat euismod ac commodo convallis euismod sit at.
