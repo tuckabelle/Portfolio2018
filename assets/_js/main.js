@@ -53,7 +53,10 @@ barba.init({
         anime.set(data.next.container, {
           translateX: directionNext,
           position: 'absolute',
-          top: 0
+          top: 0,
+          complete: function(anim) {
+            window.scrollTo(0, newNewPos)
+          }
         })
       },
       leave(data) {
@@ -115,10 +118,7 @@ barba.init({
           translateX: directionCurrent,
           easing: 'easeOutSine',
           duration: 600,
-          delay: 200,
-          complete: function(anim) {
-            window.scrollTo(0, newNewPos)
-          }
+          delay: 200
         })
 
         anime({

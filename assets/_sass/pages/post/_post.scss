@@ -1,7 +1,10 @@
 @import 'post-header';
 
 .post-content {
-  margin: 2rem 0 4rem;
+  padding: 2rem 20px;
+  @include breakpoint('medium') {
+    padding: 2rem 2rem 4rem;
+  }
 
   p {
     @extend %body-text__large;
@@ -12,7 +15,94 @@
 
   h2 {
     @extend %post-block__title;
-    max-width: 850px;
-    margin: 4rem auto 1rem;
+    @extend %post-item__mid ;
+    margin-bottom: 1rem;
   }
+
+  .post-figure__single-container figure,
+  .post-figure__double-container figure {
+    margin-bottom: 2.5rem;
+  }
+
+  .post-figure__single-container figure {
+    @extend %post-item__mid;
+    @include breakpoint('medium') {
+      display: grid;
+      grid-column-gap: 2vw;
+      grid-template-areas: 'figimg figtext';
+      grid-template-columns: 3fr 1fr;
+
+    }
+
+    img {
+      grid-area: figimg;
+    }
+
+    figcaption {
+      grid-area: figtext;
+    }
+  }
+
+  .post-figure__double-container figure {
+    @extend %post-item__wide;
+    @include breakpoint('medium') {
+      display: grid;
+      grid-column-gap: 2vw;
+      grid-template-areas: 'figimg figtext';
+      grid-template-columns: 3fr 1fr;
+
+    }
+    @include breakpoint('large') {
+      display: grid;
+      grid-column-gap: 2vw;
+      grid-template-areas: 'figimg figtext';
+      grid-template-columns: 3fr 1fr;
+
+    }
+
+    .img-container {
+      grid-area: figimg;
+      @include breakpoint('large') {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+      }
+
+    }
+
+    img {
+      @include breakpoint('large') {
+        width: calc(50% - 8px);
+
+      }
+    }
+
+    figcaption {
+      grid-area: figtext;
+
+
+    }
+
+    span {
+      @include breakpoint('medium') {
+        display: block;
+        margin-top: 1.5rem;
+      }
+    }
+  }
+}
+
+figcaption {
+  @extend %post-figure__caption;
+
+  @include breakpoint('medium') {
+    margin-top: 1rem;
+    padding-top: 0.5rem;
+    border-top: 1px solid $color__black-40;
+  }
+}
+
+.post__section-dark {
+  @extend %section-dark;
+  color: #fff;
 }

@@ -25,33 +25,15 @@ html {
 }
 
 .over-right {
-  width: calc(100% + (#{$page-margins_s} + 24px));
-
-  @include breakpoint('medium') {
-    width: calc(100% + (#{$page-margins_l} + 24px));
-  }
-
-  //margin-left: $page-margins_l;
+  @extend %over-right;
 }
 
 .over-left {
-  width: calc(100% + (#{$page-margins_s} + 24px));
-  margin-left: calc((#{$page-margins_s} + 24px) * -1);
-
-  @include breakpoint('medium') {
-    width: calc(100% + (#{$page-margins_l} + 24px));
-    margin-left: calc((#{$page-margins_l} + 24px) * -1);
-  }
+  @extend %over-left;
 }
 
 .over-full {
-  width: calc(100% + ((#{$page-margins_s} + 24px)) * 2);
-  margin-left: calc((#{$page-margins_s} + 24px) * -1);
-
-  @include breakpoint('medium') {
-    width: calc(100% + ((#{$page-margins_l} + 24px)) * 2);
-    margin-left: calc((#{$page-margins_l} + 24px) * -1);
-  }
+  @extend %over-full;
 }
 
 img {

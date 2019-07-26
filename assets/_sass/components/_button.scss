@@ -37,3 +37,19 @@
     }
   }
 }
+
+.btn-back {
+  @extend %link-block__text;
+  position: fixed;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 8px 12px;
+  color: #fff;
+  background: #000;
+
+  &:visited {
+    color: #fff;
+  }
+}

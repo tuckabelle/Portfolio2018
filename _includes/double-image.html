@@ -1,0 +1,25 @@
+
+<div class="post-figure__double-container">
+{% if include.url2.size > 0 %}
+<figure class="{{ include.classes | default: post__image }}">
+  <div class="img-container">
+  <img
+    src="{{ include.url1 }}"
+    title="{{ include.title1 | strip_html  }}"
+    alt="{{ include.title1 | strip_html  }}"
+  />
+  <img
+    src="{{ include.url2 }}"
+    title="{{ include.title2 | strip_html  }}"
+    alt="{{ include.title2 | strip_html  }}"
+  />
+  </div>
+  <figcaption class="img-caption">
+{% if include.caption1 %}
+    {{ include.caption1 }}
+    {% endif %}
+    {% if include.caption2 %}<span>{{ include.caption2 }}</span>{% endif %}
+  </figcaption>
+</figure>
+{% endif %}
+</div>
