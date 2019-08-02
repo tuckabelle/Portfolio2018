@@ -1,34 +1,24 @@
 <header id="post-header" style="background-color: {{ page.background_color }}">
-  <div id="post__img" class="post-img__container post-thumb__container ">
-    <img
-      data-ref="{{ page.url | relative_url }}"
-      id="{{ page.title | url_encode }}"
-      class="post-thumb full"
-      src="{{ page.banner_image }}"
-    />
-  </div>
-  <div id="post__info">
-    <h1 class="post__title">
-      {{ page.title | escape }}
-    </h1>
-    <p class="post__subheading">{{ page.sub_heading }}</p>
-    <div class="post__meta">
-      <div class="post-meta__left post-date">
-        {{ page.year }}
-        <img
-          class="post-date__line"
-          src="{{ 'assets/images/date-line.svg' | relative_url }}"
-          alt="{{
-        site.title }}"
-          title="{{ site.title }}"
-        />
-      </div>
-      <div class="post-meta__right" <div class="post__client">
-        <p>
-          {{ page.client }}<br />
-          <span>{{ page.client_subtitle }}</span>
-        </p>
-      </div>
-    </div>
-  </div>
+	<div id="post__img" class="post-img__container post-thumb__container ">
+		<img data-ref="{{ page.url | relative_url }}" class="post-thumb full" id="{{ page.url | relative_url | replace: '/', '' }}" src="{{ page.banner_image }}" />
+	</div>
+	<div id="post__info">
+		<h1 class="post__title">
+			{{ page.title | escape }}
+		</h1>
+		<p class="post__subheading">{{ page.sub_heading }}</p>
+		<div class="post__meta">
+			<div class="post-meta__left post-date">
+				{{ page.year }}
+				<img class="post-date__line" src="{{ 'assets/images/date-line.svg' | relative_url }}" alt="{{
+        site.title }}" title="{{ site.title }}" />
+			</div>
+			<div class="post-meta__right" <div class="post__client">
+				<p>
+					{{ page.client }}<br />
+					<span>{{ page.client_subtitle }}</span>
+				</p>
+			</div>
+		</div>
+	</div>
 </header>

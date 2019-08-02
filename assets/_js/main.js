@@ -23,21 +23,29 @@ barba.init({
         )
 
         const oldThumb = data.current.container.querySelector(imgRef)
-        const oldPos = oldThumb.getBoundingClientRect()
-        const oldPosHeight = oldPos.top
+        const newThumb = data.next.container.querySelector(imgRef)
+        // const oldPos = oldThumb.getBoundingClientRect()
+        // const oldPosHeight = oldPos.top
 
-        const newPost = getPosition(oldThumb)
+        // const newPost = getPosition(oldThumb)
+        //
+        // const lastYPos = localStorage.getItem('scrollYPos')
+        //
+        // const newNewPos = lastYPos - oldPosHeight
+        //
+        // //console.log(newNewPos)
+        // //console.log('Now scrolling ' + lastYPos)
+        // localStorage.removeItem('scrollPlace')
+        // localStorage.removeItem('scrollYPos')
+        // localStorage.setItem('scrollYPos', window.scrollY)
+        // localStorage.setItem('scrollPlace', newNewPos)
 
-        const lastYPos = localStorage.getItem('scrollYPos')
+        const tester = newThumb.id
 
-        const newNewPos = lastYPos - oldPosHeight
+        const test2 = '#' + tester
+        console.log(test2)
 
-        //console.log(newNewPos)
-        //console.log('Now scrolling ' + lastYPos)
-        localStorage.removeItem('scrollPlace')
-        localStorage.removeItem('scrollYPos')
-        localStorage.setItem('scrollYPos', window.scrollY)
-        localStorage.setItem('scrollPlace', newNewPos)
+        //  window.location.hash = test2
 
         let goingForward = true
 
@@ -48,16 +56,6 @@ barba.init({
         //console.log('Next ' + newYPos)
         const directionCurrent = (goingForward ? -100 : 100) + '%'
         const directionNext = (goingForward ? 100 : -100) + '%'
-
-        //console.log(directionNext)
-        anime.set(data.next.container, {
-          translateX: directionNext,
-          position: 'absolute',
-          top: 0,
-          complete: function(anim) {
-            window.scrollTo(0, newNewPos)
-          }
-        })
       },
       leave(data) {
         let goingForward = true
@@ -118,7 +116,10 @@ barba.init({
           translateX: directionCurrent,
           easing: 'easeOutSine',
           duration: 600,
-          delay: 200
+          delay: 200,
+          complete: function(anim) {
+            //window.scrollTo(0, newNewPos)
+          }
         })
 
         anime({
@@ -180,23 +181,22 @@ barba.init({
         // })
       },
       afterEnter(data) {
-        const nextPage = data.next.container
-
-        const imgRef = findImgRef(
-          data.current.namespace,
-          data.current.url.path,
-          data.next.url.path
-        )
-
-        const oldThumb = data.current.container.querySelector(imgRef)
-        const newThumb = data.next.container.querySelector(imgRef)
-
-        //console.log(oldThumb.offsetParent.offsetTop)
-
-        let bodyRect = data.next.container.getBoundingClientRect(),
-          elemRect = oldThumb.getBoundingClientRect(),
-          offset = elemRect.top - bodyRect.top
-
+        // const nextPage = data.next.container
+        //
+        // const imgRef = findImgRef(
+        //   data.current.namespace,
+        //   data.current.url.path,
+        //   data.next.url.path
+        // )
+        //
+        // const oldThumb = data.current.container.querySelector(imgRef)
+        // const newThumb = data.next.container.querySelector(imgRef)
+        //
+        // //console.log(oldThumb.offsetParent.offsetTop)
+        //
+        // let bodyRect = data.next.container.getBoundingClientRect(),
+        //   elemRect = oldThumb.getBoundingClientRect(),
+        //   offset = elemRect.top - bodyRect.top
         // setTimeout(() => {
         //   //console.log(offset)
         //   window.scrollTo(0, offset)
