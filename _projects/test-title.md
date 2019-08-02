@@ -1,20 +1,20 @@
 ---
 layout: post
 title: Test Title
-url: '#'
+url: "#"
 role:
-  - web design
+- web design
 client: Center for Strategic and International Studies
 team_credits:
-  - name_and_role: Jacque, developer
-sub_heading: Subtitle
-background_color: '#CA6868'
-banner_image: '/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg'
+- name_and_role: Jacque, developer
+sub_heading: 'Subtitle '
+background_color: "#CA6868"
+banner_image: "/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg"
 client_subtitle: iLab
-link: '#'
-year: '2019'
----
+link: "#"
+year: "2019"
 
+---
 Pede nec erat nulla in dui ipsum volutpat pharetra. Suscipit integer justo. Dolor sed pede. Pede nibh urna et at ac. Dictum placerat euismod ac commodo convallis euismod sit at.
 
 Con voluptate nibh vitae condimentum quis tempor semper tristique. Vel vel eu. Elit vitae sed maecenas scelerisque augue porta wisi dui. Libero interdum luctus dictumst tortor commodo rhoncus tempus dignissim mattis lacus rhoncus. Consequat egestas donec leo ultrices eu quam pharetra sit. Vehicula nulla nunc phasellus elit eget. Libero et porttitor mauris eu laoreet. Euismod excepturi quisque. Quis gravida aptent. Maecenas nulla amet. Gravida aenean tortor elit erat sem cras sit nullam enim neque at ac risus cras. Tempus cras non. Dolor in euismod diam vestibulum risus nunc porta vehicula. Pede magna duis. Et eget non. Ligula velit nam ultricies maecenas curabitur. Phasellus nascetur eu. Ullamcorper amet donec. Donec magna metus felis cumque sed. Rutrum odio lacus. Fermentum praesent malesuada ut sed mauris. Bibendum neque voluptatum. Morbi risus ad. Porta at dapibus lacus erat in vivamus sed et lacus tempor vel. Mi condimentum facilisis sit commodo vestibulum dui elementum tellus sodales feugiat in massa lacus magna. Neque eget et. Nunc litora non convallis a lorem. Non ut pellentesque nec molestias fermentum. Est lacus blandit. Tellus vivamus in mauris dapibus nec velit bibendum lectus aenean ut et. Lorem proin aptent ipsum viverra nulla. Placerat ut sapien. Tortor enim enim eleifend pellentesque maecenas. Mauris sed wisi nec elit id. Accumsan mollis consequat.
