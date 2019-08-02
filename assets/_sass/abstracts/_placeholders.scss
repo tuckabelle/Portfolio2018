@@ -16,9 +16,10 @@
 
 %sub-title {
   font-family: $font-serif;
-  @include font-size(22px);
+  font-weight: normal;
   letter-spacing: 4px;
   text-transform: uppercase;
+  @include font-size(22px);
 }
 
 %large-heading {

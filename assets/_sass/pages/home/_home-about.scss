@@ -3,15 +3,16 @@
 // -----------------------------------------------------------------------------
 
 #about-container {
-  margin-bottom: 80px;
+  padding-bottom: 80px;
   background-color: $bg-color;
   @include breakpoint('large') {
-    margin-bottom: 120px;
+    padding-bottom: 120px;
   }
 
   svg {
     grid-area: aboutdiagonal;
     background-color: #fff;
+    fill: $bg-color;
   }
 
   h2 {

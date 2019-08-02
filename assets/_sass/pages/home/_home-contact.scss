@@ -7,6 +7,8 @@
   grid-template-areas: 'contacttitle' 'contactinfo' 'intrographic';
   grid-template-columns: 1fr;
   grid-template-rows: auto;
+  color: #fff;
+  background-color: $bg-color__dark;
 
   @include breakpoint('medium') {
     grid-column-gap: 32px;

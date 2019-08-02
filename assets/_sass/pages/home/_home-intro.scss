@@ -7,6 +7,7 @@
   grid-template-areas: 'introwrds introwrds' 'intrographic intrographic' 'intrographic intrographic' 'introsubtitle introdesc';
   grid-template-columns: 1fr 2fr;
   grid-template-rows: auto 10vh auto auto;
+  padding-bottom: 80px;
   background-color: $bg-color;
   @include breakpoint('medium') {
     grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'introdesc introdesc';
@@ -17,6 +18,7 @@
     grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'intrographic introdesc';
     grid-template-columns: 4fr 1fr;
     grid-template-rows: auto 40px min-content 2fr;
+    padding-bottom: 120px;
   }
   @include breakpoint('xlarge') {
     grid-template-areas: 'introwrds introwrds' 'intrographic introsubtitle' 'intrographic introsubtitle' 'intrographic introdesc';
@@ -29,7 +31,7 @@
   grid-area: introwrds;
   grid-row: 1 / span 2;
   align-items: end;
-  height: 300px;
+  height: 100%;
   opacity: 0.7;
   @include breakpoint('small') {
     z-index: 5;
@@ -43,8 +45,9 @@
 
 #intro-subtitle {
   @extend %sub-title;
+  z-index: 5;
   grid-area: introsubtitle;
-  opacity: 0.5;
+  opacity: 1;
 }
 
 #intro-desc {

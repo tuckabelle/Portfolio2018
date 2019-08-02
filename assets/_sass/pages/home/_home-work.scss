@@ -9,15 +9,15 @@
 
   h2 {
     grid-area: worktitle;
-    height: $diag_height_s / 2;
+    //height: $diag_height_s / 2;
     @include breakpoint('medium') {
-      height: $diag_height_m / 2;
+      //height: $diag_height_m / 2;
     }
     @include breakpoint('large') {
-      height: $diag_height_l / 2;
+      //height: $diag_height_l / 2;
     }
     @include breakpoint('xlarge') {
-      height: $diag_height_xl / 2;
+      //height: $diag_height_xl / 2;
     }
   }
 }
@@ -25,12 +25,8 @@
 #work-graphic {
   grid-area: workgraphic;
   height: auto;
-
   @include breakpoint('large') {
-    max-height: 350px;
-  }
-  @include breakpoint('xlarge') {
-    max-height: 400px;
+    max-height: 300px;
   }
 }
 
@@ -57,5 +53,29 @@
     grid-template-areas: 'workdiagonal workdiagonal' 'worktitle workgraphic' 'worktitle workgraphic' 'workdesc workgraphic';
     grid-template-columns: 2fr 1fr;
     grid-template-rows: ($diag_height_l / 2) auto auto;
+  }
+}
+
+#work-more {
+  h3 {
+    @extend %sub-title;
+  }
+
+  ul {
+    margin-left: 0;
+    padding: 0;
+    list-style: none;
+
+    li {
+      padding: 0 0 0.25rem;
+    }
+
+    li a {
+      display: inline-block;
+    }
+  }
+
+  .external-icon {
+    display: inline-block;
   }
 }
