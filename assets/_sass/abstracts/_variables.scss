@@ -1,28 +1,18 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass variables.
 // -----------------------------------------------------------------------------
-
 @font-face {
-  font-family: 'kapraneuepro';
-  font-weight: bold;
-  font-style: normal;
-  src: url('../fonts/kapraneuepro-boldexpanded-webfont.woff2') format('woff2'),
-    url('../fonts/kapraneuepro-boldexpanded-webfont.woff') format('woff');
+	font-family: 'freigbigproboo';
+	src: url('../fonts/freigbigproboo-webfont.woff2') format('woff2'),
+		url('../fonts/freigbigproboo-webfont.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
 }
 
-@font-face {
-  font-family: 'kapraneuepro';
-  font-weight: normal;
-  font-style: normal;
-  src: url('../fonts/kapraneuepro-regularexpanded-webfont.woff2')
-    format('woff2'),
-    url('../fonts/kapraneuepro-regularexpanded-webfont.woff') format('woff');
-}
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
 
-@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro&display=swap');
-
-$font-sans: 'kapraneuepro';
-$font-serif: 'Source Serif Pro', serif;
+$font-sans: 'Inter', sans;
+$font-serif: 'freigbigproboo', sans-serif;
 
 // -----------------------------------------------------------------------------
 // Colors.
