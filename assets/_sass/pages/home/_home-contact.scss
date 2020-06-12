@@ -1,31 +1,3 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page section "contact".
 // -----------------------------------------------------------------------------
-
-#contact-container {
-  display: grid;
-  grid-template-areas: 'contacttitle' 'contactinfo' 'intrographic';
-  grid-template-columns: 1fr;
-  grid-template-rows: auto;
-  color: #fff;
-  background-color: $bg-color__dark;
-
-  @include breakpoint('medium') {
-    grid-column-gap: 32px;
-    grid-template-areas: 'contacttitle intrographic' 'contactinfo intrographic';
-    grid-template-columns: 3fr 1fr;
-    grid-template-rows: auto;
-  }
-
-  h2 {
-    grid-area: contacttitle;
-  }
-
-  #contact-info {
-    grid-area: contactinfo;
-  }
-
-  #contact-graphic {
-    grid-area: contactgraphic;
-  }
-}

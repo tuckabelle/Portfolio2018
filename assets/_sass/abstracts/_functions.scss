@@ -5,16 +5,18 @@
 $browser-context: 16px;
 
 @function calculate-rem($size) {
-  $rem-size: $size / $browser-context;
-  @return #{$rem-size}rem;
+	$rem-size: $size / $browser-context;
+	@return #{$rem-size}rem;
 }
 
 @function return-map-value($map, $breakpoint) {
-  @if not map-has-key($map, $breakpoint) {
-    @warn "'#{$breakpoint}' is not a valid size";
-  } @else {
-    @return map-get($map, $breakpoint);
-  }
+	@if not map-has-key($map, $breakpoint) {
+		@warn "'#{$breakpoint}' is not a valid size";
+	}
+
+	@else {
+		@return map-get($map, $breakpoint);
+	}
 }
 
 /// Native `url(..)` function wrapper
@@ -23,7 +25,7 @@ $browser-context: 16px;
 /// @param {String} $path - asset path
 /// @return {Url}
 @function asset($base, $type, $path) {
-  @return url($base+$type+$path);
+	@return url($base+$type+$path);
 }
 
 /// Returns URL to an image based on its path
@@ -32,7 +34,7 @@ $browser-context: 16px;
 /// @return {Url}
 /// @require $base-url
 @function image($path, $base: $base-url) {
-  @return asset($base, 'images/', $path);
+	@return asset($base, 'images/', $path);
 }
 
 /// Returns URL to a font based on its path
@@ -41,5 +43,5 @@ $browser-context: 16px;
 /// @return {Url}
 /// @require $base-url
 @function font($path, $base: $base-url) {
-  @return asset($base, 'fonts/', $path);
+	@return asset($base, 'fonts/', $path);
 }

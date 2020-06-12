@@ -2,27 +2,6 @@
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
-.diagonal svg {
-  display: block;
-  width: 100%;
-  height: $diag_height_s;
-  background: $bg-color;
-
-  @include breakpoint('medium') {
-    height: $diag_height_m;
-  }
-  @include breakpoint('large') {
-    height: $diag_height_l;
-  }
-  @include breakpoint('xlarge') {
-    height: $diag_height_xl;
-  }
-}
-
-.home-content {
-  max-width: 680px;
-}
-
 @import 'home-about';
 @import 'home-contact';
 @import 'home-intro';
@@ -30,15 +9,15 @@
 
 .html,
 body {
-  margin: 0;
-  padding: 0;
+	margin: 0;
+	padding: 0;
 }
 
 .barba-container {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  display: block;
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	display: block;
 }

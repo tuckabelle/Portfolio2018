@@ -6,7 +6,7 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  overflow: auto;
+  //overflow: auto;
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.38),
     -10px 2px 22px 0 rgba(0, 0, 0, 0.13);
 
@@ -31,7 +31,7 @@
   @include breakpoint('medium') {
     grid-column-gap: 40px;
     grid-template-areas: 'postinfo postimg';
-    grid-template-columns: 66% auto;
+    grid-template-columns: auto 50%;
     grid-template-rows: auto;
   }
 

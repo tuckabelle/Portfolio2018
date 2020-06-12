@@ -1,14 +1,3 @@
 {% if include.url.size > 0 %}
-<div class="post-figure__single-container">
-<figure class="{{ include.classes | default: post__image }}">
-  <img
-    src="{{ include.url }}"
-    title="{{ include.title | strip_html  }}"
-    alt="{{ include.title | strip_html  }}"
-  />
-  {% if include.title and include.caption != false %}
-  <figcaption class="img-caption">{{ include.caption }}</figcaption>
-  {% endif %}
-</figure>
-</div>
+
 {% endif %}

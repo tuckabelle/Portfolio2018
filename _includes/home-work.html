@@ -1,30 +1,3 @@
 <section id="work-container">
-	<div id="work-intro">
-		<div class="diagonal over-full">
-			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 10" preserveAspectRatio="none" fill="#ffffff">
-				<polygon points="100 0 100 10 0 10" />
-			</svg>
-		</div>
-		<h2 class="over-left">work.</h2>
-		<p id="work-desc">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-		</p>
-		<div id="work-graphic" class="over-right"><img src="{{ 'assets/images/venus.svg' | relative_url }}" alt="{{ site.title
-    }}" title="{{ site.title }}" /></div>
-	</div>
 
-	{% include post-block.html %}
-
-	<div id="work-more">
-		<h3>more projects &#8212</h3>
-		<ul>
-			{% for more in page.additional_links %}
-			<li><a href="{{ more.url | relative_url }}">
-					{{ more.heading }}
-					{% include external.html %}
-				</a>
-			</li>
-			{% endfor %}
-		</ul>
-	</div>
 </section>

@@ -1,41 +1,13 @@
 html {
-  box-sizing: border-box;
-  overflow: auto;
-  overflow-x: hidden;
+	box-sizing: border-box;
+	overflow: auto;
+	overflow-x: hidden;
 }
 
 *,
 *::after,
 *::before {
-  box-sizing: inherit;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-#post-header,
-.page-content section,
-.post-content {
-  width: 100vw !important;
-  padding: 0 $page-margins_s;
-  overflow-x: hidden;
-
-  @include breakpoint('medium') {
-    padding: 0 $page-margins_l;
-  }
-}
-
-.over-right {
-  @extend %over-right;
-}
-
-.over-left {
-  @extend %over-left;
-}
-
-.over-full {
-  @extend %over-full;
-}
-
-img {
-  width: 100%;
+	box-sizing: inherit;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
 }

@@ -1,35 +1,5 @@
 {% assign projects = site.projects %} {% for project in projects %}
 <div class="post-block-container">
-	<div class=" post-block__info">
-		<div class="post-block__left post-date">{{ project.year }}
-			<img class="post-date__line" src="{{ 'assets/images/date-line.svg' | relative_url }}" alt="{{
-      site.title }}" title="{{ site.title }}" /></div>
-		<div class="post-block__right" <h3>
-			<a class="post-block__title" href="{{ project.url | relative_url }}">
-				{{ project.title | escape }}
-			</a>
 
-			</h3>
-			<p class="home-content">{{ project.sub_heading }}</p>
-			<div class="post-block__links">
-				<div class="post-block__links-detail link-block">
-					<a class="link-block__text" href="{{ project.link | relative_url }}">
-						View Case Study
-					</a>
-				</div>
-
-				<div class="post-block__links-url link-block">
-					<a class="link-block__text" href="{{ project.link }}">
-						Launch Project
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="post-img__container over-right">
-		<a class="post-block__img intro-thumb " href="{{ project.url }}">
-			<img data-ref="{{ project.url | relative_url }}" class="full" src="{{ project.banner_image }}" id="{{ project.url | relative_url | replace: '/', '' }}" />
-		</a>
-	</div>
 </div>
 {% endfor %}
