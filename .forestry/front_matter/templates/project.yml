@@ -31,3 +31,4 @@ fields:
   label: cover_image
 pages:
 - _posts/2020-06-13-test.md
+- _projects/aerospace.md
