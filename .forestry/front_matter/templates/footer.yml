@@ -11,7 +11,7 @@ fields:
     schema:
       format: markdown
   label: Footer Message
-- name: copywrite
+- name: copyright
   type: text
   config:
     required: false
