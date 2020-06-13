@@ -1,5 +1,20 @@
 <header class="site-header" role="banner">
 	<div class="wrapper">
-
+		{%- assign default_paths = site.pages | map: "path" -%}
+		{%- assign page_paths = site.header_pages | default: default_paths -%}
+		<a class="site-header__title" rel="author" href="{{ "/" | relative_url }}">
+        	<img src="{{ 'assets/_images/img1_detail.png' | relative_url }}" alt="{{ site.title }}"
+        		title="{{ site.title }}" class="site-header__logo" />
+		</a>
+		<nav class="site-header__nav" role="navigation">
+			<button class="site-header__nav-trigger" aria-expanded="false" aria-label="Toggle Menu">
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="line"></span>
+				<span class="visually-hidden">Menu</span>
+			</button>
+			{% include nav.html class="header__nav-menu" location="inHeader" %}
+		</nav>
 	</div>
 </header>

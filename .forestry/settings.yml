@@ -6,12 +6,6 @@ webhook_url:
 sections:
   - type: heading
     label: Content
-  - type: jekyll-posts
-    label: Posts
-    create: all
-    templates:
-      - project
-      - default
   - type: jekyll-pages
     label: Pages
     create: all

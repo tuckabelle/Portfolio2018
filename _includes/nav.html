@@ -1,5 +1,13 @@
-{% assign url = page.url | remove:'index.html' %}
+{% assign location = include.location %} {% assign menu_items = site.data.menus
+| where_exp:"item","item[location] == true" %}
 
-<header class="site-header">
-
-</header>
+<ul class="site-{{ include.class }}">
+	{% for item in menu_items %}
+	<li class="menu-item">
+		<a href="{{ item.url | relative_url }}" title="{{ item.identifier }}"
+			>{{ item.title }}</a
+		>
+	</li>
+	{% endfor %}
+</ul>
+Testing 123

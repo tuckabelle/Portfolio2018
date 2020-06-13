@@ -1,35 +1,58 @@
-<footer class="site-footer h-card">
-  <data class="u-url" href="{{ '/' | relative_url }}"></data>
-  <div class="wrapper">
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1"></div>
-      <div class="footer-col footer-col-2">{%- include social.html -%}</div>
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
-    </div>
-  </div>
-  <script
-    src="https://code.jquery.com/jquery-3.3.1.min.js"
-    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-    crossorigin="anonymous"
-  ></script>
-  <script
-    src="{{ '/assets/js/bundle.js' | relative_url }}"
-    type="text/javascript"
-  ></script>
-  <script
-    src="{{ '/assets/js/main.js' | relative_url }}"
-    type="text/javascript"
-  ></script>
-  <script
-    src="{{ '/assets/js/navigation.js' | relative_url }}"
-    type="text/javascript"
-  ></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
-  <script
-    crossorigin="anonymous"
-    src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"
-  ></script>
+<footer class="site-footer">
+	<img
+		src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
+		alt="Speech Bubble Hokusai Illustration"
+		title="Speech Bubble Hokusai Illustration"
+	/>
+	<section class="site-footer__info">
+		<div class="site-footer__message">
+			{{ site.data.Footer.email }}
+		</div>
+		<div class="site-footer__copyright">
+			&copy;{{ site.time | date: '%Y' }} {{ site.data.Footer.email }}
+		</div>
+	</section>
+
+	<section class="site-footer__social">
+		<ul class="site-footer__contact">
+			<li>
+				<div>
+					<a href="{{ site.data.Footer.email }}"
+						>{{ site.data.Footer.email }}</a
+					>
+				</div>
+			</li>
+			<li>
+				<div>
+					<a href="{{ site.data.Footer.email }}"
+						>{{ site.data.Footer.email }}</a
+					>
+				</div>
+			</li>
+		</ul>
+	</section>
+	<section class="site-footer__btt"></section>
 </footer>
+
+<script
+	src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+	crossorigin="anonymous"
+></script>
+<script
+	src="{{ '/assets/js/bundle.js' | relative_url }}"
+	type="text/javascript"
+></script>
+<script
+	src="{{ '/assets/js/main.js' | relative_url }}"
+	type="text/javascript"
+></script>
+<script
+	src="{{ '/assets/js/navigation.js' | relative_url }}"
+	type="text/javascript"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
+<script
+	crossorigin="anonymous"
+	src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"
+></script>
