@@ -17,11 +17,11 @@ fields:
   config:
     required: false
   label: Organization-2
-- name: project_url
+- name: url
   type: text
   config:
     required: true
-  label: Project URL
+  label: URL
 - type: textarea
   name: description
   label: Description

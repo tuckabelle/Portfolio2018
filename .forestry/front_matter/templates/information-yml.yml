@@ -26,4 +26,4 @@ fields:
     labelField: 
   label: Contact Info
 pages:
-- _data/information.yml
+- _data/Footer.yml
