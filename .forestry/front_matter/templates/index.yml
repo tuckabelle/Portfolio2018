@@ -59,7 +59,7 @@ fields:
 - name: layout
   type: text
   config:
-    required: true
+    required: false
   label: layout
   default: home
   hidden: true
