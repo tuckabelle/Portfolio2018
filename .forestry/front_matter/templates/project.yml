@@ -1,6 +1,6 @@
 ---
 label: Project
-hide_body: false
+hide_body: true
 fields:
 - type: text
   name: title
@@ -36,6 +36,7 @@ fields:
   - text
   - aside
   - image_single
+  - project-subsection
   config:
     min: 
     max: 
