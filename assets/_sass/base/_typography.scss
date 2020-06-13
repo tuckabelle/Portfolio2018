@@ -13,34 +13,13 @@ textarea {
 =            Headings            =
 ================================*/
 
-h1 {
-	//@extend %h1 !optional;
-	margin: 0;
-}
-
-h2 {
-	//@extend %h2 !optional;
-	margin: 0 0 1rem;
-}
-
-.home h2 {
-	//@extend %large-heading;
-}
-
-h3 {
-	//@extend %h3 !optional;
-}
-
-h4 {
-	//@extend %h4 !optional;
-	margin: 0.75rem 0;
-}
 
 /*============================
 =            Copy            =
 ============================*/
 
 p {
+	display: block;
 	//@at-root %body-text;
 }
 
@@ -92,13 +71,5 @@ a {
 
 	&:visited {
 		color: #9400d3;
-	}
-
-	&.post-block__title {
-		//@extend %post-block__title;
-	}
-
-	&.link-block__text {
-		//@extend %link-block__text;
 	}
 }
