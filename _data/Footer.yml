@@ -1,15 +1,6 @@
 ---
-phone: "+1 929 391 0976"
-email: info@belkirkcollege.com
-address_1: 500 University Ave
-address_2: ''
-city: New York
-state: NY
-postal_code: 10006
-country: US
-twitter: forestryio
 footer_msg: This is the footer message
 contact_info:
-- title: Twitter
-  url: "#"
-  icon: "/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg"
+  - title: Twitteç
+    url: '#'
+    icon: '/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg'
