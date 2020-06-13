@@ -18,8 +18,8 @@ fields:
   name: description
   label: description
 - type: number
-  name: date
-  label: date
+  name: year
+  label: Year
 - type: text
   name: role
   label: role
