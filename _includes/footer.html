@@ -6,29 +6,28 @@
 	/>
 	<section class="site-footer__info">
 		<div class="site-footer__message">
-			{{ site.data.Footer.email }}
+			{{ site.data.Footer.footer_msg }}
 		</div>
 		<div class="site-footer__copyright">
-			&copy;{{ site.time | date: '%Y' }} {{ site.data.Footer.email }}
+			&copy;{{ site.time | date: '%Y' }} {{ site.data.Footer.copyright }}
 		</div>
 	</section>
 
 	<section class="site-footer__social">
 		<ul class="site-footer__contact">
+			{% for item in site.data.Footer.contact_info %}
 			<li>
 				<div>
-					<a href="{{ site.data.Footer.email }}"
-						>{{ site.data.Footer.email }}</a
-					>
+					<a href="{{ item.url }}">
+						<img
+							src="{{ 'item.icon' | relative_url }}"
+							alt="{{ item.title }}"
+							title="{{ item.title }}"
+						/>
+					</a>
 				</div>
 			</li>
-			<li>
-				<div>
-					<a href="{{ site.data.Footer.email }}"
-						>{{ site.data.Footer.email }}</a
-					>
-				</div>
-			</li>
+			{% endfor %}
 		</ul>
 	</section>
 	<section class="site-footer__btt"></section>
