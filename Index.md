@@ -9,7 +9,6 @@ other_projects:
   team:
   - 'Jacque: developer'
   - 'Matthew: content partner'
-published: false
 
 ---
 Bibendum neque congue. Quam lobortis nec nec architecto cras viverra pulvinar tempor. Tincidunt quam aenean. Elit leo sed amet rutrum cursus. Nunc duis eu luctus sed gravida. Nec qui donec congue praesent dis. Vitae justo fugit. Sed molestie viverra sem quis lorem. Nisl vitae morbi morbi tellus a. Lectus dui non suscipit potenti ac. Ridiculus fermentum morbi qui vel fermentum. Eget suscipit mollis. Tellus nullam suspendisse velit netus duis. Ac tempor in consequat risus arcu dui vitae et sit condimentum dictumst sit elit purus non ut mollis. Eget morbi euismod.

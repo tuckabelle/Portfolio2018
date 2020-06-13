@@ -2,15 +2,14 @@
 date: 2009
 title: Health Commission
 org1: CSIS
-org2: Aerospace Program
+org2: Global Health Program
 url: "#"
-description: Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus
-  leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet
-  quam orci gravida scelerisque.
+description: 'Volutpat mattis aptent dis wisi fringilla vel dui ante massa dignissim
+  pellentesque et quis amet. Lectus massa magna. '
 role: web designer
 team:
 - 'Jacque: developer'
-cover_image: "/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg"
+cover_image: "/uploads/2019/07/15/photo-1498429089284-41f8cf3ffd39.jpeg"
 
 ---
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
