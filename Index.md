@@ -2,23 +2,24 @@
 intro_heading: Intro Heading
 intro_desc: Intro description
 project_list:
-- _posts/2020-06-13-test.md
+  - _posts/2020-06-13-test.md
 other_projects:
-- title: Project Title
-  url: URL
-  org: CSIS
-  team:
-  - 'Jacque: developer'
-  - 'Matthew: content partner'
-
+  - title: Project Title
+    url: URL
+    org: CSIS
+    team:
+      - 'Jacque: developer'
+      - 'Matthew: content partner'
+layout: home
 ---
+
 Bibendum neque congue. Quam lobortis nec nec architecto cras viverra pulvinar tempor. Tincidunt quam aenean. Elit leo sed amet rutrum cursus. Nunc duis eu luctus sed gravida. Nec qui donec congue praesent dis. Vitae justo fugit. Sed molestie viverra sem quis lorem. Nisl vitae morbi morbi tellus a. Lectus dui non suscipit potenti ac. Ridiculus fermentum morbi qui vel fermentum. Eget suscipit mollis. Tellus nullam suspendisse velit netus duis. Ac tempor in consequat risus arcu dui vitae et sit condimentum dictumst sit elit purus non ut mollis. Eget morbi euismod.
 
 Aliquet tincidunt elit. Sagittis augue mollis. Fusce duis et. Lectus morbi magna. Nulla in tempor sed tincidunt mollis. Et nec arcu. Sodales egestas at purus at at. At cras et. Et pharetra purus. Integer ultrices pede vel lacinia class sit sagittis nonummy. Mauris faucibus et et ipsum eleifend. Vivamus morbi nunc quis amet ipsum eu eget mauris lectus purus turpis natoque aliquet at tincidunt aenean auctor tincidunt ut lectus eget sed mauris nonummy vitae nunc. Neque incididunt et tristique justo tempor. Magnis arcu wisi. Vestibulum risus integer eu vel arcu.
 
 > Ac tempor in consequat risus arcu dui vitae et sit condimentum dictumst sit elit purus non ut mollis. Eget morbi euismod.
 >
-> * credit
+> - credit
 
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
 

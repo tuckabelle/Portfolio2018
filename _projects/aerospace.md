@@ -2,19 +2,15 @@
 title: Aerospace
 org1: Org
 org2: Org
-url: "#"
-description: 'Ligula convallis eu malesuada et adipiscing. Vulputate inceptos nibh
+url: '#'
+description:
+  'Ligula convallis eu malesuada et adipiscing. Vulputate inceptos nibh
   pellentesque sollicitudin odio metus integer suspendisse. '
-date: 2009
 role: web designer
 team: []
-cover_image: "/uploads/2019/07/15/photo-1498429089284-41f8cf3ffd39.jpeg"
+cover_image: '/uploads/2019/07/15/photo-1498429089284-41f8cf3ffd39.jpeg'
 year: 2009
-
 ---
-{% include double-image.html url1="/uploads/2019/07/17/stock-photo-74582179.jpg" caption1="Test Caption" title1="Test Title"
-
-url2="/uploads/2019/07/17/stock-photo-74582179.jpg" caption2="Test Caption" title2="Test Title" %}
 
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
 
