@@ -1,0 +1,23 @@
+---
+title: Test
+org1: ''
+org2: ''
+url: ''
+description: ''
+date: 
+role: ''
+team: []
+cover_image: ''
+content:
+- template: image_single
+  no__images: '1'
+  size: center
+  orientation: vertical
+  caption_location: side
+  image1: ''
+  image2: ''
+  caption: ''
+- template: text
+  label: Test
+
+---

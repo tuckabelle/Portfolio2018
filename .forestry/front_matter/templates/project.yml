@@ -39,3 +39,5 @@ fields:
   config:
     min: 
     max: 
+pages:
+- _posts/test.md
