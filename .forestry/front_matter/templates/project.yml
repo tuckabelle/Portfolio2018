@@ -67,5 +67,3 @@ fields:
   label: layout
   hidden: true
   default: post
-pages:
-- _projects/test-title3.md
