@@ -1,7 +1,16 @@
 ---
-label: Contact Information
+label: Footer
 hide_body: true
 fields:
+- name: footer_msg
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Footer Message
 - name: contact_info
   type: field_group_list
   fields:
@@ -18,12 +27,12 @@ fields:
   - name: icon
     type: file
     config:
-      maxSize: 250
+      maxSize: 
     label: Icon
   config:
     min: 
     max: 
     labelField: 
-  label: Contact Info
+  label: Social Media
 pages:
 - _data/Footer.yml
