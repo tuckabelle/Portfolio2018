@@ -3,5 +3,22 @@ layout: default
 ---
 
 <div class="home">
-	Test
+	<section id="introduction" class="home__intro">
+		<h1 class="page__title">
+			Tucker Harris: Home
+		</h1>
+
+		<div class="home__intro-desc"></div>
+	</section>
+
+	<section class="home__work">
+		<h2 class="home__section-title">work.</h2>
+		<div class="home__work-main">
+			{% include post-block-main.html %}
+		</div>
+		<h3 class="home__subsection-title">work.</h3>
+		<div class="home__work-other">
+			{% include post-block-other.html %}
+		</div>
+	</section>
 </div>

@@ -1,0 +1,16 @@
+{% assign projects = site.projects %} {% for project in projects %}
+
+<article class="post-block" role="article">
+	<header class="post-block__header" role="header">
+		<h3 class="post-block__title"><a href="{{ project.url | relative_url }}.html"">{{ project.title }}</a></h3>
+		<div class=" post-block__org">{{ project.org1 }}</div>
+	</header>
+
+	<div class="post-block__content">
+		<img src="{{ project.cover_image | relative_url }}" alt="{{ project.title | escape }}"
+			title="{{ project.title | escape }}" />
+		{% include btn-launch.html %}
+		</section>
+</article>
+
+{% endfor %}
