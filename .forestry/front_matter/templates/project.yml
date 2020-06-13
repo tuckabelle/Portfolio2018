@@ -1,0 +1,31 @@
+---
+label: Project
+hide_body: false
+fields:
+- type: number
+  name: date
+  label: date
+- type: text
+  name: title
+  label: title
+- type: text
+  name: org1
+  label: org1
+- type: text
+  name: org2
+  label: org2
+- type: text
+  name: url
+  label: url
+- type: textarea
+  name: description
+  label: description
+- type: text
+  name: role
+  label: role
+- type: list
+  name: team
+  label: team
+- type: file
+  name: cover_image
+  label: cover_image
