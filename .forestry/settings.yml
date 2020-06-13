@@ -17,9 +17,11 @@ sections:
     create: all
     templates:
       - index
-  - type: jekyll-pages
+  - type: directory
+    path: _projects
     label: Projects
     create: all
+    match: '*'
     templates:
       - project
   - type: document
