@@ -1,4 +1,19 @@
 ---
 label: Project--Subsection
 hide_body: true
-fields: []
+fields:
+- name: heading
+  type: text
+  config:
+    required: false
+  label: Heading
+- name: content
+  type: blocks
+  label: Content
+  template_types:
+  - text
+  - aside
+  - image_single
+  config:
+    min: 
+    max: 
