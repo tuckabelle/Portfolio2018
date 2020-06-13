@@ -1,6 +1,6 @@
 ---
 label: Project--Image
-hide_body: false
+hide_body: true
 fields:
 - name: no__images
   type: select
