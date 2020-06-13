@@ -32,7 +32,10 @@ fields:
 - name: content
   type: blocks
   label: Content
-  template_types: []
+  template_types:
+  - text
+  - aside
+  - image_single
   config:
     min: 
     max: 
