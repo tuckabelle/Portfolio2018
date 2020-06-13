@@ -8,3 +8,8 @@ state: NY
 postal_code: 10006
 country: US
 twitter: forestryio
+footer_msg: This is the footer message
+contact_info:
+- title: Twitter
+  url: "#"
+  icon: "/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg"

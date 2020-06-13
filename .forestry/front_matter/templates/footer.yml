@@ -34,3 +34,5 @@ fields:
     max: 
     labelField: 
   label: Social Media
+pages:
+- _data/Footer.yml
