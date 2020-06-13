@@ -8,3 +8,12 @@ fields:
   config:
     required: false
   label: Label
+- name: content
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Content
