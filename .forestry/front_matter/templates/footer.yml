@@ -11,6 +11,12 @@ fields:
     schema:
       format: markdown
   label: Footer Message
+- name: copywrite
+  type: text
+  config:
+    required: false
+  label: Copyright
+  description: This will appear after the symbol and date
 - name: contact_info
   type: field_group_list
   fields:
