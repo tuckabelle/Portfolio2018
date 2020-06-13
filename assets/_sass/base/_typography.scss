@@ -3,10 +3,10 @@ button,
 input,
 select,
 textarea {
-  //  @extend %body-text;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  @extend %body-text;
+	//  @extend %body-text;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+	// @extend %body-text;
 }
 
 /*================================
@@ -14,26 +14,26 @@ textarea {
 ================================*/
 
 h1 {
-  //@extend %h1 !optional;
-  margin: 0;
+	//@extend %h1 !optional;
+	margin: 0;
 }
 
 h2 {
-  //@extend %h2 !optional;
-  margin: 0 0 1rem;
+	//@extend %h2 !optional;
+	margin: 0 0 1rem;
 }
 
 .home h2 {
-  @extend %large-heading;
+	//@extend %large-heading;
 }
 
 h3 {
-  //@extend %h3 !optional;
+	//@extend %h3 !optional;
 }
 
 h4 {
-  //@extend %h4 !optional;
-  margin: 0.75rem 0;
+	//@extend %h4 !optional;
+	margin: 0.75rem 0;
 }
 
 /*============================
@@ -41,43 +41,44 @@ h4 {
 ============================*/
 
 p {
-  @extend %body-text;
+	//@at-root %body-text;
 }
 
 @for $i from 2 through 6 {
-  p + h#{$i},
-  ul + h#{$i},
-  ol + h#{$i} {
-    margin-top: 2.5rem;
-  }
+
+	p+h#{$i},
+	ul+h#{$i},
+	ol+h#{$i} {
+		margin-top: 2.5rem;
+	}
 }
 
 hr {
-  clear: both;
-  height: 1px;
-  margin: 2rem 0;
-  border: 0;
+	clear: both;
+	height: 1px;
+	margin: 2rem 0;
+	border: 0;
 }
 
 b,
 strong {
-  font-weight: 600;
+	font-weight: 600;
 }
 
 dfn,
 cite,
 em,
 i {
-  font-style: italic;
+	font-style: italic;
 }
 
 p {
-  margin-bottom: 0;
-  color: inherit;
-  font-family: inherit;
-  font-weight: inherit;
-  font-size: inherit;
-  line-height: inherit;
+	margin-bottom: 0;
+	color: inherit;
+	font-family: inherit;
+	font-weight: inherit;
+	font-size: inherit;
+	line-height: inherit;
 }
 
 /*=============================
@@ -85,20 +86,19 @@ p {
 =============================*/
 
 a {
-  color: inherit;
-  text-decoration: none;
-  transition: all 0.3s ease-in-out;
+	color: inherit;
+	text-decoration: none;
+	transition: all 0.3s ease-in-out;
 
-  &:visited {
-    color: #9400d3;
-  }
+	&:visited {
+		color: #9400d3;
+	}
 
-  &.post-block__title {
-    @extend %post-block__title;
-    color: $text-color__black;
-  }
+	&.post-block__title {
+		//@extend %post-block__title;
+	}
 
-  &.link-block__text {
-    @extend %link-block__text;
-  }
+	&.link-block__text {
+		//@extend %link-block__text;
+	}
 }
