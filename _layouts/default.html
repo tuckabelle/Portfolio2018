@@ -1,23 +1,18 @@
 <!DOCTYPE html>
 <html lang="{{ page.lang | default: site.lang | default: 'en' }}">
-  {%- include head.html -%}
+{%- include head.html -%}
 
-  <body data-barba="wrapper">
-    <div
-      data-barba="container"
-      data-barba-namespace="{% if page.url != '/' %}detail{% else %}home{% endif %}"
-      data-namespace="{% if page.url != '/' %}detail{% else %}home{% endif %}"
-      style="visibility: visible;"
-    >
-      {%- include header.html -%}
+<body data-barba="wrapper">
+	<div data-barba="container" data-barba-namespace="{% if page.url != '/' %}detail{% else %}home{% endif %}"
+		data-namespace="{% if page.url != '/' %}detail{% else %}index{% endif %}" style="visibility: visible;">
+		{%- include header.html -%}
 
-      <div class="page-content" aria-label="Content">
-        <div class="wrapper">
-          {{ content }}
-        </div>
-      </div>
+		<div class="page-content" aria-label="Content">
+			{{ content }}
+		</div>
 
-      {%- include footer.html -%}
-    </div>
-  </body>
+		{%- include footer.html -%}
+	</div>
+</body>
+
 </html>
