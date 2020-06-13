@@ -1,5 +1,5 @@
 ---
-label: Home
+label: Index
 hide_body: false
 fields:
 - name: intro_heading
