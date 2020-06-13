@@ -58,3 +58,4 @@ fields:
   label: Cover Image
 pages:
 - _posts/aerospace-security.md
+- _posts/test.md
