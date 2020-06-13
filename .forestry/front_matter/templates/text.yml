@@ -1,6 +1,7 @@
 ---
 label: Text
 hide_body: false
+display_field: label
 fields:
 - name: label
   type: text
