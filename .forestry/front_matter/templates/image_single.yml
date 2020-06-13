@@ -2,11 +2,66 @@
 label: Image_Single
 hide_body: false
 fields:
-- name: image
+- name: no__images
+  type: select
+  default: '1'
+  config:
+    required: false
+    options:
+    - '1'
+    - " 2"
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: No. Images
+- name: size
+  type: select
+  default: center
+  config:
+    required: false
+    options:
+    - wide
+    - center
+    - aside-right
+    - aside-left
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Size
+- name: image1
   type: file
   config:
     maxSize: 64
   label: Image
+- name: image2
+  type: file
+  config:
+    maxSize: 64
+  label: Image
+  showOnly:
+    field: no__images
+    value: " 2"
+- name: orientation
+  type: select
+  default: vertical
+  config:
+    required: false
+    options:
+    - horizontal
+    - vertical
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Orientation
+  showOnly:
+    field: no__images
+    value: " 2"
 - name: caption
   type: textarea
   default: ''
@@ -16,3 +71,17 @@ fields:
     schema:
       format: markdown
   label: Caption
+- name: caption_location
+  type: select
+  default: side
+  config:
+    required: false
+    options:
+    - bottom
+    - side
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Caption location
