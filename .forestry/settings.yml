@@ -10,20 +10,13 @@ sections:
   label: Posts
   create: all
   templates:
-  - post
+  - default
 - type: jekyll-pages
   label: Pages
   create: all
   templates:
   - landing-page
   - page
-- type: directory
-  path: _projects
-  label: Projects
-  create: all
-  match: "*"
-  templates:
-  - project
 - type: document
   path: _data/information.yml
   label: Contact Information
