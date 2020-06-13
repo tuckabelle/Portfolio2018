@@ -29,16 +29,24 @@ fields:
 - type: file
   name: cover_image
   label: cover_image
-- name: content
-  type: blocks
-  label: Content
-  template_types:
-  - text
-  - aside
-  - image_single
-  - project-subsection
+- name: section
+  type: field_group_list
+  fields:
+  - name: content
+    type: blocks
+    label: Content
+    template_types:
+    - text
+    - aside
+    - image_single
+    - project-subsection
+    config:
+      min: 
+      max: 
   config:
     min: 
     max: 
+    labelField: 
+  label: Section
 pages:
 - _posts/2020-06-13-test.md
