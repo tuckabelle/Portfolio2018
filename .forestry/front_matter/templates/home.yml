@@ -56,3 +56,5 @@ fields:
     max: 
     labelField: 
   label: Other Projects
+pages:
+- Index.md
