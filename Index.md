@@ -2,7 +2,7 @@
 intro_heading: Intro Heading
 intro_desc: Intro description
 project_list:
-- _posts/aerospace-security.md
+- _posts/2020-06-13-test.md
 other_projects:
 - title: Project Title
   url: URL
