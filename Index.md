@@ -1,7 +1,8 @@
 ---
 intro_heading: Intro Heading
 intro_desc: Intro description
-project_list: []
+project_list:
+- _posts/aerospace-security.md
 other_projects:
 - title: Project Title
   url: URL
