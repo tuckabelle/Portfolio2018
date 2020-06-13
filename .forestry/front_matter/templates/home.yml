@@ -1,4 +1,48 @@
 ---
 label: Home
-hide_body: true
-fields: []
+hide_body: false
+fields:
+- name: intro_heading
+  type: text
+  config:
+    required: false
+  label: Intro Heading
+- name: intro_desc
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: Intro Description
+- name: other_projects
+  type: field_group_list
+  fields:
+  - name: title
+    type: text
+    config:
+      required: false
+    label: Title
+  - name: url
+    type: text
+    config:
+      required: false
+    label: URL
+  - name: org
+    type: text
+    config:
+      required: false
+    label: Organization
+  - name: team
+    type: list
+    config:
+      use_select: false
+      min: 
+      max: 
+    label: Team
+  config:
+    min: 
+    max: 
+    labelField: 
+  label: Other Projects
