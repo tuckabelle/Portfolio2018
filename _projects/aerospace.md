@@ -9,7 +9,6 @@ date: 2009
 role: web designer
 team: []
 cover_image: "/uploads/2019/07/15/photo-1498429089284-41f8cf3ffd39.jpeg"
-published: false
 
 ---
 {% include double-image.html url1="/uploads/2019/07/17/stock-photo-74582179.jpg" caption1="Test Caption" title1="Test Title"
