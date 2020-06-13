@@ -55,5 +55,3 @@ fields:
   config:
     maxSize: 64
   label: Cover Image
-pages:
-- _posts/aerospace-security.md
