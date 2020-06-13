@@ -56,5 +56,12 @@ fields:
     max: 
     labelField: 
   label: Other Projects
+- name: layout
+  type: text
+  config:
+    required: true
+  label: layout
+  default: home
+  hidden: true
 pages:
 - Index.md
