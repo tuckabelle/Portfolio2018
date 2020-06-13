@@ -32,6 +32,11 @@ fields:
 - name: section
   type: field_group_list
   fields:
+  - name: heading
+    type: text
+    config:
+      required: false
+    label: Heading
   - name: content
     type: blocks
     label: Content
