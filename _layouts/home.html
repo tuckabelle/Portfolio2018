@@ -51,6 +51,17 @@ layout: default
 
 	<section id="about" class="home__about">
 		<h2 class="home__section-title">about.</h2>
+		<aside>
+			<ul>
+				{% for detail in page.about-details %} {% assign item = detail | split:
+				": " %}
+				<li>
+					<div>{{ item[0] }}</div>
+					{{ item[1] }}
+				</li>
+				{% endfor %}
+			</ul>
+		</aside>
 		{{ content }}
 		<img
 			src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
