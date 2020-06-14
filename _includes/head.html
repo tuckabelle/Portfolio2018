@@ -1,9 +1,14 @@
 <head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  {%- seo -%}
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' |  relative_url }}" />
-  {%- feed_meta -%} {%- if jekyll.environment == 'production' and
+	<meta charset="utf-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+	<link rel="icon" href="/favicon.ico" type="image/x-icon" />
+	{%- seo -%}
+	{% unless page.cover_image.size > 0 %}
+	<meta property="og:image" content="{{ site.logo | relative_url }}" />
+	{% endunless %}
+	<link rel="stylesheet" href="{{ '/assets/css/main.css' |  relative_url }}" />
+	{%- feed_meta -%} {%- if jekyll.environment == 'production' and
   site.google_analytics -%} {%- include google-analytics.html -%} {%- endif -%}
 </head>

@@ -1,0 +1,6 @@
+<figure class="project__block--{{include.size}} img-{{orientation}}">
+	<img src="{{ include.file }}" alt="{{ include.alt }}" />
+	{% if include.file2 %}
+	<img src="{{ include.file }}" alt="{{ include.alt }}" />{% endif %}
+	<figcaption>{{ include.caption }}</figcaption>
+</figure>

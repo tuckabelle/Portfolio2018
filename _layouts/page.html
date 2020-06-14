@@ -16,12 +16,15 @@ layout: default
 	</header>
 	<section class="project__meta">
 		<p class="project__description">{{ page.description }}</p>
-		{% include btn-launch.html %}
+		{% assign project = page %} {% include btn-launch.html %}
 	</section>
 	<div class="bg-text">{{ project.title | escape }}</div>
 	<section class="project__img-container">
-		<img src="{{ 'assets/_images/img1_detail.png' | relative_url }}" alt="Venus on Screen Illustration"
-			title="Venus on Screen Illustration" />
+		<img
+			src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
+			alt="Venus on Screen Illustration"
+			title="Venus on Screen Illustration"
+		/>
 	</section>
 
 	<section class="project__content project-content" itemprop="articleBody">
