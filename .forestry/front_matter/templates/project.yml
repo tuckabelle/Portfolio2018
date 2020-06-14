@@ -12,8 +12,8 @@ fields:
   name: org2
   label: org2
 - type: text
-  name: url
-  label: url
+  name: project-link
+  label: Project Link
 - type: textarea
   name: description
   label: description
