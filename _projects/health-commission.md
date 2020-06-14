@@ -12,7 +12,6 @@ team:
 cover_image: "/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg"
 year: 2010
 project-link: https://aerospace.csis.org/
-published: false
 
 ---
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
