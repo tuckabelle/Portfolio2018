@@ -5,15 +5,12 @@
 	<!-- <body data-barba="wrapper">
 	<div data-barba="container" data-barba-namespace="{% if page.url != '/' %}detail{% else %}home{% endif %}"
 		data-namespace="{% if page.url != '/' %}detail{% else %}index{% endif %}" style="visibility: visible;"> -->
-	<body>
-		<div>
-			{%- include header.html -%}
+	<body class="{{ page.layout | slugify | prepend: 'layout-'}}">
+		{%- include header.html -%}
+		<main class="page-content" aria-label="Content">
+			{{ content }}
+		</main>
 
-			<div class="page-content" aria-label="Content">
-				{{ content }}
-			</div>
-
-			{%- include footer.html -%}
-		</div>
+		{%- include footer.html -%}
 	</body>
 </html>

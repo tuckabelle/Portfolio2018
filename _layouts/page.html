@@ -2,9 +2,36 @@
 layout: default
 ---
 
-{% comment %} A general page layout. Used by default for all content on the
-site. {% endcomment %}
+<article class="project" itemscope itemtype="http://schema.org/BlogPosting">
+	<header class="project__header">
+		<h1 class="project__title" itemprop="name headline">
+			{{ page.title | escape }}
+		</h1>
+		<div class="project__org">
+			<ul>
+				<li>{{ page.org1 }}</li>
+				<li>{{ page.org2 }}</li>
+			</ul>
+		</div>
+	</header>
+	<section class="project__meta">
+		<p class="project__description">{{ page.description }}</p>
+		{% include btn-launch.html %}
+	</section>
+	<div class="bg-text">{{ project.title | escape }}</div>
+	<section class="project__img-container">
+		<img src="{{ 'assets/_images/img1_detail.png' | relative_url }}" alt="Venus on Screen Illustration"
+			title="Venus on Screen Illustration" />
+	</section>
 
-<div class="container">
+	<section class="project__content project-content" itemprop="articleBody">
+		<aside class="project__details">
+			{%- include project-details.html -%}
+		</aside>
+		{{ content }}
+	</section>
 
-</div>
+	<section class="project__footer">
+		{% include post-block-next.html %}
+	</section>
+</article>

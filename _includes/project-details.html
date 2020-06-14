@@ -1,0 +1,7 @@
+<ul>
+	<li>{{ page.year }}</li>
+	<li>{{ page.role }}</li>
+	{% for member in page.team %}
+	<li>{{ member }}</li>
+	{% endfor %}
+</ul>

@@ -1,15 +1,20 @@
-{% assign projects = site.projects %} {% for project in projects %}
+{% assign projects = page.other_projects %} {% for project in projects %}
 
 <article class="post-block" role="article">
 	<header class="post-block__header" role="header">
-		<h3 class="post-block__title"><a href="{{ project.url | relative_url }}.html"">{{ project.title }}</a></h3>
-		<div class=" post-block__org">{{ project.org1 }}</div>
+		<h4 class="post-block__title"><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h4>
+
 	</header>
 
 	<div class="post-block__content">
-		<img src="{{ project.cover_image | relative_url }}" alt="{{ project.title | escape }}"
-			title="{{ project.title | escape }}" />
-		{% include btn-launch.html %}
+		<div class="post-block__org">{{ project.org }}</div>
+		<div class="post-block__team">
+			<ul>
+				{% for member in project.team %}
+				<li>{{ member }}</li>
+				{% endfor %}
+			</ul>
+		</div>
 		</section>
 </article>
 

@@ -7,11 +7,33 @@ layout: default
 		<h1 class="page__title">
 			Tucker Harris: Home
 		</h1>
+		<img
+			src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
+			alt="Venus on Screen Illustration"
+			title="Venus on Screen Illustration"
+			class="home__intro-bg"
+		/>
 
-		<div class="home__intro-desc"></div>
+		<div class="home__intro-content">
+			<div class="home__intro-illustration">
+				<img
+					src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
+					alt="Venus on Screen Illustration"
+					title="Venus on Screen Illustration"
+				/>
+			</div>
+			<div class="home__intro-text">
+				<div class="home__heading">
+					{{ page.intro_heading }}
+				</div>
+				<div class="home__desc">
+					{{ page.intro_desc }}
+				</div>
+			</div>
+		</div>
 	</section>
 
-	<section class="home__work">
+	<section id="work" class="home__work">
 		<h2 class="home__section-title">work.</h2>
 		<div class="home__work-main">
 			{% include post-block-main.html %}
@@ -20,5 +42,20 @@ layout: default
 		<div class="home__work-other">
 			{% include post-block-other.html %}
 		</div>
+		<img
+			src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
+			alt="Venus on Screen Illustration"
+			title="Venus on Screen Illustration"
+		/>
+	</section>
+
+	<section id="about" class="home__about">
+		<h2 class="home__section-title">work.</h2>
+		{{ content }}
+		<img
+			src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
+			alt="The Thinker on a Phone Illustration"
+			title="The Thinker on a Phone Illustration"
+		/>
 	</section>
 </div>
