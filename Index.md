@@ -1,7 +1,9 @@
 ---
 intro_heading: Intro Heading
 intro_desc: Intro description
-project_list: []
+project_list:
+- _projects/aerospace.md
+- _projects/health-commission.md
 other_projects:
 - title: Project Title
   url: URL
