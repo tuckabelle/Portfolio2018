@@ -24,7 +24,7 @@ fields:
     max: 
     source:
       type: pages
-      section: jekyll-posts
+      section: projects
   label: Project List
 - name: other_projects
   type: field_group_list
