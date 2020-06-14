@@ -63,5 +63,12 @@ fields:
   label: layout
   default: home
   hidden: true
+- name: about-details
+  type: list
+  config:
+    use_select: false
+    min: 
+    max: 
+  label: about-details
 pages:
 - Index.md
