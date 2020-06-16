@@ -4,7 +4,7 @@
 
 // 1. Configuration and helpers
 @import 'abstracts/variables', 'abstracts/functions', 'abstracts/mixins',
-'abstracts/placeholders';
+	'abstracts/placeholders';
 
 // 2. Vendors
 @import 'vendor/normalize';
@@ -16,7 +16,9 @@
 @import 'layout/header', 'layout/footer';
 
 // 5. Components
-@import 'components/button', 'components/post-blocks';
+@import 'components/button', 'components/post-block-main',
+	'components/post-block-other', 'components/post-block-next',
+	'components/block-image', 'components/meta-list', 'components/back-to-top';
 
 // 6. Page-specific styles
-@import 'pages/home/home', 'pages/post/post';
+@import 'pages/home/home', 'pages/project/project';

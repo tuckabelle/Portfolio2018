@@ -16,7 +16,7 @@ project-link: https://aerospace.csis.org/
 
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
 
-{% include project-img.html size="wide" orientation="vertical" file="logo.png" file2="logo.png" alt="Jekyll logo" alt2="Jekyll logo"
+{% include project-img.html size="wide" orientation="column" file="logo.png" file2="logo.png" alt="Jekyll logo" alt2="Jekyll logo"
 caption="This is the Jekyll logo." %}
 
 <section class="project-section">
@@ -29,7 +29,7 @@ Vulputate nibh diam ligula sed vitae suspendisse quisque sociis est felis nulla.
 <section class="project-section__subsection">
 Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec.
 
-{% include project-img.html size="center" orientation="horizontal" file="logo.png" file2="logo.png" alt="Jekyll logo" alt2="Jekyll logo"
+{% include project-img.html size="center" orientation="row" file="logo.png" file2="logo.png" alt="Jekyll logo" alt2="Jekyll logo"
 caption="This is the Jekyll logo." %}
 
 Natoque egestas vel tortor nullam facilisi dui et nisl. Vel ut magna egestas nunc quisque. Ac tincidunt integer. Eu inceptos dui velit at est integer ipsum erat pretium magna non. Quisque vitae quis. Ut velit turpis ultricies urna massa. Gravida sed cursus. Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin.

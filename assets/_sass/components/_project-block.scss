@@ -1,0 +1,16 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the image block component in a project.
+// -----------------------------------------------------------------------------
+
+.project__block {
+	&--wide {
+	}
+
+	&--center {
+	}
+
+	&--small {
+	}
+}
+
+@import 'block-image', 'block-aside';
