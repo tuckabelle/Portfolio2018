@@ -3,7 +3,7 @@ button,
 input,
 select,
 textarea {
-	//  @extend %body-text;
+	@extend %body-text;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 	// @extend %body-text;
@@ -12,23 +12,178 @@ textarea {
 /*================================
 =            Headings            =
 ================================*/
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	@extend %serif-base;
+}
 
+h1 {
+	&.project__title {
+		@include fontSize(42px);
+		line-height: 0.9;
 
+		@include breakpoint('sm') {
+			@include fontSize(50px);
+		}
+
+		@include breakpoint('md') {
+			@include fontSize(56px);
+		}
+
+		@include breakpoint('lg') {
+			@include fontSize(64px);
+		}
+
+		@include breakpoint('2xl') {
+			@include fontSize(72px);
+		}
+	}
+}
+
+h2 {
+	&.home__section-title {
+		@include fontSize(80px);
+		line-height: 1;
+
+		@include breakpoint('sm') {
+			@include fontSize(96px);
+		}
+
+		@include breakpoint('md') {
+			@include fontSize(104px);
+		}
+
+		@include breakpoint('lg') {
+			@include fontSize(112px);
+		}
+
+		@include breakpoint('xl') {
+			@include fontSize(134px);
+		}
+	}
+
+	&.project__section-title {
+		@include fontSize(54px);
+		line-height: 1;
+
+		@include breakpoint('sm') {
+			@include fontSize(60px);
+		}
+
+		@include breakpoint('md') {
+			@include fontSize(68px);
+		}
+
+		@include breakpoint('lg') {
+			@include fontSize(72px);
+		}
+
+		@include breakpoint('xl') {
+			@include fontSize(80px);
+		}
+	}
+}
+
+h3 {
+	@include fontSize(36px);
+	line-height: 1;
+
+	@include breakpoint('sm') {
+		@include fontSize(40px);
+	}
+
+	@include breakpoint('md') {
+		@include fontSize(42px);
+	}
+
+	@include breakpoint('lg') {
+		@include fontSize(48px);
+	}
+
+	@include breakpoint('xl') {
+		@include fontSize(56px);
+	}
+}
+
+h4 {
+	@include fontSize(24px);
+	line-height: 1;
+
+	@include breakpoint('sm') {
+		@include fontSize(26px);
+	}
+
+	@include breakpoint('md') {
+		@include fontSize(28px);
+	}
+
+	@include breakpoint('lg') {
+		@include fontSize(30px);
+	}
+
+	@include breakpoint('xl') {
+		@include fontSize(32px);
+	}
+}
+
+h5 {
+	@include fontSize(20px);
+	line-height: 1;
+
+	@include breakpoint('sm') {
+		@include fontSize(22px);
+	}
+
+	@include breakpoint('lg') {
+		@include fontSize(24px);
+	}
+}
 /*============================
 =            Copy            =
 ============================*/
 
 p {
-	display: block;
-	//@at-root %body-text;
+	@extend %body-text;
+
+	&.project__description {
+		line-height: 1.35;
+	}
 }
 
 @for $i from 2 through 6 {
-
-	p+h#{$i},
-	ul+h#{$i},
-	ol+h#{$i} {
+	p + h#{$i},
+	ul + h#{$i},
+	ol + h#{$i} {
 		margin-top: 2.5rem;
+	}
+}
+
+ul.meta-list {
+	margin: 0;
+	padding: 0;
+
+	li {
+		margin: 0 0 4px 0;
+		line-height: 1.15;
+		list-style: none;
+		padding: 0;
+		color: $color-text-gray-70;
+		@include fontSize(15px);
+
+		@include breakpoint('md') {
+			@include fontSize(16px);
+		}
+	}
+	div {
+		letter-spacing: 0.03em;
+		font-weight: bold;
+		text-transform: uppercase;
+		color: $color-text-black;
+		@include fontSize(14px);
 	}
 }
 
@@ -51,15 +206,6 @@ i {
 	font-style: italic;
 }
 
-p {
-	margin-bottom: 0;
-	color: inherit;
-	font-family: inherit;
-	font-weight: inherit;
-	font-size: inherit;
-	line-height: inherit;
-}
-
 /*=============================
 =            Links            =
 =============================*/
@@ -71,5 +217,38 @@ a {
 
 	&:visited {
 		color: #9400d3;
+	}
+}
+
+.home__work-main .post-block__title {
+	@extend %serif-base;
+	@include fontSize(28px);
+	line-height: 1;
+	text-align: center;
+
+	@include breakpoint('sm') {
+		text-align: right;
+	}
+
+	@include breakpoint('md') {
+		@include fontSize(34px);
+	}
+
+	@include breakpoint('lg') {
+		@include fontSize(40px);
+	}
+
+	@include breakpoint('xl') {
+		@include fontSize(48px);
+	}
+}
+
+.home__work-other .post-block__title {
+	@include fontSize(19px);
+	font-weight: bold;
+	line-height: 1.15;
+
+	@include breakpoint('md') {
+		@include fontSize(20px);
 	}
 }

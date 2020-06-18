@@ -5,48 +5,90 @@
 // Consistent font sizes and pixel fallback.
 // Define default font size
 
+@mixin fontSize($size) {
+	font-size: $size; //Fallback in px
+	font-size: calculateRem($size);
+}
+
 // Breakpoints
-$breakpoint-xs: 480px;
-$breakpoint-sm: 640px;
-$breakpoint-md: 1024px;
-$breakpoint-lg: 1280px;
-$breakpoint-xl: 1400px;
+$breakpoint-sm: 480px;
+$breakpoint-md: 640px;
+$breakpoint-lg: 1024px;
+$breakpoint-xl: 1280px;
+$breakpoint-xxl: 1400px;
 
 @mixin breakpoint($break) {
-
-	@if $break==xl {
+	@if $break==2xl {
+		@media screen and (min-width: $breakpoint-xxl) {
+			@content;
+		}
+	} @else if $break==xl {
 		@media screen and (min-width: $breakpoint-xl) {
 			@content;
 		}
-	}
-
-	@else if $break==lg {
+	} @else if $break==lg {
 		@media screen and (min-width: $breakpoint-lg) {
 			@content;
 		}
-	}
-
-	@else if $break==md {
+	} @else if $break==md {
 		@media screen and (min-width: $breakpoint-md) {
 			@content;
 		}
-	}
-
-	@else if $break==sm {
+	} @else if $break==sm {
 		@media screen and (min-width: $breakpoint-sm) {
 			@content;
 		}
-	}
-
-	@else if $break==xs {
+	} @else if $break==xs {
 		@media screen and (max-width: $breakpoint-xs) {
 			@content;
 		}
-	}
-
-	@else {
+	} @else {
 		@media screen and (min-width: $break) {
 			@content;
+		}
+	}
+}
+
+// Extend Background to full width of window
+@mixin full-width-background($background, $direction: '') {
+	$width_forumula: calc((100vw - 100%) / 2);
+	position: relative;
+	margin: 0 auto;
+
+	&::before,
+	&::after {
+		content: '';
+		position: absolute;
+		top: 0;
+		display: block;
+		width: $width_forumula;
+		height: 100%;
+		background-color: $background;
+	}
+
+	&::before {
+		right: 100%;
+	}
+
+	&::after {
+		left: 100%;
+	}
+
+	@if $direction==left {
+		&::before {
+			width: calc(#{$width_forumula} - 50%);
+		}
+
+		&::after {
+			display: none;
+		}
+	} @else if $direction==right {
+		&::after {
+			width: calc(#{$width_forumula} - 50%);
+		}
+
+		&::before {
+			display: none;
 		}
 	}
 }

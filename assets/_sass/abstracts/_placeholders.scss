@@ -1,3 +1,46 @@
 /*====================================
 =            Placeholders            =
 ====================================*/
+%body-text {
+	display: block;
+	font-family: $font-sans;
+	font-style: normal;
+	font-weight: normal;
+	@include fontSize(17px);
+	line-height: 1.6;
+	color: $color-text-gray-90;
+
+	@include breakpoint('md') {
+		@include fontSize(18px);
+	}
+}
+
+%body-text-sm {
+	display: block;
+	font-family: $font-sans;
+	font-style: normal;
+	font-weight: normal;
+	@include fontSize(15px);
+	line-height: 1.35;
+	color: $color-text-gray-70;
+
+	@include breakpoint('md') {
+		@include fontSize(16px);
+	}
+}
+
+%button-text {
+	display: block;
+	font-family: $font-sans;
+	font-style: normal;
+	font-weight: bold;
+	@include fontSize(12px);
+	line-height: 100%;
+	color: $color-text-gray-90;
+}
+
+%serif-base {
+	font-family: $font-serif;
+	letter-spacing: 0.03em;
+	font-weight: normal;
+}

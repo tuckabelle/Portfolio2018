@@ -1,7 +1,16 @@
-<ul>
-	<li>{{ page.year }}</li>
-	<li>{{ page.role }}</li>
+<ul class="meta-list">
+	<li>
+		<div>Year</div>
+		{{ page.year }}
+	</li>
+	<li>
+		<div>Role</div>
+		{{ page.role }}
+	</li>
 	{% for member in page.team %}
-	<li>{{ member }}</li>
+	<li>
+		<div>Member</div>
+		{{ member }}
+	</li>
 	{% endfor %}
 </ul>

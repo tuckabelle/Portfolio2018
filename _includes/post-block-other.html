@@ -2,14 +2,14 @@
 
 <article class="post-block" role="article">
 	<header class="post-block__header" role="header">
-		<h4 class="post-block__title"><a href="{{ project.url }}" target="_blank">{{ project.title }}</a></h4>
+		<a href="{{ project.url }}" class="post-block__title" target="_blank">{{ project.title }}</a>
 
 	</header>
 
 	<div class="post-block__content">
 		<div class="post-block__org">{{ project.org }}</div>
 		<div class="post-block__team">
-			<ul>
+			<ul class="meta-list">
 				{% for member in project.team %}
 				<li>{{ member }}</li>
 				{% endfor %}
