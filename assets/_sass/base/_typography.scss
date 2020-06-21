@@ -19,6 +19,7 @@ h4,
 h5,
 h6 {
 	@extend %serif-base;
+	margin: 0;
 }
 
 h1 {
@@ -142,6 +143,7 @@ h5 {
 		@include fontSize(24px);
 	}
 }
+
 /*============================
 =            Copy            =
 ============================*/
@@ -178,6 +180,7 @@ ul.meta-list {
 			@include fontSize(16px);
 		}
 	}
+
 	div {
 		letter-spacing: 0.03em;
 		font-weight: bold;
@@ -220,7 +223,7 @@ a {
 	}
 }
 
-.home__work-main .post-block__title {
+.post-block__main-title {
 	@extend %serif-base;
 	@include fontSize(28px);
 	line-height: 1;
@@ -243,7 +246,7 @@ a {
 	}
 }
 
-.home__work-other .post-block__title {
+.post-block__other-title {
 	@include fontSize(19px);
 	font-weight: bold;
 	line-height: 1.15;

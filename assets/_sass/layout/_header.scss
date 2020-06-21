@@ -2,10 +2,77 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.totop {
-  position: fixed;
+.site-header {
+	position: absolute;
+	top: 0;
+	display: block;
+	width: 100vw;
+	z-index: 5;
+	padding: 8px $page-margins--xs;
+
+	@include breakpoint('sm') {
+		padding: 8px $page-margins--sm;
+	}
+
+	@include breakpoint('md') {
+		padding: 16px $page-margins--md 8px;
+	}
+
+	@include breakpoint('lg') {
+		padding: 32px $page-margins--lg 8px;
+	}
+
+	@include breakpoint('xl') {
+		padding: 32px $page-margins--xl 8px;
+	}
+
+	@include breakpoint('xxl') {
+		padding: 32px $page-margins--xxl 8px;
+	}
+
+	.wrapper {
+		display: block;
+		width: 100%;
+		display: flex;
+		align-items: center;
+		justify-content: space-between;
+	}
+}
+
+.site-header__title {
+	display: flex;
+	align-items: center;
+	flex-direction: row;
+	@include fontSize(24px);
+	@extend %serif-base;
+
+	@include breakpoint('md') {
+		@include fontSize(26px);
+	}
+
+	.site-header__logo {
+		display: none;
+		height: 32px;
+		width: auto;
+		margin-right: 12px;
+
+		@include breakpoint('sm') {
+			display: block;
+		}
+	}
 }
 
 .site-nav {
-  z-index: 5;
+	margin: 0;
+	display: flex;
+
+	li {
+		list-style: none;
+		padding: 8px 0;
+		@include fontSize(16px);
+
+		&:first-child {
+			margin-right: 24px;
+		}
+	}
 }

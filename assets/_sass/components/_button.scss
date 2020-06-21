@@ -2,4 +2,73 @@
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
 
-.btn-launch {}
+.btn-launch {
+	display: block;
+
+	width: 100%;
+
+	&.main-block {
+		height: 40px;
+		bottom: 24px;
+		right: 16px;
+		display: flex;
+		align-items: center;
+		justify-content: flex-end;
+		position: absolute;
+		@extend %button-bold;
+		color: $color-primary-gray-light;
+
+		@include breakpoint('lg') {
+			width: 40px;
+			align-items: center;
+			position: relative;
+			margin-left: 16px;
+			color: $color-primary-dark;
+			justify-content: flex-end;
+		}
+
+		@include breakpoint('lg') {
+			flex-direction: column;
+			height: auto;
+			bottom: unset;
+			right: unset;
+		}
+		a {
+			display: block;
+			height: 40px;
+			width: 40px;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			border: 1px solid $color-primary-gray-light;
+			border-radius: 50%;
+
+			@include breakpoint('lg') {
+				border: 1px solid $color-primary-dark;
+			}
+		}
+		span {
+			margin-right: 8px;
+			@include breakpoint('lg') {
+				margin-right: 16px;
+				transform: rotate(-90deg);
+				transform-origin: 0 0;
+				position: relative;
+				left: 50%;
+			}
+		}
+		.btn-launch__icon {
+			display: block;
+			height: 12px;
+			width: 12px;
+
+			path {
+				fill: $color-primary-gray-light;
+
+				@include breakpoint('lg') {
+					fill: $color-primary-dark;
+				}
+			}
+		}
+	}
+}

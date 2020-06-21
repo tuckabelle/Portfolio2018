@@ -44,3 +44,42 @@
 	letter-spacing: 0.03em;
 	font-weight: normal;
 }
+
+%button-bold {
+	font-family: $font-sans;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 12px;
+	line-height: 100%;
+	text-transform: uppercase;
+}
+
+%blockquote {
+	display: block;
+	position: relative;
+	@extend %serif-base;
+	@include fontSize(24px);
+	line-height: 1.35;
+	color: $color-text-gray-90;
+	z-index: 1;
+
+	@include breakpoint('lg') {
+		@include fontSize(28px);
+	}
+
+	&:after {
+		height: auto;
+		width: 56px;
+		display: block;
+		position: absolute;
+		content: url('#{$imgpath}/quotes.svg');
+		z-index: -1;
+		bottom: 0;
+		left: calc(100% - 56px);
+
+		@include breakpoint('lg') {
+			width: 72px;
+			left: calc(100% - 72px);
+		}
+	}
+}

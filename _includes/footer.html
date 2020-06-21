@@ -1,9 +1,6 @@
 <footer class="site-footer">
-	<img
-		src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
-		alt="Speech Bubble Hokusai Illustration"
-		title="Speech Bubble Hokusai Illustration"
-	/>
+	<img src="{{ '/assets/images/Wave.png' | relative_url }}" alt="Speech Bubble Hokusai Illustration"
+		title="Speech Bubble Hokusai Illustration" />
 	<section class="site-footer__info">
 		<div class="site-footer__message">
 			{{ site.data.Footer.footer_msg }}
@@ -19,11 +16,7 @@
 			<li>
 				<div>
 					<a href="{{ item.url }}">
-						<img
-							src="{{ 'item.icon' | relative_url }}"
-							alt="{{ item.title }}"
-							title="{{ item.title }}"
-						/>
+						<img src="{{ 'item.icon' | relative_url }}" alt="{{ item.title }}" title="{{ item.title }}" />
 					</a>
 				</div>
 			</li>
@@ -33,25 +26,11 @@
 	<section class="site-footer__btt"></section>
 </footer>
 
-<script
-	src="https://code.jquery.com/jquery-3.3.1.min.js"
-	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
-	crossorigin="anonymous"
-></script>
-<script
-	src="{{ '/assets/js/bundle.js' | relative_url }}"
-	type="text/javascript"
-></script>
-<script
-	src="{{ '/assets/js/main.js' | relative_url }}"
-	type="text/javascript"
-></script>
-<script
-	src="{{ '/assets/js/navigation.js' | relative_url }}"
-	type="text/javascript"
-></script>
+<script src="https://code.jquery.com/jquery-3.3.1.min.js"
+	integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="{{ '/assets/js/bundle.js' | relative_url }}" type="text/javascript"></script>
+<script src="{{ '/assets/js/main.js' | relative_url }}" type="text/javascript"></script>
+<script src="{{ '/assets/js/navigation.js' | relative_url }}" type="text/javascript"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.1/TweenMax.min.js"></script>
-<script
-	crossorigin="anonymous"
-	src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"
-></script>
+<script crossorigin="anonymous"
+	src="https://polyfill.io/v3/polyfill.min.js?features=default%2CArray.prototype.find%2CIntersectionObserver"></script>

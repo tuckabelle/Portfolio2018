@@ -1,3 +1,19 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the other post block component.
 // -----------------------------------------------------------------------------
+.post-block__other {
+	@include breakpoint('lg') {
+		width: 50%;
+	}
+}
+
+.post-block__other-content {
+	& > .meta-list > li {
+		@extend %body-text-sm;
+		padding-bottom: 4px;
+	}
+
+	.list-container {
+		display: flex;
+	}
+}

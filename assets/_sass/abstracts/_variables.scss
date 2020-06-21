@@ -32,17 +32,43 @@ $color-line-gray-30: rgba(0, 0, 0, 0.3);
 $color-line-white-20: rgba(255, 255, 255, 0.2);
 
 $color-primary-dark: rgba(57, 57, 57, 1);
-$color-primary-gray-light: rgba(250, 250, 250, 1);
-$color-primary-gray-mid: rgba(227, 227, 227, 1);
+$color-primary-gray-light: #fafafa;
+$color-primary-gray-mid: #e3e3e3;
 $color-primary-accent: rgba(228, 78, 44, 1);
+
+$color-gradient-graygray: linear-gradient(
+	180deg,
+	#ededed 0%,
+	$color-primary-gray-mid 100%
+);
+
+$color-gradient-whitegray: linear-gradient(
+	180deg,
+	$color-primary-gray-light 0%,
+	$color-primary-gray-mid 100%
+);
 
 // -----------------------------------------------------------------------------
 // Layout
 // -----------------------------------------------------------------------------
 
 // Margins
-$page-margins--s: 20px;
-$page-margins--m: 6vw;
-$page-margins--l: 8vw;
+$page-margins--xs: 20px;
+$page-margins--sm: 6vw;
+$page-margins--md: 6vw;
+$page-margins--lg: 8vw;
+$page-margins--xl: 8vw;
+$page-margins--xxl: 8%;
 
-$page-margins_overflow: $page-margins--l - 2;
+$page-margins_overflow: $page-margins--xxl - 2;
+
+// Max page width
+$max-width: 1500px;
+$max-width--content: 1000px;
+
+// -----------------------------------------------------------------------------
+// Images
+// -----------------------------------------------------------------------------
+
+$imgpath: '/assets/images/';
+//url('#{$imgpath}/quotes.svg');

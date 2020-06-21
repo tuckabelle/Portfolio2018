@@ -1,21 +1,23 @@
 {% assign projects = page.other_projects %} {% for project in projects %}
 
-<article class="post-block" role="article">
-	<header class="post-block__header" role="header">
-		<a href="{{ project.url }}" class="post-block__title" target="_blank">{{ project.title }}</a>
+<article class="post-block post-block__other" role="article">
+	<header class="post-block____other-header" role="header">
+		<a href="{{ project.url }}" class="post-block__other-title" target="_blank">{{ project.title }}</a>
 
 	</header>
 
-	<div class="post-block__content">
-		<div class="post-block__org">{{ project.org }}</div>
-		<div class="post-block__team">
+	<div class="post-block__other-content">
+				<div class="post-block__other-org">{{ project.role }}</div>
+<ul class="meta-list list-container">
+		<li class="post-block__other-org">{{ project.org }}</li>
+		<li class="post-block__other-team">
 			<ul class="meta-list">
 				{% for member in project.team %}
 				<li>{{ member }}</li>
 				{% endfor %}
 			</ul>
-		</div>
-		</section>
+		</li>
+		</ul>
 </article>
 
 {% endfor %}

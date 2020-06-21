@@ -50,10 +50,18 @@ $breakpoint-xxl: 1400px;
 }
 
 // Extend Background to full width of window
-@mixin full-width-background($background, $direction: '') {
+@mixin full-width-background(
+	$background,
+	$direction: '',
+	$includeMargins: true
+) {
 	$width_forumula: calc((100vw - 100%) / 2);
 	position: relative;
-	margin: 0 auto;
+
+	@if $includeMargins {
+		margin-right: auto;
+		margin-left: auto;
+	}
 
 	&::before,
 	&::after {
@@ -63,7 +71,7 @@ $breakpoint-xxl: 1400px;
 		display: block;
 		width: $width_forumula;
 		height: 100%;
-		background-color: $background;
+		background: $background;
 	}
 
 	&::before {
@@ -76,7 +84,7 @@ $breakpoint-xxl: 1400px;
 
 	@if $direction==left {
 		&::before {
-			width: calc(#{$width_forumula} - 50%);
+			width: #{$width_forumula} - 50%;
 		}
 
 		&::after {
@@ -84,11 +92,21 @@ $breakpoint-xxl: 1400px;
 		}
 	} @else if $direction==right {
 		&::after {
-			width: calc(#{$width_forumula} - 50%);
+			width: #{$width_forumula} - 50%;
 		}
 
 		&::before {
 			display: none;
 		}
+	}
+}
+
+// Box Shadow
+/* @include box-shadow(1px,1px,1px,0, #fff, true); */
+@mixin box-shadow($top, $left, $blur, $size, $color, $inset: false) {
+	@if $inset {
+		box-shadow: inset $top $left $blur $size $color;
+	} @else {
+		box-shadow: $top $left $blur $size $color;
 	}
 }

@@ -3,8 +3,9 @@
 		{%- assign default_paths = site.pages | map: "path" -%}
 		{%- assign page_paths = site.header_pages | default: default_paths -%}
 		<a class="site-header__title" rel="author" href="{{ "/" | relative_url }}">
-			<img src="{{ 'assets/_images/img1_detail.png' | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}"
+			<img src="{{ '/assets/images/tucker-harris-logo.png' | relative_url }}" alt="{{ site.title }}" title="{{ site.title }}"
 				class="site-header__logo" />
+				Tucker Harris
 		</a>
 		<nav class="site-header__nav" role="navigation">
 			<ul class="site-nav">
