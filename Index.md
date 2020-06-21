@@ -33,9 +33,9 @@ Bibendum neque congue. Quam lobortis nec nec architecto cras viverra pulvinar te
 
 Aliquet tincidunt elit. Sagittis augue mollis. Fusce duis et. Lectus morbi magna. Nulla in tempor sed tincidunt mollis. Et nec arcu. Sodales egestas at purus at at. At cras et. Et pharetra purus. Integer ultrices pede vel lacinia class sit sagittis nonummy. Mauris faucibus et et ipsum eleifend. Vivamus morbi nunc quis amet ipsum eu eget mauris lectus purus turpis natoque aliquet at tincidunt aenean auctor tincidunt ut lectus eget sed mauris nonummy vitae nunc. Neque incididunt et tristique justo tempor. Magnis arcu wisi. Vestibulum risus integer eu vel arcu.
 
+<img src="{{ '/assets/images/Thinker.png' | relative_url }}" alt="The Thinker on a Phone Illustration" title="The Thinker on a Phone Illustration"  />
+
 > Ac tempor in consequat risus arcu dui vitae et sit condimentum dictumst sit elit purus non ut mollis. Eget morbi euismod.
->
-> - credit
 
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
 
