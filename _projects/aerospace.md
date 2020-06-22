@@ -30,7 +30,7 @@ Vulputate nibh diam ligula sed vitae suspendisse quisque sociis est felis nulla.
 
 ### navigation 
 
-Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec.
+Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec. f
 
 {% include project-img.html size="center" orientation="row" file="logo.png" file2="logo.png" alt="Jekyll logo" alt2="Jekyll logo"
 caption="This is the Jekyll logo." %}
