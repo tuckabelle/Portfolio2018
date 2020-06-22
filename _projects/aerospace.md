@@ -28,7 +28,7 @@ Vulputate nibh diam ligula sed vitae suspendisse quisque sociis est felis nulla.
 
 <section class="project-section__subsection">
 
-### navigation 
+<h3>navigation</h3> 
 
 Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec. f
 
