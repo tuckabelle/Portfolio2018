@@ -30,15 +30,15 @@ Vulputate nibh diam ligula sed vitae suspendisse quisque sociis est felis nulla.
 
 <h3>navigation</h3> 
 
-Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec. f
+<p>Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec. </p>
 
 {% include project-img.html size="center" orientation="row" file="logo.png" file2="logo.png" alt="Jekyll logo" alt2="Jekyll logo"
 caption="This is the Jekyll logo." %}
 
-Natoque egestas vel tortor nullam facilisi dui et nisl. Vel ut magna egestas nunc quisque. Ac tincidunt integer. Eu inceptos dui velit at est integer ipsum erat pretium magna non. Quisque vitae quis. Ut velit turpis ultricies urna massa. Gravida sed cursus. Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin.
+<p>Natoque egestas vel tortor nullam facilisi dui et nisl. Vel ut magna egestas nunc quisque. Ac tincidunt integer. Eu inceptos dui velit at est integer ipsum erat pretium magna non. Quisque vitae quis. Ut velit turpis ultricies urna massa. Gravida sed cursus. Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. </p>
 
 {% include project-aside.html content="This is the Jekyll logo." %}
-Natoque egestas vel tortor nullam facilisi dui et nisl. Vel ut magna egestas nunc quisque. Ac tincidunt integer. Eu inceptos dui velit at est integer ipsum erat pretium magna non. Quisque vitae quis. Ut velit turpis ultricies urna massa. Gravida sed cursus. Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec.
+<p>Natoque egestas vel tortor nullam facilisi dui et nisl. Vel ut magna egestas nunc quisque. Ac tincidunt integer. Eu inceptos dui velit at est integer ipsum erat pretium magna non. Quisque vitae quis. Ut velit turpis ultricies urna massa. Gravida sed cursus. Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec. </p>
 
 </section>
 
