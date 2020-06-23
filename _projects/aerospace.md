@@ -15,6 +15,8 @@ project-link: https://aerospace.csis.org/
 ---
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
 
+Volutpat mattis aptent dis wisi fringilla vel dui ante massa dignissim pellentesque et quis amet. Lectus massa magna. Ipsum habitant ullamcorper. In cras molestie. Fugiat turpis mauris. Venenatis architecto dolor laoreet lacus sit metus est lacus. Eu sapien sit. Eiusmod vitae vestibulum orci id aliquam. Suspendisse nulla tincidunt. Est in dui. Dolor pellentesque etiam adipiscing elit pede. Torquent amet aenean ut donec et. Mi fringilla nullam. Amet quis viverra porta augue placerat. Consectetuer velit varius amet lacus dapibus. Pede ac non. Ullamcorper pellentesque egestas quam proin sit. Libero wisi nisl. Arcu libero sed. Morbi sed neque.
+
 {% include project-img.html size="wide" orientation="column" file="/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg" file2="/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg" caption-location="side" alt="Jekyll logo" alt2="Jekyll logo" caption="This is the Jekyll logo." %}
 
 ## design 
@@ -49,5 +51,7 @@ Volutpat mattis aptent dis wisi fringilla vel dui ante massa dignissim pellentes
 {% include project-aside.html content="This is the Jekyll logo." %}
 
 Vulputate nibh diam ligula sed vitae suspendisse quisque sociis est felis nulla. In imperdiet ac quis turpis eget et eu mauris. Vulputate lacinia aliquam non mauris sit. Orci consectetuer feugiat eu id tempor. Feugiat nunc sit adipiscing sed sapien nunc tempor vel convallis in nunc. Orci nunc odio. Nec faucibus diamlorem in sagittis tempor in tellus ut eleifend at et. Proin non vel viverra nulla vel sapien sed auctor mi at vel. Suscipit sociis at. Purus ullamcorper gravida nunc sed nec eget lacinia lectus.
+
+{% include project-img.html size="right" orientation="column" file="/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg" file2="/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg" caption-location="side" alt="Jekyll logo" alt2="Jekyll logo" caption="This is the Jekyll logo." %}
 
 Natoque egestas vel tortor nullam facilisi dui et nisl. Vel ut magna egestas nunc quisque. Ac tincidunt integer. Eu inceptos dui velit at est integer ipsum erat pretium magna non. Quisque vitae quis. Ut velit turpis ultricies urna massa. Gravida sed cursus. Praesent nullam viverra sed arcu risus. Vestibulum sit sollicitudin orci vel libero. Nisl massa faucibus arcu vivamus bibendum eu eros urna accumsan massa proin. Suscipit at ante. Nisl augue augue. Ligula egestas interdum purus tellus mauris tempor ante potenti sed enim elit. Id commodo risus. Ultricies eget nec.
