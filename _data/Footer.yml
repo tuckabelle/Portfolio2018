@@ -1,5 +1,5 @@
 ---
-footer_msg: This is the footer message
+footer_msg: If you’d like to get in touch, email me
 contact_info:
 - title: Github
   url: "#"
@@ -7,4 +7,4 @@ contact_info:
 - title: LinkedIn
   url: "#"
   icon: "/uploads/2020/06/21/linked-in.svg"
-copyright: Copyright message
+copyright: "©2020 Tucker Harris. Designed and developed by Tucker Harris"
