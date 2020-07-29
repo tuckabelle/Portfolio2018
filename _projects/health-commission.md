@@ -1,17 +1,18 @@
 ---
 title: Health Commission
-org1: Org
-org2: Org
+org1: Aerospace
+org2: Center for Strategic and International Studies
 url: "#"
 description: Vulputate nibh diam ligula sed vitae suspendisse quisque sociis est felis
   nulla. In imperdiet ac quis turpis eget et eu mauris. Vulputate lacinia aliquam
   non mauris sit.
 role: web designer
 team:
-- 'Jacque: developer'
+- Jacque, developer
 cover_image: "/uploads/2019/07/15/photo-1519305124423-5ccccff55da9.jpeg"
 year: 2010
 project-link: https://aerospace.csis.org/
+product_type: website
 
 ---
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
