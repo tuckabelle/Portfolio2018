@@ -53,12 +53,14 @@ fields:
     config:
       required: false
     label: Organization
-  - name: desc
-    type: list
+  - name: description
+    type: textarea
+    default: ''
     config:
-      use_select: false
-      min: 
-      max: 
+      required: false
+      wysiwyg: false
+      schema:
+        format: markdown
     label: Description
   config:
     min: 
