@@ -1,7 +1,7 @@
 ---
 title: Aerospace
-org1: Org
-org2: Org
+org1: Health Commission
+org2: Center for Strategic and International Studies
 url: "#"
 description: 'Ligula convallis eu malesuada et adipiscing. Vulputate inceptos nibh
   pellentesque sollicitudin odio metus integer suspendisse. '
@@ -11,6 +11,7 @@ team:
 cover_image: "/uploads/2019/07/15/photo-1498429089284-41f8cf3ffd39.jpeg"
 year: 2009
 project-link: https://aerospace.csis.org/
+product_type: website
 
 ---
 Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu. Risus leo lectus. Eget platea venenatis. Vivamus vel et mauris dui lectus. Nunc aliquet quam orci gravida scelerisque.
