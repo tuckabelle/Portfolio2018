@@ -5,6 +5,11 @@ fields:
 - type: text
   name: title
   label: title
+- name: product_type
+  type: text
+  config:
+    required: false
+  label: product type
 - type: text
   name: org1
   label: org1
@@ -26,6 +31,7 @@ fields:
 - type: list
   name: team
   label: team
+  description: Role, Name
 - type: file
   name: cover_image
   label: cover_image
