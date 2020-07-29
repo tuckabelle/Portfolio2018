@@ -26,6 +26,15 @@ fields:
       type: pages
       section: projects
   label: Project List
+- name: other_projects_desc
+  type: textarea
+  default: ''
+  config:
+    required: false
+    wysiwyg: false
+    schema:
+      format: markdown
+  label: other projects desc
 - name: other_projects
   type: field_group_list
   fields:
@@ -44,13 +53,13 @@ fields:
     config:
       required: false
     label: Organization
-  - name: team
+  - name: desc
     type: list
     config:
       use_select: false
       min: 
       max: 
-    label: Team
+    label: Description
   config:
     min: 
     max: 
