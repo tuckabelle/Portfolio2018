@@ -2,54 +2,50 @@
 intro_heading: Intro Heading
 intro_desc: Intro description
 project_list:
-  - _projects/aerospace.md
-  - _projects/health-commission.md
+- _projects/aerospace.md
+- _projects/health-commission.md
 other_projects:
-  - title: Project Title
-    url: URL
-    org: CSIS
-    team:
-      - 'Matthew: content expert'
-      - 'John Doe: developer'
-      - 'Jacque: developer'
-    desc: []
-    description:
-      'Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu.
-      Risus leo lectus. '
-  - title: Project Title
-    url: URL
-    org: Aerospace, CSIS
-    team:
-      - 'Jacque: developer'
-    desc: []
-    description:
-      At cras et. Et pharetra purus. Integer ultrices pede vel lacinia class
-      sit sagittis nonummy. Mauris faucibus et et ipsum eleifend. Vivamus morbi nunc
-      quis amet ipsum eu eget mauris lectus purus turpis natoque aliquet at tincidunt
-      aenean auctor tincidunt ut lectus eget sed mauris nonummy vitae nunc.
-  - title: Project Title
-    url: URL
-    org: Health Commission, CSIS
-    team:
-      - 'Jacque: developer'
-      - 'Matthew: content partner'
-    desc: []
-    description:
-      At cras et. Et pharetra purus. Integer ultrices pede vel lacinia class
-      sit sagittis nonummy. Mauris faucibus et et ipsum eleifend. Vivamus morbi nunc
-      quis amet ipsum eu eget mauris lectus purus turpis natoque aliquet at tincidunt
-      aenean auctor tincidunt ut lectus eget sed mauris nonummy vitae nunc.
+- title: Project Title
+  url: URL
+  org: CSIS
+  team:
+  - 'Matthew: content expert'
+  - 'John Doe: developer'
+  - 'Jacque: developer'
+  desc: []
+  description: 'Lorem ipsum dolor sit amet metus nam orci nam vulputate purus arcu.
+    Risus leo lectus. '
+- title: Project Title
+  url: URL
+  org: Aerospace, CSIS
+  team:
+  - 'Jacque: developer'
+  desc: []
+  description: At cras et. Et pharetra purus. Integer ultrices pede vel lacinia class
+    sit sagittis nonummy. Mauris faucibus et et ipsum eleifend. Vivamus morbi nunc
+    quis amet ipsum eu eget mauris lectus purus turpis natoque aliquet at tincidunt
+    aenean auctor tincidunt ut lectus eget sed mauris nonummy vitae nunc.
+- title: Project Title
+  url: URL
+  org: Health Commission, CSIS
+  team:
+  - 'Jacque: developer'
+  - 'Matthew: content partner'
+  desc: []
+  description: At cras et. Et pharetra purus. Integer ultrices pede vel lacinia class
+    sit sagittis nonummy. Mauris faucibus et et ipsum eleifend. Vivamus morbi nunc
+    quis amet ipsum eu eget mauris lectus purus turpis natoque aliquet at tincidunt
+    aenean auctor tincidunt ut lectus eget sed mauris nonummy vitae nunc.
 layout: home
 about-details:
-  - This is the first line that is big and such
-  - "Favorite Color: That's not a fair question"
-  - 'Location: Washington, DC'
-other_projects_desc:
-  'Volutpat mattis aptent dis wisi fringilla vel dui ante massa
+- 'Favorite Color: That''s not a fair question'
+- 'Location: Washington, DC'
+other_projects_desc: 'Volutpat mattis aptent dis wisi fringilla vel dui ante massa
   dignissim pellentesque et quis amet. Lectus massa magna. Ipsum habitant ullamcorper.
   In cras molestie. '
----
+about-list-details: This is the first line that is big and such
 
+---
 Bibendum neque congue. Quam lobortis nec nec architecto cras viverra pulvinar tempor. Tincidunt quam aenean. Elit leo sed amet rutrum cursus. Nunc duis eu luctus sed gravida. Nec qui donec congue praesent dis. Vitae justo fugit. Sed molestie viverra sem quis lorem. Nisl vitae morbi morbi tellus a. Lectus dui non suscipit potenti ac. Ridiculus fermentum morbi qui vel fermentum. Eget suscipit mollis. Tellus nullam suspendisse velit netus duis. Ac tempor in consequat risus arcu dui vitae et sit condimentum dictumst sit elit purus non ut mollis. Eget morbi euismod.
 
 Aliquet tincidunt elit. Sagittis augue mollis. Fusce duis et. Lectus morbi magna. Nulla in tempor sed tincidunt mollis. Et nec arcu. Sodales egestas at purus at at. At cras et. Et pharetra purus. Integer ultrices pede vel lacinia class sit sagittis nonummy. Mauris faucibus et et ipsum eleifend. Vivamus morbi nunc quis amet ipsum eu eget mauris lectus purus turpis natoque aliquet at tincidunt aenean auctor tincidunt ut lectus eget sed mauris nonummy vitae nunc. Neque incididunt et tristique justo tempor. Magnis arcu wisi. Vestibulum risus integer eu vel arcu.
