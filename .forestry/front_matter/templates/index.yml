@@ -81,5 +81,10 @@ fields:
     min: 
     max: 
   label: about-details
+- name: about-list-details
+  type: text
+  config:
+    required: false
+  label: about-list-details
 pages:
 - Index.md
