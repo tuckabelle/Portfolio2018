@@ -37,4 +37,5 @@ fields:
   label: cover_image
 pages:
 - _projects/aerospace.md
+- _projects/health-commission-copy.md
 - _projects/health-commission.md
