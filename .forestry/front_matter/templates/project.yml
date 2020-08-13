@@ -36,6 +36,7 @@ fields:
   name: cover_image
   label: cover_image
 pages:
+- _projects/aerospace-copy.md
 - _projects/aerospace.md
 - _projects/health-commission-copy.md
 - _projects/health-commission.md
