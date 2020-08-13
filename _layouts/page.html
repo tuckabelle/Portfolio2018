@@ -3,34 +3,27 @@ layout: default
 ---
 
 <article class="project" itemscope itemtype="http://schema.org/BlogPosting">
-	<header class="project__header">
+	<header class="project__header content-wrapper ">
+
 		<h1 class="project__title" itemprop="name headline">
 			{{ page.title | escape }}
 		</h1>
-		<div class="project__org meta-list">
-			<ul>
+		<div class="project__org">
+			<ul class="meta-list">
 				<li>{{ page.org1 }}</li>
 				<li>{{ page.org2 }}</li>
 			</ul>
 		</div>
-	</header>
-	<section class="project__meta">
 		<p class="project__description">{{ page.description }}</p>
 		{% assign project = page %} {% include btn-launch.html %}
-	</section>
-	<div class="bg-text">{{ project.title | escape }}</div>
+		{%- include project-details.html -%}
+	</header>
 	<section class="project__img-container">
-		<img
-			src="{{ 'assets/_images/img1_detail.png' | relative_url }}"
-			alt="Venus on Screen Illustration"
-			title="Venus on Screen Illustration"
-		/>
+		<img src="{{ project.cover_image | relative_url }}" alt="Venus on Screen Illustration"
+			title="Venus on Screen Illustration" />
 	</section>
 
-	<section class="project__content project-content" itemprop="articleBody">
-		<aside class="project__details">
-			{%- include project-details.html -%}
-		</aside>
+	<section class="project__content project-content content-wrapper" itemprop="articleBody">
 		{{ content }}
 	</section>
 

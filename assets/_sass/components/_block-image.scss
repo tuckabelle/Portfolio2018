@@ -2,10 +2,75 @@
 // This file contains all styles related to the image block component in a project.
 // -----------------------------------------------------------------------------
 
-.group {
-	&--row {
+.img-container img {
+	display: block;
+	width: 100%;
+	height: auto;
+}
+
+.project__image-block {
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 32px;
+	margin-top: 24px;
+
+	.double-img img:first-of-type {
+		margin-bottom: 16px;
+	}
+	.group {
+		&--row {
+			display: flex;
+			flex-direction: column;
+
+			@include breakpoint('lg') {
+				flex-direction: row;
+				&.double-img img:first-of-type {
+					margin-bottom: 0px;
+					margin-right: 16px;
+				}
+			}
+
+			&.double-img img {
+				@include breakpoint('lg') {
+					width: calc(50% - 16px);
+				}
+			}
+		}
+
+		&--column {
+			display: flex;
+			flex-direction: column;
+		}
 	}
 
-	&--column {
+	figcaption {
+		margin-top: 16px;
+		width: 100%;
+	}
+
+	&.caption {
+		&--bottom {
+			flex-direction: column;
+			margin-top: 16px;
+		}
+
+		&--side {
+			@include breakpoint('lg') {
+				flex-direction: row;
+			}
+
+			figcaption {
+				@include breakpoint('lg') {
+					margin-top: 0px;
+					margin-left: 3vw;
+					width: 100%;
+					min-width: 200px;
+					max-width: 250px;
+				}
+				@include breakpoint('xxl') {
+					margin-left: 48px;
+				}
+			}
+		}
 	}
 }

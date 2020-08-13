@@ -2,8 +2,16 @@
 // This file contains all styles related to the other post block component.
 // -----------------------------------------------------------------------------
 .post-block__other {
-	@include breakpoint('lg') {
-		width: 50%;
+	padding-bottom: 32px;
+	margin-bottom: 32px;
+	@extend %body-text-sm;
+	@include breakpoint('md') {
+		padding-bottom: 40px;
+		margin-bottom: 40px;
+	}
+
+	&:not(:last-of-type) {
+		border-bottom: 1px solid $color-line-gray-30;
 	}
 }
 
@@ -13,7 +21,16 @@
 		padding-bottom: 4px;
 	}
 
+	svg {
+		display: inline;
+	}
+
 	.list-container {
 		display: flex;
+		flex-direction: column;
+	}
+
+	.post-block__other-desc {
+		padding: 12px 0;
 	}
 }

@@ -13,12 +13,13 @@
 @import 'base/accessibility', 'base/base', 'base/print', 'base/typography';
 
 // 4. Layout-related sections
-@import 'layout/header', 'layout/footer';
+@import 'layout/header', 'layout/footer', 'layout/general';
 
 // 5. Components
 @import 'components/button', 'components/post-block-main',
 	'components/post-block-other', 'components/post-block-next',
-	'components/block-image', 'components/meta-list', 'components/back-to-top';
+	'components/block-image', 'components/meta-list', 'components/back-to-top',
+	'components/project-block';
 
 // 6. Page-specific styles
 @import 'pages/home/home', 'pages/project/project';

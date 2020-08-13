@@ -1,2 +1,47 @@
 .project-section__subsection {
+	background-color: $color-primary-dark;
+	color: $color-text-white-90;
+	@include full-width-background($color-primary-dark);
+	margin: 40px 0;
+	padding: 48px 0 56px;
+
+	@include breakpoint('sm') {
+		@include full-width-background($color-primary-dark, 'left', true);
+		padding: 48px $page-margins--sm 56px;
+		margin: 56px 0;
+	}
+
+	@include breakpoint('md') {
+		padding: 48px $page-margins--md 56px;
+	}
+	@include breakpoint('lg') {
+		padding: 48px $page-margins--lg 56px;
+		margin: 56px 0;
+	}
+	@include breakpoint('xl') {
+		padding: 48px $page-margins--lg 64px;
+	}
+	@include breakpoint('xxl') {
+		padding: 48px $page-margins--lg 64px;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6,
+	p {
+		max-width: 640px;
+
+		color: $color-text-white-90;
+	}
+
+	h3,
+	h4,
+	h5,
+	h6 {
+		color: $color-text-white;
+	}
+	figcaption {
+		color: $color-text-white-75;
+	}
 }

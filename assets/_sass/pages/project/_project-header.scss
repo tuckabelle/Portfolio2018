@@ -1,1 +1,82 @@
+.layout-page {
+	background-color: $color-primary-gray-mid;
+}
 
+.project__header {
+	margin-top: 80px;
+	width: 100%;
+
+	@include breakpoint('md') {
+		margin-top: 100px;
+	}
+
+	@include breakpoint('lg') {
+		margin-top: 136px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+
+	@include breakpoint('xl') {
+		margin-top: 150px;
+	}
+	.header__col {
+		max-width: 680px;
+		@include breakpoint('lg') {
+			width: calc(100% - 4vw);
+		}
+		@include breakpoint('xl') {
+			width: calc(100% - 4vw);
+		}
+		@include breakpoint('xl') {
+			width: 96%;
+		}
+	}
+	.header__col:first-of-type {
+		margin-bottom: 24px;
+	}
+
+	.meta-list {
+		margin-top: 16px;
+
+		li:first-of-type {
+			margin-bottom: 4px;
+		}
+		li:last-of-type {
+			color: $color-text-gray-60;
+		}
+	}
+}
+
+.bg-text {
+	width: 100%;
+	@extend %serif-base;
+	font-size: 20vw;
+	color: $color-text-white-55;
+	line-height: 0.35;
+	margin-top: 40px;
+}
+
+.project__img-container {
+	width: 100%;
+	padding-left: $page-margins--xs;
+	margin-bottom: 40px;
+	@include breakpoint('sm') {
+		padding-left: $page-margins--sm;
+		margin-bottom: 48px;
+	}
+	@include breakpoint('md') {
+		padding-left: $page-margins--md;
+	}
+	@include breakpoint('lg') {
+		padding-left: $page-margins--lg;
+		margin-bottom: 64px;
+	}
+	@include breakpoint('xl') {
+		padding-left: $page-margins--xl;
+		margin-bottom: 72px;
+	}
+	@include breakpoint('xxl') {
+		padding-left: $page-margins--xxl;
+	}
+}

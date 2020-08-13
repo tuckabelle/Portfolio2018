@@ -1,3 +1,40 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the meta-list component.
 // -----------------------------------------------------------------------------
+aside {
+	padding-top: 8px;
+	border-top: 1px solid $color-line-gray-30;
+	margin-bottom: 24px;
+
+	@include breakpoint('sm') {
+		display: flex;
+		width: 61.8%;
+	}
+
+	@include breakpoint('md') {
+		width: calc(38.2% - 4vw);
+		max-width: 200px;
+		margin-right: 3vw;
+		float: left;
+		flex-direction: column;
+	}
+
+	@include breakpoint('xl') {
+		margin-right: calc(#{$max-width} * 0.04);
+	}
+
+	li {
+		margin-bottom: 12px;
+
+		@include breakpoint('sm') {
+			width: 160px;
+			margin-right: 24px;
+		}
+
+		@include breakpoint('md') {
+			width: 100%;
+			margin-right: 0;
+			margin-bottom: 1rem;
+		}
+	}
+}

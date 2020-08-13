@@ -7,7 +7,7 @@
 	font-style: normal;
 	font-weight: normal;
 	@include fontSize(17px);
-	line-height: 1.6;
+	line-height: 1.7;
 	color: $color-text-gray-90;
 
 	@include breakpoint('md') {
@@ -72,14 +72,23 @@
 		width: 56px;
 		display: block;
 		position: absolute;
-		content: url('#{$imgpath}/quotes.svg');
+		content: url('#{$imgpath}/quotes-sm.svg');
 		z-index: -1;
 		bottom: 0;
 		left: calc(100% - 56px);
 
 		@include breakpoint('lg') {
+			content: url('#{$imgpath}/quotes-lg.svg');
+
 			width: 72px;
 			left: calc(100% - 72px);
 		}
 	}
+}
+
+%figcaption {
+	padding-top: 8px;
+	border-top: 1px solid $color-line-gray-30;
+	margin-bottom: 24px;
+	@extend %body-text-sm;
 }

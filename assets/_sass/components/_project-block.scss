@@ -3,13 +3,30 @@
 // -----------------------------------------------------------------------------
 
 .project__block {
+	margin: auto;
 	&--wide {
+		@include breakpoint('lg') {
+			width: 80%;
+			margin: 24px auto;
+		}
 	}
 
 	&--center {
+		@include breakpoint('lg') {
+			max-width: 640px;
+			margin: 24px auto;
+		}
 	}
 
 	&--small {
+		display: flex;
+		flex-direction: column;
+
+		@include breakpoint('md') {
+			width: 50%;
+			max-width: 400px;
+			float: right;
+		}
 	}
 }
 

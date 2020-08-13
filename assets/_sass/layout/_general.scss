@@ -1,0 +1,25 @@
+.content-wrapper {
+	margin: 0 auto;
+	padding: 24px $page-margins--xs;
+	max-width: $max-width;
+
+	@include breakpoint('sm') {
+		padding: 32px $page-margins--sm;
+	}
+
+	@include breakpoint('md') {
+		padding: 32px $page-margins--md;
+	}
+
+	@include breakpoint('lg') {
+		padding: 48px $page-margins--lg;
+	}
+
+	@include breakpoint('xl') {
+		padding: 56px $page-margins--xl;
+	}
+
+	@include breakpoint('xxl') {
+		padding: 56px $page-margins--xxl;
+	}
+}

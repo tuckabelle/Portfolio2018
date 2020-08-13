@@ -51,6 +51,9 @@ $color-gradient-whitegray: linear-gradient(
 // -----------------------------------------------------------------------------
 // Layout
 // -----------------------------------------------------------------------------
+// Max widths
+$max-width: 1500px;
+$max-width--content: 1000px;
 
 // Margins
 $page-margins--xs: 20px;
@@ -58,13 +61,9 @@ $page-margins--sm: 6vw;
 $page-margins--md: 6vw;
 $page-margins--lg: 8vw;
 $page-margins--xl: 8vw;
-$page-margins--xxl: 8%;
+$page-margins--xxl: $max-width * 0.08;
 
 $page-margins_overflow: $page-margins--xxl - 2;
-
-// Max page width
-$max-width: 1500px;
-$max-width--content: 1000px;
 
 // -----------------------------------------------------------------------------
 // Images

@@ -1,6 +1,12 @@
-<figure class="project__block--{{include.size}} group--{{orientation}}">
-	<img src="{{ include.file }}" alt="{{ include.alt }}" />
-	{% if include.file2 %}
-	<img src="{{ include.file }}" alt="{{ include.alt }}" />{% endif %}
+<figure
+	class="project__block--{{ include.size }}  project__image-block caption--{{ include.caption-location }}"
+>
+	<div
+		class="img-container  group--{{ include.orientation }} {% if include.file2 %}double-img{% endif %}"
+	>
+		<img src="{{ include.file }}" alt="{{ include.alt }}" />
+		{% if include.file2 %}
+		<img src="{{ include.file }}" alt="{{ include.alt }}" />{% endif %}
+	</div>
 	<figcaption>{{ include.caption }}</figcaption>
 </figure>

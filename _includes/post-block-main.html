@@ -1,18 +1,21 @@
 {% assign projects = site.projects %} {% for project in projects %}
 
-<article class="post-block__main" role="article">
+<article class="post-block__main item" role="article">
 	<header class="post-block__main-header" role="header">
-		<div class="post-block__main-title"><a href="{{ project.url | relative_url }}.html"">{{ project.title }}</a></div>
-		<div class=" post-block__main-org">{{ project.org1 }}</div>
+		<div class="main-type label">{{ project.product_type }}</div>
+		<h3 class="main-title"><a href="{{ project.url | relative_url }}.html"">{{ project.title }}</a></h3>
+		<div class=" main-org1">{{ project.org1 }}</div>
+				<div class="main-org2">{{ project.org2 }}</div>
 	</header>
 
-	<div class="post-block__main-content">
-		<img src="{{ project.cover_image | relative_url }}" alt="{{ project.title | escape }}"
-			title="{{ project.title | escape }}" class="project-img"/>
+	<div class="post-block__main-content post-block-content">
+		<div class="project-img">
+			<img src="{{ project.cover_image | relative_url }}" alt="{{ project.title | escape }}"
+				title="{{ project.title | escape }}" />
+		</div>
+		{% capture project-title %}
+		{{ project.title }}{% endcapture %}
 
-{% capture project-title %}
-{{ project.title }}{% endcapture %}
-			
 		{% include btn-launch.html class="main-block" alt=project-title %}
 	</div>
 </article>

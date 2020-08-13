@@ -3,44 +3,10 @@
 // -----------------------------------------------------------------------------
 
 .post-block__main {
-	display: grid;
-	width: 100%;
-
-	@include breakpoint('sm') {
-		grid-template-columns: 1fr 1fr;
-		grid-column-gap: 4vw;
-		grid-template-areas: 'header content';
-		align-items: end;
+	.post-block__main-header {
+		@extend %body-text-sm;
 	}
-
-	&-header {
-		grid-area: header;
-		padding-bottom: 16px;
-
-		@include breakpoint('md') {
-			padding: 0 0 24px 4vw;
-		}
-	}
-
-	&-content {
-		grid-area: content;
-		position: relative;
-
-		@include breakpoint('md') {
-			display: flex;
-		}
-
-		@include breakpoint('lg') {
-			flex-direction: row;
-			padding-right: 4vw;
-		}
-
-		.project-img {
-			width: 100%;
-
-			@include breakpoint('lg') {
-				width: calc(100% - 56px);
-			}
-		}
+	.main-org2 {
+		font-style: italic;
 	}
 }

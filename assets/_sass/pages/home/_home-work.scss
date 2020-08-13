@@ -2,73 +2,80 @@
 // This file contains styles that are specific to the home page section "work".
 // -----------------------------------------------------------------------------
 .home__work {
-	.home__section-header:after {
-		display: block;
-		content: '';
-		position: absolute;
+	background-color: $color-primary-gray-mid;
+	&-main {
+		display: grid;
+		grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
+		grid-gap: 16px;
+		grid-auto-rows: auto;
+	}
+	.project-img img {
 		width: 100%;
-		height: 50%;
-		bottom: 0%;
-		background-color: $color-primary-gray-light;
-
-		@include breakpoint('sm') {
-			width: calc(50vw + 2vw);
-		}
-	}
-	&-container {
-		background: $color-gradient-whitegray;
-		width: 100vw;
 	}
 
-	.home__subsection-title {
-		padding: 56px 0 32px;
-		@include breakpoint('lg') {
-			padding: 80px 0 32px;
-		}
-	}
-
-	.home__work-other-container {
+	&-other-container {
+		position: relative;
+		margin-top: 64px;
 		display: flex;
 		flex-direction: column;
-		@include breakpoint('lg') {
+		@include breakpoint('md') {
 			flex-direction: row;
+
+			position: relative;
 		}
-
-		.home__work-other {
-			margin-bottom: 48px;
-			display: flex;
-			flex-direction: column;
-
-			@include breakpoint('lg') {
-				margin-right: 8vw;
-				flex-direction: row;
-				flex-wrap: wrap;
-				flex-grow: 2;
-			}
-			.post-block__other li:nth-child(odd) {
-				order: 1;
-			}
-			.post-block__other li:nth-child(even) {
-				order: 2;
-			}
-
-			&::before,
-			&::after {
-				content: '';
-				flex-basis: 100%;
-				width: 0;
-				order: 2;
-			}
-		}
-
-		.home__work-illustration {
+		> div {
+			display: block;
+			position: relative;
 			width: 100%;
-
-			@include breakpoint('sm') {
+			@include breakpoint('md') {
+				width: 50%;
+			}
+		}
+		.other-projects {
+			@include breakpoint('lg') {
 				width: 61.8%;
 			}
+		}
+		.other-description {
+			margin-bottom: 40px;
+		}
+		.illustration-container {
+			display: flex;
+			align-content: center;
+			justify-content: center;
+			@include breakpoint('md') {
+				display: flex;
+				width: 50%;
+				position: relative;
+				align-content: flex-start;
+				justify-content: flex-end;
+				z-index: 1;
+				margin-right: 4vw;
+			}
 			@include breakpoint('lg') {
-				width: 38.1%;
+				margin-right: 4vw;
+				width: calc(100% - 61.8%);
+			}
+			@include breakpoint('xl') {
+				margin-right: 56px;
+			}
+
+			img {
+				width: 100%;
+				max-width: 400px;
+				margin: 0 auto 32px;
+
+				@include breakpoint('md') {
+					position: absolute;
+					display: block;
+					width: 120%;
+					height: auto;
+					margin: unset;
+					max-width: unset;
+				}
+				@include breakpoint('lg') {
+					width: 140%;
+				}
 			}
 		}
 	}

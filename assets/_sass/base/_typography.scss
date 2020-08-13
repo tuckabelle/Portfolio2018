@@ -66,26 +66,28 @@ h2 {
 			@include fontSize(134px);
 		}
 	}
+}
+.project__content h2 {
+	@include fontSize(54px);
+	line-height: 1;
+	margin: 48px auto 32px;
 
-	&.project__section-title {
-		@include fontSize(54px);
-		line-height: 1;
+	@include breakpoint('sm') {
+		@include fontSize(60px);
+	}
 
-		@include breakpoint('sm') {
-			@include fontSize(60px);
-		}
+	@include breakpoint('md') {
+		@include fontSize(68px);
+		margin: 64px auto 32px;
+	}
 
-		@include breakpoint('md') {
-			@include fontSize(68px);
-		}
+	@include breakpoint('lg') {
+		@include fontSize(72px);
+	}
 
-		@include breakpoint('lg') {
-			@include fontSize(72px);
-		}
-
-		@include breakpoint('xl') {
-			@include fontSize(80px);
-		}
+	@include breakpoint('xl') {
+		@include fontSize(80px);
+		margin: 72px auto 32px;
 	}
 }
 
@@ -108,6 +110,10 @@ h3 {
 	@include breakpoint('xl') {
 		@include fontSize(56px);
 	}
+}
+.project__content h3,
+.project__content h3 p {
+	margin: 16px auto 24px;
 }
 
 h4 {
@@ -169,7 +175,7 @@ ul.meta-list {
 	padding: 0;
 
 	li {
-		margin: 0 0 4px 0;
+		//margin: 0 0 4px 0;
 		line-height: 1.15;
 		list-style: none;
 		padding: 0;
@@ -180,14 +186,14 @@ ul.meta-list {
 			@include fontSize(16px);
 		}
 	}
+}
 
-	div {
-		letter-spacing: 0.03em;
-		font-weight: bold;
-		text-transform: uppercase;
-		color: $color-text-black;
-		@include fontSize(14px);
-	}
+.label {
+	letter-spacing: 0.03em;
+	font-weight: bold;
+	text-transform: uppercase;
+	color: $color-text-black;
+	@include fontSize(14px);
 }
 
 hr {
@@ -254,4 +260,15 @@ a {
 	@include breakpoint('md') {
 		@include fontSize(20px);
 	}
+}
+
+figcaption {
+	@extend %figcaption;
+	@include breakpoint('sm') {
+		max-width: 250px;
+	}
+}
+
+.project-section__subsection figcaption {
+	border-top: 1px solid $color-line-white-20;
 }

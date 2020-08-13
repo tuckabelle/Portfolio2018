@@ -1,3 +1,6 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the aside block component in a project.
 // -----------------------------------------------------------------------------
+.aside.project__block--small {
+	@extend %body-text-sm;
+}

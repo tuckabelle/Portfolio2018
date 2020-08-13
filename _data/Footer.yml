@@ -1,10 +1,11 @@
 ---
 footer_msg: If you’d like to get in touch, email me
 contact_info:
-- title: Github
-  url: "#"
-  icon: "/uploads/2020/06/21/github.svg"
-- title: LinkedIn
-  url: "#"
-  icon: "/uploads/2020/06/21/linked-in.svg"
-copyright: "©2020 Tucker Harris. Designed and developed by Tucker Harris"
+  - title: Github
+    url: '#'
+    icon: '/uploads/2020/06/21/github.svg'
+  - title: LinkedIn
+    url: '#'
+    icon: '/uploads/2020/06/21/linked-in.svg'
+copyright: '©2020 Tucker Harris. Designed and developed by Tucker Harris'
+email: 'hello@etuckerharris.com'

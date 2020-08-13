@@ -3,4 +3,27 @@
 // -----------------------------------------------------------------------------
 
 .back-to-top {
+	height: 90px;
+	width: auto;
+	display: block;
+	position: relative;
+	//background-image: url('#{$imgpath}/btt-cutout.svg');
+	//background-size: cover;
+	//@extend: $color-primary-gray-light;
+	z-index: 5;
+	display: flex;
+	justify-content: flex-end;
+	align-items: flex-end;
+	color: $color-text-gray-70;
+	span {
+		padding: 1rem;
+		position: relative;
+		overflow: hidden;
+		height: 90px;
+		width: 90px;
+	}
+	svg {
+		bottom: -15px;
+		position: absolute;
+	}
 }

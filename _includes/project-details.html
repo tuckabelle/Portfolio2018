@@ -1,16 +1,28 @@
 <ul class="meta-list">
 	<li>
-		<div>Year</div>
+		<div class="label">Year</div>
 		{{ page.year }}
 	</li>
 	<li>
-		<div>Role</div>
+		<div class="label">Type</div>
+		{{ page.product_type }}
+	</li>
+	<li>
+		<div class="label">Role</div>
 		{{ page.role }}
 	</li>
 	{% for member in page.team %}
 	<li>
-		<div>Member</div>
-		{{ member }}
+		<div class="label">Team</div>
+		<ul class="meta-list">
+			{% for member in project.team %}
+			{% assign item = member | split: ": " %}
+
+			<li>{{ item[0] }}, <em>{{ item[1] }}</em></li>
+			{% endfor %}
+		</ul>
+
 	</li>
+
 	{% endfor %}
 </ul>
