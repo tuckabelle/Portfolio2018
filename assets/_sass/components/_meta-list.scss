@@ -3,7 +3,6 @@
 // -----------------------------------------------------------------------------
 aside {
 	padding-top: 8px;
-	border-top: 1px solid $color-line-gray-30;
 	margin-bottom: 24px;
 
 	@include breakpoint('sm') {
@@ -20,6 +19,7 @@ aside {
 	}
 
 	@include breakpoint('xl') {
+		max-width: 300px;
 		margin-right: calc(#{$max-width} * 0.04);
 	}
 

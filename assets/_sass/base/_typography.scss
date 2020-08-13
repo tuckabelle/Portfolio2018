@@ -172,7 +172,8 @@ p {
 
 ul.meta-list {
 	margin: 0;
-	padding: 0;
+	border-top: 1px solid $color-line-gray-30;
+	padding: 12px 0 0 0;
 
 	li {
 		//margin: 0 0 4px 0;
@@ -193,7 +194,8 @@ ul.meta-list {
 	font-weight: bold;
 	text-transform: uppercase;
 	color: $color-text-black;
-	@include fontSize(14px);
+	@include fontSize(13px);
+	padding-bottom: 2px;
 }
 
 hr {
@@ -213,6 +215,11 @@ cite,
 em,
 i {
 	font-style: italic;
+}
+
+.large-text {
+	@extend %large-text;
+	padding-bottom: 16px;
 }
 
 /*=============================

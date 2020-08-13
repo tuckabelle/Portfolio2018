@@ -29,32 +29,21 @@
 //   lastScrollPos = scrollPos
 // })
 
-function resizeGridItem(item) {
-  let grid = document.getElementsByClassName('grid')[0]
-  let rowHeight = parseInt(
-    window.getComputedStyle(grid).getPropertyValue('grid-auto-rows')
-  )
-  let rowGap = parseInt(
-    window.getComputedStyle(grid).getPropertyValue('grid-row-gap')
-  )
-  let rowSpan = Math.ceil(
-    (item.querySelector('.content').getBoundingClientRect().height + rowGap) /
-      (rowHeight + rowGap)
-  )
-  item.style.gridRowEnd = 'span ' + rowSpan
-}
+'use strict'
 
-function resizeAllGridItems() {
-  let allItems = document.getElementsByClassName('item')
-  for (let x = 0; x < allItems.length; x++) {
-    resizeGridItem(allItems[x])
-  }
-}
+import Masonry from 'masonry-layout'
 
-function resizeInstance(instance) {
-  let item = instance.elements[0]
-  resizeGridItem(item)
-}
+const grid = document.querySelector('.grid')
+const msnry = new Masonry(grid, {
+  itemSelector: '.grid-item',
+  columnWidth: '.grid-item',
+  gutter: 16,
+  percentPosition: true,
+  horizontalOrder: true
+})
 
-window.onload = resizeAllGridItems()
-window.addEventListener('resize', resizeAllGridItems)
+msnry.once('layoutComplete', () => {
+  grid.classList.add('load')
+})
+
+msnry.layout()

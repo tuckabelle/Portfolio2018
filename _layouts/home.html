@@ -43,6 +43,7 @@ layout: default
 				<div class="home__work-main grid">
 					{% include post-block-main.html %}
 				</div>
+				<div class="clearfix"></div>
 				<div class="home__work-other-container">
 					<div class="illustration-container">
 						<img class="illustration" src="{{ '/assets/images/Venus.png' | relative_url }}"
@@ -68,7 +69,7 @@ layout: default
 			<div class="content-wrapper">
 
 				<aside>
-
+					<div class="large-text">{{ page.about-list-details }}</div>
 					<ul class="meta-list">
 						{% for detail in page.about-details %} {% assign item = detail |
 							split: ": " %}

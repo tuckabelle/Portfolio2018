@@ -3,6 +3,28 @@
 // -----------------------------------------------------------------------------
 
 .post-block__main {
+	&.grid-item {
+		width: 100%;
+		display: block;
+		position: relative;
+		float: left;
+		margin-bottom: 24px;
+		//@include breakpoint('sm') {
+		//width: 100%;
+		//}
+
+		@include breakpoint('md') {
+			width: calc(50% - 16px);
+		}
+
+		@include breakpoint('lg') {
+			width: calc(33% - 16px);
+		}
+
+		@include breakpoint('xxl') {
+			width: calc(25% - 16px);
+		}
+	}
 	.post-block__main-header {
 		@extend %body-text-sm;
 	}

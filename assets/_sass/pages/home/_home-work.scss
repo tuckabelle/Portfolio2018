@@ -4,10 +4,8 @@
 .home__work {
 	background-color: $color-primary-gray-mid;
 	&-main {
-		display: grid;
-		grid-template-columns: repeat(auto-fill, minmax(300px, 3fr));
-		grid-gap: 16px;
-		grid-auto-rows: auto;
+		clear: both;
+		display: block;
 	}
 	.project-img img {
 		width: 100%;

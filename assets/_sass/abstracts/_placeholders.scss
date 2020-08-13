@@ -92,3 +92,17 @@
 	margin-bottom: 24px;
 	@extend %body-text-sm;
 }
+
+%large-text {
+	display: block;
+	position: relative;
+	@extend %serif-base;
+	@include fontSize(28px);
+	line-height: 1.15;
+	color: $color-text-gray-90;
+	z-index: 1;
+
+	@include breakpoint('lg') {
+		@include fontSize(30px);
+	}
+}

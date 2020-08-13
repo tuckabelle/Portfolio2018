@@ -1,6 +1,6 @@
 {% assign projects = site.projects %} {% for project in projects %}
 
-<article class="post-block__main item" role="article">
+<article class="post-block__main grid-item" role="article">
 	<header class="post-block__main-header" role="header">
 		<div class="main-type label">{{ project.product_type }}</div>
 		<h3 class="main-title"><a href="{{ project.url | relative_url }}.html"">{{ project.title }}</a></h3>
