@@ -170,25 +170,6 @@ p {
 	}
 }
 
-ul.meta-list {
-	margin: 0;
-	border-top: 1px solid $color-line-gray-30;
-	padding: 12px 0 0 0;
-
-	li {
-		//margin: 0 0 4px 0;
-		line-height: 1.15;
-		list-style: none;
-		padding: 0;
-		color: $color-text-gray-70;
-		@include fontSize(15px);
-
-		@include breakpoint('md') {
-			@include fontSize(16px);
-		}
-	}
-}
-
 .label {
 	letter-spacing: 0.03em;
 	font-weight: bold;

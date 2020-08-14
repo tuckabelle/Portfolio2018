@@ -42,33 +42,36 @@
 			flex-direction: column;
 		}
 	}
+}
 
+.featured-img,
+.project__image-block {
 	figcaption {
 		margin-top: 16px;
 		width: 100%;
-	}
 
-	&.caption {
-		&--bottom {
-			flex-direction: column;
-			margin-top: 16px;
-		}
-
-		&--side {
-			@include breakpoint('lg') {
-				flex-direction: row;
+		&.caption {
+			&--bottom {
+				flex-direction: column;
+				margin-top: 16px;
 			}
 
-			figcaption {
+			&--side {
 				@include breakpoint('lg') {
-					margin-top: 0px;
-					margin-left: 3vw;
-					width: 100%;
-					min-width: 200px;
-					max-width: 250px;
+					flex-direction: row;
 				}
-				@include breakpoint('xxl') {
-					margin-left: 48px;
+
+				figcaption {
+					@include breakpoint('lg') {
+						margin-top: 0px;
+						margin-left: 3vw;
+						width: 100%;
+						min-width: 200px;
+						max-width: 250px;
+					}
+					@include breakpoint('xxl') {
+						margin-left: 48px;
+					}
 				}
 			}
 		}

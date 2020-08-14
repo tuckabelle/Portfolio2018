@@ -3,27 +3,71 @@ layout: default
 ---
 
 <article class="project" itemscope itemtype="http://schema.org/BlogPosting">
-	<header class="project__header content-wrapper ">
+	<header class="project__header ">
+		<div class="content-wrapper ">
+			<div class="project-num bg-text">01/08</div>
+			<h1 class="project__title" itemprop="name headline">
+				{{ page.title | escape }}
+			</h1>
 
-		<h1 class="project__title" itemprop="name headline">
-			{{ page.title | escape }}
-		</h1>
-		<div class="project__org">
-			<ul class="meta-list">
-				<li>{{ page.org1 }}</li>
-				<li>{{ page.org2 }}</li>
-			</ul>
-		</div>
-		<p class="project__description">{{ page.description }}</p>
-		{% assign project = page %} {% include btn-launch.html %}
-		{%- include project-details.html -%}
+			<div class="project__description">
+				<div class="project-intro">
+					<div>
+						<p>{{ page.description }}</p>
+						{% assign project = page %} {% include btn-launch.html %}
+					</div>
+					<figure class="featured-img caption--bottom">
+						<div class="img-container">
+							<img src="{{ project.cover_image | relative_url }}" alt="{{ include.alt }}" />
+						</div>
+					</figure>
+				</div>
+
+
+				<div class="details1">
+					<ul class="meta-list">
+						<li>
+							<div class="label">Year</div>
+							<span class="large-text">{{ page.year }}</span>
+						</li>
+						<li>
+							<div class="label">Type</div>
+							<span class="large-text">{{ page.product_type }}</span>
+						</li>
+						<li class="list-border">
+							<div class="label">Client</div>
+							{{ page.org1 }}<br />{{ page.org2 }}
+					</ul>
+				</div>
+				<div class="details2">
+					<ul class="meta-list ">
+
+						<li>
+							<div class="label">Role</div>
+							{{ page.role }}
+						</li>
+						{% for member in page.team %}
+						<li class="list-border">
+							<div class="label">Product Team</div>
+							<ul>
+								{% for member in project.team %}
+								{% assign item = member | split: ": " %}
+								<li>{{ item[0] }}, <em>{{ item[1] }}</em></li>
+								{% endfor %}
+							</ul>
+
+						</li>
+
+						{% endfor %}
+					</ul>
+
+				</div>
+			</div>
 	</header>
-	<section class="project__img-container">
-		<img src="{{ project.cover_image | relative_url }}" alt="Venus on Screen Illustration"
-			title="Venus on Screen Illustration" />
-	</section>
 
-	<section class="project__content project-content content-wrapper" itemprop="articleBody">
+
+
+	<section class="project__content content-wrapper" itemprop="articleBody">
 		{{ content }}
 	</section>
 

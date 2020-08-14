@@ -1,14 +1,18 @@
-.project-content {
+.project__content {
+	background-color: $color-primary-gray-light;
+
 	h2,
 	h3,
 	h4,
 	h5,
 	h6,
 	p {
-		max-width: 640px;
+		max-width: 680px;
+		margin-left: auto;
+		margin-right: auto;
 		//margin: 0 auto;
 	}
 	p {
-		margin: 0 auto 24px;
+		margin: 0 auto 28px;
 	}
 }

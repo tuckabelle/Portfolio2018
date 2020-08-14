@@ -106,3 +106,7 @@
 		@include fontSize(30px);
 	}
 }
+
+%list-border {
+	border-top: 1px solid $color-line-gray-30;
+}

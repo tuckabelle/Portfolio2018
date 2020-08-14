@@ -10,6 +10,10 @@
 	.home__section-header:after {
 		left: calc(100% - 61.8% + 2vw);
 	}
+	.list-border {
+		padding-top: 12px;
+		@extend %list-border;
+	}
 	.section-content {
 		//max-width: $max-width--content;
 		margin: 0 auto;

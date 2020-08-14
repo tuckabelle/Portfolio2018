@@ -1,10 +1,6 @@
 @import 'project-header', 'project-section', 'project-subsection',
 	'project-footer';
 
-.project__content {
-	background-color: $color-gradient-graygray;
-}
-
 .project {
 	overflow: auto;
 	clear: both;

@@ -13,7 +13,7 @@
 
 	&--center {
 		@include breakpoint('lg') {
-			max-width: 640px;
+			max-width: 680px;
 			margin: 24px auto;
 		}
 	}
@@ -23,6 +23,7 @@
 		flex-direction: column;
 
 		@include breakpoint('md') {
+			margin-right: 0;
 			width: 50%;
 			max-width: 400px;
 			float: right;

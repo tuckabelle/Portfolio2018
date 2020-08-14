@@ -70,15 +70,17 @@ layout: default
 
 				<aside>
 					<div class="large-text">{{ page.about-list-details }}</div>
-					<ul class="meta-list">
+					<ul class="meta-list list-border">
 						{% for detail in page.about-details %} {% assign item = detail |
 							split: ": " %}
-						<li>
+
+						<li class="">
 							<div class="label">{{ item[0] }}</div>
 							{{ item[1] }}
 						</li>
 						{% endfor %}
 					</ul>
+
 				</aside>
 				{{ content }}
 

@@ -1,6 +1,24 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the meta-list component.
 // -----------------------------------------------------------------------------
+ul.meta-list,
+ul.meta-list ul {
+	margin: 0;
+	padding: 0;
+	li {
+		//margin: 0 0 4px 0;
+		line-height: 1.15;
+		list-style: none;
+		padding: 0;
+		color: $color-text-gray-70;
+		@include fontSize(15px);
+
+		@include breakpoint('md') {
+			@include fontSize(16px);
+		}
+	}
+}
+
 aside {
 	padding-top: 8px;
 	margin-bottom: 24px;
@@ -18,8 +36,8 @@ aside {
 		flex-direction: column;
 	}
 
-	@include breakpoint('xl') {
-		max-width: 300px;
+	@include breakpoint('lg') {
+		max-width: 250px;
 		margin-right: calc(#{$max-width} * 0.04);
 	}
 
