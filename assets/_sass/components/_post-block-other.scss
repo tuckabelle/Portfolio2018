@@ -1,21 +1,46 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the other post block component.
 // -----------------------------------------------------------------------------
+$other-margin: 24px;
+
 .post-block__other {
-	padding-bottom: 32px;
-	margin-bottom: 32px;
+	padding-bottom: 16px;
+	margin-bottom: 16px;
 	@extend %body-text-sm;
 	@include breakpoint('md') {
-		padding-bottom: 40px;
-		margin-bottom: 40px;
+		padding-bottom: 24px;
+		margin-bottom: 24px;
+	}
+
+	@include breakpoint('md') {
+		margin-left: $other-margin;
 	}
 
 	&:not(:last-of-type) {
-		border-bottom: 1px solid $color-line-gray-30;
+		//border-bottom: 1px solid $color-line-gray-30;
 	}
 }
-
+.post-block__other-title {
+	position: relative;
+	&:before {
+		content: '';
+		display: block;
+		border-radius: 50%;
+		height: 8px;
+		width: 8px;
+		position: absolute;
+		background-color: rgba(0, 0, 0, 0.3);
+		opacity: 1;
+		bottom: calc(50% - 4px);
+		left: calc(-#{$other-margin});
+		transition: all 300ms ease-in;
+	}
+	svg {
+		height: 12px;
+	}
+}
 .post-block__other-content {
+	margin-top: 4px;
 	& > .meta-list > li {
 		@extend %body-text-sm;
 		padding-bottom: 4px;
@@ -28,6 +53,14 @@
 	.list-container {
 		display: flex;
 		flex-direction: column;
+		@include breakpoint('md') {
+			flex-direction: row;
+			align-content: space-between;
+			justify-content: space-between;
+			> li {
+				width: 46%;
+			}
+		}
 	}
 
 	.post-block__other-desc {

@@ -39,7 +39,7 @@ h1 {
 			@include fontSize(64px);
 		}
 
-		@include breakpoint('2xl') {
+		@include breakpoint('xl') {
 			@include fontSize(72px);
 		}
 	}
@@ -213,40 +213,62 @@ a {
 	transition: all 0.3s ease-in-out;
 
 	&:visited {
-		color: #9400d3;
+		color: #000;
 	}
 }
 
-.post-block__main-title {
+.post-block__main .main-title a {
+	display: inline;
 	@extend %serif-base;
 	@include fontSize(28px);
 	line-height: 1;
-	text-align: center;
 
-	@include breakpoint('sm') {
-		text-align: right;
-	}
+	color: inherit;
+	background-image: linear-gradient(
+		transparent calc(100% - 8px),
+		black 4px,
+		transparent calc(100% - 4px)
+	);
+	background-repeat: no-repeat;
+	background-size: 0% 100%;
+
+	transition: background-size 0.5s;
 
 	@include breakpoint('md') {
-		@include fontSize(34px);
+		@include fontSize(32px);
 	}
 
 	@include breakpoint('lg') {
-		@include fontSize(40px);
+		@include fontSize(36px);
 	}
 
 	@include breakpoint('xl') {
-		@include fontSize(48px);
+		@include fontSize(40px);
+	}
+	&:hover {
+		background-size: 100% 100%;
 	}
 }
 
 .post-block__other-title {
 	@include fontSize(19px);
 	font-weight: bold;
-	line-height: 1.15;
 
+	display: inline-block;
+	span {
+		display: inline-block;
+		line-height: 1.3;
+		background-image: linear-gradient(transparent calc(100% - 3px), black 3px);
+		background-repeat: no-repeat;
+		background-size: 0% 100%;
+
+		transition: background-size 0.5s;
+	}
 	@include breakpoint('md') {
 		@include fontSize(20px);
+	}
+	&:hover span {
+		background-size: 100% 100%;
 	}
 }
 

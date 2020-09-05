@@ -38,14 +38,16 @@
 	&__intro-bg {
 		display: block;
 		width: 110vw;
-		max-width: 1000px;
+		//max-width: 1000px;
 		height: auto;
 		position: absolute;
 		top: -20px;
 		z-index: 0;
 
 		@include breakpoint('md') {
-			width: 75vw;
+			//width: 75vw;
+			width: 100vw;
+
 			margin: 0 auto;
 			left: 50%;
 			transform: translate(-50%, 0%);

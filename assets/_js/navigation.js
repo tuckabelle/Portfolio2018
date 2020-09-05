@@ -1,49 +1,27 @@
-// const header_height = headerimg.offsetHeight - 40
-//
-// //header.style.height = 'header_height'
-// const hidden_class = 'totop'
-// let scrollPos = window.pageYOffset
-// let lastScrollPos = 0
-//
-// scrollPos = window.pageYOffset
-// header.style.height = headerimg.offsetHeight + 'px'
-// const header_h = header.offsetHeight
-// console.log(header_h)
-// if (scrollPos >= header_height) {
-//   headerimg.classList.add(hidden_class)
-// } else {
-//   headerimg.classList.remove(hidden_class)
-// }
-//
-// window.addEventListener('scroll', function() {
-//   scrollPos = window.pageYOffset
-//   header.style.height = headerimg.offsetHeight + 'px'
-//   const header_h = header.offsetHeight
-//   console.log(header_h)
-//   if (scrollPos >= header_height) {
-//     headerimg.classList.add(hidden_class)
-//   } else {
-//     headerimg.classList.remove(hidden_class)
-//   }
-//
-//   lastScrollPos = scrollPos
-// })
+const Navigation = () => {
+  const trigger = document.querySelector('#actionButton1')
+  const menu = document.querySelector('.action-menu')
 
-'use strict'
+  trigger.addEventListener('click', function() {
+    if (menu.classList.contains('is-active')) {
+      this.setAttribute('aria-expanded', 'false')
+      this.classList.remove('is-active')
+      menu.classList.remove('is-active')
+    } else {
+      menu.classList.add('is-active')
+      this.setAttribute('aria-expanded', 'true')
+      this.classList.add('is-active')
+    }
+  })
+  document.addEventListener('click', function(event) {
+    let isClickInside = trigger.contains(event.target)
 
-import Masonry from 'masonry-layout'
+    if (!isClickInside) {
+      trigger.setAttribute('aria-expanded', 'false')
+      trigger.classList.remove('is-active')
+      menu.classList.remove('is-active')
+    }
+  })
+}
 
-const grid = document.querySelector('.grid')
-const msnry = new Masonry(grid, {
-  itemSelector: '.grid-item',
-  columnWidth: '.grid-item',
-  gutter: 16,
-  percentPosition: true,
-  horizontalOrder: true
-})
-
-msnry.once('layoutComplete', () => {
-  grid.classList.add('load')
-})
-
-msnry.layout()
+export default Navigation

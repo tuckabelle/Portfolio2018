@@ -51,6 +51,10 @@
 		}
 		@include breakpoint('lg') {
 			font-size: 40px;
+			max-width: 700px;
+		}
+		@include breakpoint('xl') {
+			max-width: 800px;
 		}
 	}
 	.site-footer__info {
@@ -70,14 +74,15 @@
 		}
 		@include breakpoint('lg') {
 			display: flex;
+			flex-grow: 2;
 			padding: 0;
-			margin: 48px 0 32px $page-margins--lg;
+			margin: 48px $page-margins--lg 32px $page-margins--lg;
 		}
 		@include breakpoint('xl') {
-			margin: 56px 0 32px $page-margins--xl;
+			margin: 56px $page-margins--xl 32px $page-margins--xl;
 		}
 		@include breakpoint('xxl') {
-			margin: 56px 0 40px $page-margins--xxl;
+			margin: 80px $page-margins--xxl 40px $page-margins--xxl;
 		}
 	}
 	.site-footer__copyright {

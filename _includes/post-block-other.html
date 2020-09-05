@@ -2,7 +2,8 @@
 
 <article class="post-block post-block__other" role="article">
 	<header class="post-block____other-header" role="header">
-		<a href="{{ project.url }}" class="post-block__other-title" target="_blank">{{ project.title }}
+		<a href="{{ project.url }}" class="post-block__other-title" target="_blank">
+			<span>{{ project.title }}</span>
 			<svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
 				<path
 					d="M0.506348 11.4118L9.33135 2.58683H3.83968V0.920166H12.173V9.2535H10.5063V3.76183L1.68135 12.5868L0.506348 11.4118Z"
@@ -15,19 +16,12 @@
 
 	<div class="post-block__other-content">
 		<div class="post-block__other-role">{{ project.role }}</div>
+		<div class="post-block__other-org">{{ project.org }}</div>
 		<div class="post-block__other-desc">{{ project.description }}</div>
-		<ul class="meta-list list-container">
-			<li class="post-block__other-org">{{ project.org }}</li>
-			<li class="post-block__other-team">
-				<ul class="meta-list">
-					{% for member in project.team %}
-					{% assign item = member | split: ": " %}
 
-					<li>{{ item[0] }}, <em>{{ item[1] }}</em></li>
-					{% endfor %}
-				</ul>
-			</li>
-		</ul>
+
+
+
 </article>
 
 {% endfor %}

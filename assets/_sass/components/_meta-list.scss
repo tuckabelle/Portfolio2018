@@ -31,7 +31,7 @@ aside {
 	@include breakpoint('md') {
 		width: calc(38.2% - 4vw);
 		max-width: 200px;
-		margin-right: 3vw;
+		margin-right: 6vw;
 		float: left;
 		flex-direction: column;
 	}

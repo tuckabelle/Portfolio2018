@@ -14,7 +14,7 @@ layout: default
 				<div class="project-intro">
 					<div>
 						<p>{{ page.description }}</p>
-						{% assign project = page %} {% include btn-launch.html %}
+						{% assign project = page %} {% include btn-launch.html content="Launch website" %}
 					</div>
 					<figure class="featured-img caption--bottom">
 						<div class="img-container">
@@ -71,7 +71,7 @@ layout: default
 		{{ content }}
 	</section>
 
-	<section class="project__footer">
+	<!--<section class="project__footer">
 		{% include post-block-next.html %}
-	</section>
+	</section>-->
 </article>

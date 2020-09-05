@@ -1,20 +1,14 @@
 <div class="btn-launch {{ include.class }}">
-	<span>Launch website</span>
-	<a href="{{ project.project-link }}" alt="Visit {{ include.alt }}">
-		<svg
-			width="12"
-			height="12"
-			viewBox="0 0 13 13"
-			fill="none"
-			alt="Go to website"
-			title="Go to website"
-			class="btn-launch__icon"
-			xmlns="http://www.w3.org/2000/svg"
-		>
-			<path
-				d="M0.506348 11.4118L9.33135 2.58683H3.83968V0.920166H12.173V9.2535H10.5063V3.76183L1.68135 12.5868L0.506348 11.4118Z"
-				fill="#393939"
-			/>
-		</svg>
+
+	<a href="{{ project.project-link }}" alt="Visit {{ include.alt }}" target="_blank">
+		<div class="btn-launch__icon">
+			<svg width="12" height="12" viewBox="0 0 13 13" fill="none" alt="Go to website" title="Go to website"
+				class="icon-arrow" xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M0.506348 11.4118L9.33135 2.58683H3.83968V0.920166H12.173V9.2535H10.5063V3.76183L1.68135 12.5868L0.506348 11.4118Z"
+					fill="#393939" />
+			</svg>
+		</div>
+		<span>{{ include.content }}</span>
 	</a>
 </div>

@@ -7,9 +7,6 @@
 		clear: both;
 		display: block;
 	}
-	.project-img img {
-		width: 100%;
-	}
 
 	&-other-container {
 		position: relative;
@@ -18,7 +15,6 @@
 		flex-direction: column;
 		@include breakpoint('md') {
 			flex-direction: row;
-
 			position: relative;
 		}
 		> div {

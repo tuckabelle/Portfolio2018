@@ -8,7 +8,7 @@
 	}
 
 	.home__section-header:after {
-		left: calc(100% - 61.8% + 2vw);
+		left: calc(100% - (61.8% + 2vw));
 	}
 	.list-border {
 		padding-top: 12px;
@@ -19,6 +19,30 @@
 		margin: 0 auto;
 		//padding: 0 0 54px 0;
 		background: $color-primary-gray-light;
+
+		aside {
+			width: 100%;
+			@include breakpoint('xxl') {
+				max-width: 300px;
+			}
+			.large-text,
+			.meta-list {
+				@include breakpoint('sm') {
+					width: calc(50%);
+				}
+				@include breakpoint('md') {
+					width: 100%;
+				}
+			}
+			.large-text {
+				@include breakpoint('sm') {
+					padding-right: 24px;
+				}
+				@include breakpoint('md') {
+					padding-right: 0;
+				}
+			}
+		}
 
 		p {
 			max-width: 680px;

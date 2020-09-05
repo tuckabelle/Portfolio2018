@@ -3,20 +3,26 @@
 <article class="post-block__main grid-item" role="article">
 	<header class="post-block__main-header" role="header">
 		<div class="main-type label">{{ project.product_type }}</div>
-		<h3 class="main-title"><a href="{{ project.url | relative_url }}.html"">{{ project.title }}</a></h3>
+		<div class="main-title"><svg width=" 23" class="main-block-arrow" height="23" viewBox="0 0 23 23" fill="none"
+				xmlns="http://www.w3.org/2000/svg">
+				<path
+					d="M1.11976 11.0468L18.083 10.3926L12.6015 5.31815L14.1415 3.65455L22.4595 11.3548L14.7593 19.6728L13.0957 18.1327L18.1701 12.6512L1.20686 13.3054L1.11976 11.0468Z"
+					fill="#393939" />
+			</svg><a href="{{ project.url | relative_url }}.html">{{ project.title }}</a>
+		</div>
 		<div class=" main-org1">{{ project.org1 }}</div>
-				<div class="main-org2">{{ project.org2 }}</div>
+		<div class="main-org2">{{ project.org2 }}</div>
 	</header>
 
 	<div class="post-block__main-content post-block-content">
 		<div class="project-img">
-			<img src="{{ project.cover_image | relative_url }}" alt="{{ project.title | escape }}"
-				title="{{ project.title | escape }}" />
+			<a href="{{ project.url | relative_url }}.html"><img src=" {{ project.cover_image | relative_url }}"
+					alt="{{ project.title | escape }}" title="{{ project.title | escape }}" /></a>
 		</div>
 		{% capture project-title %}
 		{{ project.title }}{% endcapture %}
 
-		{% include btn-launch.html class="main-block" alt=project-title %}
+		{% include btn-launch.html class="main-block" alt=project-title content="Launch website" %}
 	</div>
 </article>
 

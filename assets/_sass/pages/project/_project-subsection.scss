@@ -19,10 +19,10 @@
 		margin: 56px 0;
 	}
 	@include breakpoint('xl') {
-		padding: 48px $page-margins--lg 64px;
+		padding: 48px $page-margins--xl 64px;
 	}
 	@include breakpoint('xxl') {
-		padding: 48px $page-margins--lg 64px;
+		padding: 48px $page-margins--xxl 64px;
 	}
 
 	h3,

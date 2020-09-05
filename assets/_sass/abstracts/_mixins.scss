@@ -18,7 +18,7 @@ $breakpoint-xl: 1280px;
 $breakpoint-xxl: 1400px;
 
 @mixin breakpoint($break) {
-	@if $break==2xl {
+	@if $break==xxl {
 		@media screen and (min-width: $breakpoint-xxl) {
 			@content;
 		}
@@ -131,4 +131,24 @@ $breakpoint-xxl: 1400px;
 		float: left;
 		padding-bottom: $padding;
 	}
+}
+
+// Fluid Type
+@mixin fluid-font($responsive, $min, $max: false, $fallback: false) {
+	$responsive-unitless: $responsive / ($responsive - $responsive + 1);
+	$dimension: if(unit($responsive) == 'vh', 'height', 'width');
+	$min-breakpoint: $min / $responsive-unitless * 100;
+	@media (max-#{$dimension}: #{$min-breakpoint}) {
+		font-size: $min;
+	}
+	@if $max {
+		$max-breakpoint: $max / $responsive-unitless * 100;
+		@media (min-#{$dimension}: #{$max-breakpoint}) {
+			font-size: $max;
+		}
+	}
+	@if $fallback {
+		font-size: $fallback;
+	}
+	font-size: $responsive;
 }
