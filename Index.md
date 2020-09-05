@@ -1,6 +1,6 @@
 ---
-intro_heading: Intro Heading
-intro_desc: Intro description
+intro_heading: web design, UX, and front-end development
+intro_desc: "+ lover of Art, drinker of black coffee, and pun enthusiest."
 project_list:
 - _projects/aerospace.md
 - _projects/health-commission.md
