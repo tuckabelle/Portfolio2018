@@ -35,12 +35,8 @@ $other-margin: 24px;
 		left: calc(-#{$other-margin});
 		transition: all 300ms ease-in;
 	}
-	svg {
-		height: 12px;
-	}
 }
 .post-block__other-content {
-	margin-top: 4px;
 	& > .meta-list > li {
 		@extend %body-text-sm;
 		padding-bottom: 4px;
@@ -48,6 +44,10 @@ $other-margin: 24px;
 
 	svg {
 		display: inline;
+	}
+
+	.post-block__other-org {
+		@include fontSize(14px);
 	}
 
 	.list-container {

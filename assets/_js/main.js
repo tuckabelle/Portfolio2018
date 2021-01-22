@@ -2,8 +2,8 @@
 import barba from '@barba/core'
 import barbaPrefetch from '@barba/prefetch'
 import { TweenMax, TimelineMax } from 'gsap/all'
-import anime from 'animejs/lib/anime.min.js'
 
+/* 
 barba.use(barbaPrefetch)
 
 barba.hooks.beforeEnter(() => {})
@@ -195,3 +195,4 @@ function getPosition(el) {
     y: yPos
   }
 }
+ */

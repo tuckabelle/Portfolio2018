@@ -38,9 +38,11 @@
 	}
 
 	.project-intro > div,
+	h1 .project-intro > div,
 	h1 {
 		max-width: 700px;
 		margin: 0 auto;
+
 		@include breakpoint('lg') {
 			margin: unset;
 			padding-left: calc(#{$page-margins--lg} / 2);
@@ -165,5 +167,116 @@
 			height: 20%;
 			background: $color-primary-gray-light;
 		}
+	}
+}
+
+h1 {
+	//Test
+	opacity: 1;
+	-o-transition: opacity 0s;
+	-moz-transition: opacity 0s;
+	-webkit-transition: opacity 0s;
+	transition: opacity 0s;
+	-webkit-animation: ink 1s steps(24);
+	-moz-animation: ink 1s steps(24);
+	-o-animation: ink 1s steps(24);
+	-ms-animation: ink 1s steps(24);
+	animation: ink 1s steps(24);
+	-webkit-animation-fill-mode: forwards;
+	-moz-animation-fill-mode: forwards;
+	-o-animation-fill-mode: forwards;
+	-ms-animation-fill-mode: forwards;
+	animation-fill-mode: forwards;
+	-webkit-animation-iteration-count: 1;
+	-moz-animation-iteration-count: 1;
+	-o-animation-iteration-count: 1;
+	-ms-animation-iteration-count: 1;
+	animation-iteration-count: 1;
+	-webkit-animation-delay: 3s;
+	-moz-animation-delay: 3s;
+	-o-animation-delay: 3s;
+	-ms-animation-delay: 3s;
+	animation-delay: 0.5s;
+	width: 640px;
+	background-image: url('../images/ink_splash.png');
+	-webkit-background-clip: text;
+	-moz-background-clip: text;
+	-o-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-size: 90px !important;
+	//end test
+}
+
+@-moz-keyframes ink {
+	from {
+		background-position: 0;
+		-webkit-transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		transform: translateZ(0px);
+	}
+	to {
+		background-position: -15330px;
+		-webkit-transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		transform: translateZ(0px);
+	}
+}
+@-webkit-keyframes ink {
+	from {
+		background-position: 0;
+		-webkit-transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		transform: translateZ(0px);
+	}
+	to {
+		background-position: -15330px;
+		-webkit-transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		transform: translateZ(0px);
+	}
+}
+@-o-keyframes ink {
+	from {
+		background-position: 0;
+		-webkit-transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		transform: translateZ(0px);
+	}
+	to {
+		background-position: -15330px;
+		-webkit-transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		transform: translateZ(0px);
+	}
+}
+@keyframes ink {
+	from {
+		background-position: 0;
+		-webkit-transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		transform: translateZ(0px);
+	}
+	to {
+		background-position: -15330px;
+		-webkit-transform: translateZ(0px);
+		-moz-transform: translateZ(0px);
+		-o-transform: translateZ(0px);
+		-ms-transform: translateZ(0px);
+		transform: translateZ(0px);
 	}
 }

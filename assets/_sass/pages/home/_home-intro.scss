@@ -152,6 +152,7 @@
 			@include fontSize(26px);
 			@extend %serif-base;
 			padding: 16px 0;
+			line-height: 1.15;
 
 			@include breakpoint('sm') {
 				padding: 40px 0 16px;

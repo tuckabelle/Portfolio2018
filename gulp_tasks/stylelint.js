@@ -3,7 +3,7 @@ const config = require('../frasco.config.js')
 const gulp = require('gulp')
 const styleLint = require('gulp-stylelint')
 
-gulp.task('styleLint', function() {
+gulp.task('styleLint', function () {
   let autoFix = false
   if (argv.fix) {
     autoFix = true
@@ -15,7 +15,7 @@ gulp.task('styleLint', function() {
       styleLint({
         failAfterError: false,
         reporters: [{ formatter: 'string', console: true }],
-        fix: autoFix
+        fix: autoFix,
       })
     )
 

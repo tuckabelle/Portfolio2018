@@ -79,10 +79,13 @@
 		a {
 			padding: 8px 4px;
 		}
+		> a {
+			font-weight: bold;
+		}
 	}
 }
-$red: #f45042;
-$red-light: #ffdad7;
+$selected: #fff;
+$highlight: rgba(0, 0, 0, 0.1);
 $white: #fff;
 $shadow: 0px 5px 20px 10px rgba(0, 0, 0, 0.2);
 $shadowB: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
@@ -95,19 +98,19 @@ $shadowB: 0px 5px 10px 5px rgba(0, 0, 0, 0.2);
 	cursor: pointer;
 	display: inline-flex;
 	align-items: center;
-	padding: 4px 4px;
-	border-radius: 5px;
+	padding: 2px 4px 2px 8px;
+	border-radius: 2px;
 	transition: all 0.2s ease;
 	background: transparent;
 
 	&:hover {
-		background: #ffdad7;
-		color: $white;
+		background: $highlight;
+		color: $color-text-black;
 		outline: none;
 	}
 	&:focus {
-		background: $red;
-		color: $white;
+		background: $selected;
+		color: $color-text-black;
 		outline: none;
 	}
 
@@ -163,7 +166,7 @@ ul.action-menu {
 		transition: all 0.2s ease;
 		&:focus,
 		&:hover {
-			background-color: $red-light;
+			background-color: $highlight;
 			outline: none;
 		}
 		a {

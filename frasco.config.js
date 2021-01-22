@@ -56,7 +56,13 @@ module.exports = {
   js: {
     src: '_js',
     dest: 'js',
-    entry: ['bundle.js', 'main.js', 'navigation.js', 'masonry.js']
+    entry: [
+      'bundle.js',
+      'main.js',
+      'navigation.js',
+      'masonry.js',
+      'animations.js'
+    ]
   },
 
   sass: {
@@ -78,7 +84,8 @@ module.exports = {
   externals: {
     TimelineMax: 'TimelineMax',
     TweenMax: 'TweenMax',
-    Barba: 'Barba'
+    Barba: 'Barba',
+    Lottie: 'Lottie'
   },
   module: {
     rules: [{ test: /\.js$/, exclude: /node_modules/, loader: 'babel-loader' }]
@@ -91,7 +98,7 @@ module.exports = {
       TimelineLite: 'gsap/src/minified/TimelineLite.min.js',
       TimelineMax: 'gsap/src/minified/TimelineMax.min.js',
       Barba: 'barba.js/dist/barba.min.js',
-      anime: 'animejs/lib/anime.es.js'
+      Lottie: 'lottie-web/build/player/lottie.min.js'
     }
   }
 }

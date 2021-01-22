@@ -25,7 +25,7 @@ h6 {
 h1 {
 	&.project__title {
 		@include fontSize(42px);
-		line-height: 0.9;
+		line-height: 130%;
 
 		@include breakpoint('sm') {
 			@include fontSize(50px);
@@ -226,13 +226,12 @@ a {
 	color: inherit;
 	background-image: linear-gradient(
 		transparent calc(100% - 8px),
-		black 4px,
+		white 4px,
 		transparent calc(100% - 4px)
 	);
 	background-repeat: no-repeat;
 	background-size: 0% 100%;
-
-	transition: background-size 0.5s;
+	transition: background-size 200ms ease-in-out;
 
 	@include breakpoint('md') {
 		@include fontSize(32px);
@@ -251,24 +250,22 @@ a {
 }
 
 .post-block__other-title {
-	@include fontSize(19px);
+	@include fontSize(18px);
 	font-weight: bold;
 
 	display: inline-block;
 	span {
 		display: inline-block;
-		line-height: 1.3;
-		background-image: linear-gradient(transparent calc(100% - 3px), black 3px);
-		background-repeat: no-repeat;
-		background-size: 0% 100%;
+		//line-height: 1.3;
+		//background-image: linear-gradient(transparent calc(100% - 3px), black 3px);
+		//background-repeat: no-repeat;
+		//background-size: 0% 100%;
 
 		transition: background-size 0.5s;
 	}
-	@include breakpoint('md') {
-		@include fontSize(20px);
-	}
 	&:hover span {
-		background-size: 100% 100%;
+		//background-size: 100% 100%;
+		color: $color-text-black;
 	}
 }
 

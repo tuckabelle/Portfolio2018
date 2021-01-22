@@ -3,17 +3,17 @@
 // -----------------------------------------------------------------------------
 
 .site-footer {
-	background-color: $color-primary-gray-light;
-	@extend %body-text-sm;
-	color: $color-text-gray-90;
 	position: relative;
+	background-color: $color-primary-gray-light;
+	color: $color-text-gray-90;
+	@extend %body-text-sm;
 
 	.site-footer-container {
 		display: flex;
+		position: relative;
 		flex-direction: column;
 		padding-bottom: 48px;
 		width: 100%;
-		position: relative;
 
 		@include breakpoint('sm') {
 			flex-direction: row;
@@ -29,8 +29,8 @@
 
 		&::before {
 			display: block;
-			content: '';
 			position: absolute;
+			content: '';
 			height: 100%;
 			width: 40px;
 			background-color: $color-primary-gray-mid;
@@ -87,11 +87,12 @@
 	}
 	.site-footer__copyright {
 		color: $color-text-gray-60;
-		@include fontSize(13px);
 		margin-top: 8px;
+		@include fontSize(13px);
 	}
 	.site-footer__img {
 		display: block;
+		position: relative;
 		width: 100%;
 		height: auto;
 		max-width: 350px;
@@ -99,25 +100,14 @@
 		order: 2;
 		padding-bottom: 40px;
 		overflow: visible;
-		position: relative;
+
 		@include breakpoint('sm') {
 			width: 50%;
 			order: 1;
 		}
 
-		img {
-			width: 120%;
-			max-width: 300px;
-			position: relative;
-			float: left;
-			@include breakpoint('sm') {
-				margin-top: -1rem;
-				float: right;
-			}
-			@include breakpoint('lg') {
-				width: 100%;
-				margin-top: -2rem;
-			}
+		#lottie_thinker {
+			margin-top: -3rem;
 		}
 	}
 	.site-footer__message {
@@ -130,10 +120,10 @@
 		}
 	}
 	.site-footer__contact {
+		display: flex;
 		list-style: none;
 		margin: 0 0 16px 0;
 		padding: 0;
-		display: flex;
 
 		@include breakpoint('lg') {
 			flex-direction: column;
@@ -158,11 +148,11 @@
 		}
 	}
 	.site-footer__btt {
-		order: 3;
 		position: absolute;
+		right: 0px;
 		bottom: 0;
+		order: 3;
 		max-width: 300px;
 		width: 100%;
-		right: 0px;
 	}
 }
